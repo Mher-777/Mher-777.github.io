@@ -1,0 +1,255 @@
+@media (max-width: 1500px) {
+  .researches__item {
+    max-width: 97%;
+  }
+}
+@media (max-width: 1240px) {
+  .researches__item {
+    max-width: 97%;
+  }
+  .action__video {
+    max-width: 100%;
+    order: 1;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .action__side {
+    padding: 20px;
+    max-width: 49%;
+  }
+  .action__inner {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1100px) {
+  .showcase__inner {
+    padding: 60px 0;
+    flex-direction: column;
+  }
+  .showcase__item {
+    margin-bottom: 30px;
+    max-width: 640px;
+  }
+  .action {
+    padding: 60px 0;
+  }
+  .footer__inner{
+      flex-wrap: wrap;
+  }
+  .footer__content{
+      margin-bottom: 30px;
+  }
+.footer__content-contact{
+    max-width: 100%;
+}
+  .footer__content-social{
+      max-width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .features__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .features__bottom {
+    margin-bottom: 35px;
+  }
+  .features__bottom-content {
+    flex-direction: column-reverse;
+  }
+  .features__bottom-description {
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  .features__bottom-images {
+    margin-top: 0;
+    background-position: center;
+    margin: 0 auto;
+  }
+  .features {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 960px) {
+  .top-link__address {
+    display: none;
+  }
+  .researches {
+    padding: 60px 0;
+  }
+  .action__side {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .action__video {
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  .action__video-content {
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .header__menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-color: #34495e;
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    top: 83px;
+    text-align: center;
+  }
+  .researches__item {
+    height: 200px;
+  }
+  .header__menu-list + .header__menu-list {
+    margin-left: 0;
+  }
+  .header__menu-list {
+    display: block;
+    border-bottom: 1px solid #fff;
+
+    a {
+      display: block;
+      padding: 10px 10px;
+    }
+  }
+  .menu-btn {
+    display: block;
+    width: 30px;
+    height: 25px;
+
+    span {
+      height: 3px;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 3px;
+      display: block;
+      margin-bottom: 5px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .header__top {
+    display: none;
+  }
+  .header {
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  .header__inner {
+    min-height: 80px;
+  }
+}
+
+@media (max-width: 660px) {
+  .professional__contnet {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .professional-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .professional {
+    padding-top: 160px;
+  }
+  .professional-text {
+    font-size: 25px;
+  }
+  .professional-description__inner {
+    text-align: center;
+  }
+  .showcase__item {
+    max-width: 100%;
+    text-align: center;
+  }
+  .showcase__box-icon {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .footer__inner{
+      padding-bottom: 0;
+  }
+  .footer__copy{
+      text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .features__top {
+    line-height: 36px;
+  }
+  .footer__content-title{
+      text-align: center;
+  }
+  .features__suptitle {
+    line-height: 26px;
+  }
+  .features__inner {
+    text-align: center;
+  }
+  .action__video-content {
+    iframe {
+      height: 200px;
+    }
+  }
+  .reviews__content-text{
+      line-height: 20px;
+      padding-left: 0;
+      margin-top: 0;
+  }
+  .reviews__content-author{
+      margin-bottom: 20px;
+  }
+  .reviews__content-info{
+      padding-left: 0;
+  }
+  .author__name-link,
+  .author__telegram-link{
+      margin: 0;
+  }
+  .reviews__content-btn{
+      margin-top: 0;
+  }
+}
+@media (max-width: 400px) {
+  .features__bottom-images {
+    background-size: contain;
+    max-width: 200px;
+    min-height: 200px;
+    &::before {
+      left: -59px;
+      bottom: -33px;
+    }
+  }
+  .features__bottom {
+    margin-bottom: 0;
+  }
+  .researches__item {
+    max-width: 100%;
+  }
+}
+@media (max-width: 360px){
+    .content-info__link{
+        display: none;
+    }
+} 
+@media (min-width: 850px) {
+  .header__menu {
+    display: block !important;
+  }
+}

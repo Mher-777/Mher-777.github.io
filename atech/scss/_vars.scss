@@ -1,0 +1,11 @@
+@mixin font-700 {
+    font-family: "arial-boldmt", sans-serif;
+    font-weight: 700;
+}
+@mixin font-400 {
+    font-family: "arial-regular", sans-serif;
+    font-weight: 400;
+}
+@mixin icon {
+    font-family: 'icomoon' !important;
+}

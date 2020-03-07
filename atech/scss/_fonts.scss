@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "arial-boldmt", sans-serif;
+  src: url("../fonts/arial-boldmt-webfont.woff2") format("woff2"),
+    url("../fonts/arial-boldmt-webfont.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "arial-regular", sans-serif;
+  src: url("../fonts/arial-regular.woff2") format("woff2"),
+    url("../fonts/arial-regular.woff2") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?d7mfkl');
+  src:  url('../fonts/icomoon.eot?d7mfkl#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?d7mfkl') format('truetype'),
+    url('../fonts/icomoon.woff?d7mfkl') format('woff'),
+    url('../fonts/icomoon.svg?d7mfkl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\f002";
+}
+.icon-clock-o:before {
+  content: "\f017";
+}
+.icon-image:before {
+  content: "\f03e";
+}
+.icon-photo:before {
+  content: "\f03e";
+}
+.icon-picture-o:before {
+  content: "\f03e";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-chain:before {
+  content: "\f0c1";
+}
+.icon-link:before {
+  content: "\f0c1";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-angle-left:before {
+  content: "\f104";
+}
+.icon-angle-right:before {
+  content: "\f105";
+}
+.icon-desktop:before {
+  content: "\f108";
+}
+.icon-mobile:before {
+  content: "\f10b";
+}
+.icon-mobile-phone:before {
+  content: "\f10b";
+}
+.icon-circle-o:before {
+  content: "\f10c";
+}
+.icon-github-alt:before {
+  content: "\f113";
+}
+.icon-location-arrow:before {
+  content: "\f124";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-flickr:before {
+  content: "\f16e";
+}
+.icon-tumblr:before {
+  content: "\f173";
+}
+.icon-dribbble:before {
+  content: "\f17d";
+}
+.icon-skype:before {
+  content: "\f17e";
+}
+.icon-vimeo-square:before {
+  content: "\f194";
+}
+.icon-stumbleupon:before {
+  content: "\f1a4";
+}
+.icon-behance:before {
+  content: "\f1b4";
+}
+.icon-soundcloud:before {
+  content: "\f1be";
+}
+.icon-vine:before {
+  content: "\f1ca";
+}
