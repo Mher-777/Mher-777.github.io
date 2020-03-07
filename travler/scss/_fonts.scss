@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Nexa-Regular", sans-serif;
+  src: url("../fonts/Nexa-Regular-webfont.woff2") format("woff2"),
+    url("../fonts/Nexa-Regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nexa-Bold", sans-serif;
+  src: url("../fonts/Nexa-Bold-webfont.woff2") format("woff2"),
+    url("../fonts/Nexa-Bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nexa-Light", sans-serif;
+  src: url("../fonts/Nexa-Light-webfont.woff2") format("woff2"),
+    url("../fonts/Nexa-Light-webfont.woff") format("woff");
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial-Regular", sans-serif;
+  src: url("../fonts/Arial-Regular.woff2") format("woff2"),
+    url("../fonts/Arial-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}

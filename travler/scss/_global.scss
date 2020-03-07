@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #707070;
+}
+input, textarea, button, select, option{
+    outline: none;
+}
+.container {
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+img{
+    display: block;
+}
+ul{
+  list-style-type: none;
+}

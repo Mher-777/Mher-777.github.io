@@ -1,0 +1,9 @@
+
+@mixin font-700 {
+    font-family: "Nexa-Bold", sans-serif;
+    font-weight: 700;
+}
+@mixin font-200 {
+    font-family: "Nexa-Light", sans-serif;
+    font-weight: 200;
+}
