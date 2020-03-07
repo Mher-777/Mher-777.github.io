@@ -563,7 +563,6 @@ $(function () {
         dataType: 'JSON',
         success: function (data) {
             for (let i = 0; i < 25; i++) {
-                console.log(data[i])
                 let productId = data[i]["id"];
                 let productImages = data[i]['url'];
                 let productTitle = data[i]["title"];
@@ -651,12 +650,10 @@ $(function () {
     });
     $(".cart-product__quantity .cart-product__quantity-number").each(function () {
         let test = $(this).val()
-        console.log(+test)
     });
     $(".cart-product .cart-product__price").each(function () {
         let test = $(this).text()
         let replace = test.replace('$', "");
-        console.log(+replace)
     });
 
     $('.cart-product__quantity-plus').on('click', function () {
