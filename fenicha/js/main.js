@@ -556,22 +556,9 @@ $(function () {
     $('.header__bottom-search').on('click', function () {
         $('.header-personal').toggleClass('--on')
     });
-
-   if (token){
-       $('.header__top-login-btn').remove()
-       $('.header__top-login').append(
-           `<div class="header__top-login-btn login-logout"> LOGOUT </div>`
-       )
-       $('.login-logout').on('click', function () {
-            localStorage.removeItem('loginToken')
-           location.reload()
-       })
-   }
+    
     $.ajax({
         url: 'https://jsonplaceholder.typicode.com/photos',
-        // headers: {
-        //     'Authorization': `Bearer ${token}`
-        // },
         type: "GET",
         dataType: 'JSON',
         success: function (data) {
@@ -694,54 +681,6 @@ $(function () {
         updateCartTotal()
     });
 
-    $('#header-btn__reg').on('click', function () {
-        const name = $("#name").val().trim();
-        const email = $("#email").val().trim();
-        const password = $("#password").val().trim();
-        const obj = {
-            'name': name,
-            'email': email,
-            'password': password
-        };
-        let passwordError = $('#password-error');
-        let emailError = $('#email-error');
-        let nameError = $('#name-error');
-
-        function formPost() {
-            $.ajax({
-                url: host + '/rest/users/',
-                data: JSON.stringify(obj),
-                type: 'POST',
-                contentType: "application/json;charset=utf-8",
-                error: function (xhr, status, error) {
-                    emailError.text('this email is already in use');
-                    $('#email').addClass('input-error');
-
-                },
-                success: function (data) {
-                    location.reload()
-                },
-            });
-        }
-
-        if (password.length >= 8 && name > 0) {
-            formPost();
-        } else if (password === "") {
-            passwordError.text('Enter password!');
-            return false;
-        } else if (nameError === "") {
-            nameError.text('Enter name!');
-            return false;
-        } else if (emailError === "") {
-            emailError.text('Enter email!');
-            return false;
-        } else if (password.length <= 8) {
-            passwordError.text('A minimum 8 characters password contains');
-            $('#password').addClass('input-error');
-            return false;
-        }
-    });
-
     function timerComing() {
         new TimezZ('.coming__soon-countdown-box', {
             date: 'Dec 17, 2020 00:00:00',
@@ -765,35 +704,12 @@ $(function () {
 
     function checkComing() {
         const newURL = window.location.protocol + "//" + window.location.host + "" + window.location.pathname;
-        if (newURL === 'http://localhost:3000/coming-soon.html') {
+        if (newURL === 'https://mher-777.github.io/fenicha/coming-soon.html') {
             timerComing()
         }
     }
 
-    $('#login').on('click', function () {
-        const emailInput = $('#email-input').val().trim();
-        const passwordInput = $('#password-input').val().trim();
-        let objLogin = {
-            'email': emailInput,
-            'password': passwordInput,
-        };
 
-        $.ajax({
-            url: host + '/rest/users/auth',
-            dataType: 'JSON',
-            data: JSON.stringify(objLogin),
-            type: 'POST',
-            contentType: "application/json;charset=utf-8",
-            success: function (data) {
-                let loginToken = data['token'];
-                localStorage.setItem('loginToken',loginToken);
-                location.reload()
-            },
-            error: function (request, status, error) {
-                $('#email-login__error').text('login or password incorrect')
-            },
-        });
-    })
 
     $(".top-collection__item-star, .products-grid__info-rate, .product-list__item-rate, .product-details__reviews-rate, .product__reviews-item-rate").rateYo({
         rating: 5,
