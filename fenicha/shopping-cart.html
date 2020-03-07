@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FENICHA</title>
+    <link href="https://fonts.googleapis.com/css?family=Electrolize|Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="./js/store.js" async></script>
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-inner">
+                <div class="header__top-info">
+                    <a href="mailto: tonydat@fenicha.com" class="header__top-info-item animated slideInDown">tonydat@fenicha.com</a>
+                    <a href="tel:+400123456789" class="header__top-info-item animated slideInDown">(+400) 123 456
+                        789</a>
+                    <a href="contact-page.html" class="header__top-info-item animated slideInDown">24/7 online
+                        support</a>
+                </div>
+                <div class="header__top-login animated fadeInRight">
+                    <button class="header__top-login-btn login-btn">
+                        Login
+                    </button>
+                    <div class="header__top-login-box  header__top-log">
+                        <form class="header__top-login-form">
+                            <div class="header__top-login-form-row">
+                                <label class="header__top-login-form-text">Email</label>
+                                <input id="email-input" type="email" name="email" class="header__top-register-input"
+                                       required>
+
+                            </div>
+                            <div class="header__top-login-form-row">
+                                <label class="header__top-login-form-text">Password</label>
+                                <input id="password-input" type="password" name="password"
+                                       class="header__top-register-input" required>
+                            </div>
+                            <span id="email-login__error" class="form-error__text"></span>
+                            <button id="login" class="header__top-form-btn" type="button">Login</button>
+                            <a href="#" class="header__top-login-link">Forgot password?</a>
+
+                        </form>
+                    </div>
+                    <button class="header__top-login-btn register-btn">
+                        register
+                    </button>
+                    <div class="header__top-login-box  header__top-register">
+                        <form id="header__form-login" class="header__top-login-form">
+                            <div class="header__top-login-form-row">
+                                <label class="header__top-login-form-text">Username</label>
+                                <input id="name" type="text" name="name" class="header__top-register-input" required>
+                                <span id="name-error" class="form-error__text"></span>
+                            </div>
+                            <div class="header__top-login-form-row">
+                                <label class="header__top-login-form-text">E-Mail</label>
+                                <input id="email" type="text" name="email" class="header__top-register-input" required>
+                                <span id="email-error" class="form-error__text"></span>
+                            </div>
+                            <div class="header__top-login-form-row">
+                                <label class="header__top-login-form-text">Password</label>
+                                <input id="password" type="password" name="password" class="header__top-register-input"
+                                       required>
+                                <span id="password-error" class="form-error__text"></span>
+                            </div>
+                            <span class="header__top-login-description">A password will be e-mailed to you</span>
+                            <button id="header-btn__reg" class="header__top-form-btn" type="button">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__center">
+        <div class="container">
+            <div class="header__center-inner">
+                <div class="header-social animated fadeInLeft">
+                    <a href="https://www.facebook.com/" class="header-social__link ">
+                        <span class="header-social__link-box header-social__link-facebook">
+                            Follow on facebook
+                        </span>
+                    </a>
+                    <a href="https://twitter.com/" class="header-social__link header-social__link-twitter">
+                         <span class="header-social__link-box">
+                            Follow on twitter
+                        </span>
+                    </a>
+                    <a href="https://www.google.com/" class="header-social__link header-social__link-google">
+                        <span class="header-social__link-box">
+                            Follow on google
+                        </span>
+                    </a>
+                    <a href="https://www.pinterest.com/" class="header-social__link header-social__link-pinterest">
+                        <span class="header-social__link-box">
+                            Follow on pinterest
+                        </span>
+                    </a>
+                </div>
+                <div class="header-logo animated fadeInDown">
+                    <a href="#" class="header-logo__link">
+                        <img src="./images/logo.jpg" alt="логотип">
+                    </a>
+                </div>
+                <div class="header-personal animated fadeInRight">
+                    <div class="header-personal__item-box">
+                        <a href="" class="header-personal__item icon-hart">
+                            <span>17</span>
+                        </a>
+                        <div class="header-personal__item-box-text">
+                            there are <span class="number-one">()</span> items
+                        </div>
+                    </div>
+                    <div class="header-personal__item-box">
+                        <a href="" class="header-personal__item icon-cart">
+                            <span>21</span>
+                        </a>
+                        <div class="header-personal__item-box-text">
+                            there are <span class="number-two">()</span> items
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header__bottom">
+        <div class="container">
+            <div class="header__bottom-inner">
+                <a href="#" class="header__bottom-icon animated fadeInDown"></a>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="index.html" class="header__menu-link">Home</a>
+                            <div class="header__menu-box">
+                                <ul class="header__menu-box-list">
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Frooming</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Interior</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Furniture</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Tableware</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Decor</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Essentials</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="about-page.html" class="header__menu-link">about</a>
+                            <div class="header__menu-box">
+                                <ul class="header__menu-box-list">
+                                    <li class="header__menu-box-item">
+                                        <a href="" class="header__menu-box-link">Frooming</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Interior</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Furniture</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Tableware</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Decor</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Essentials</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="lookbook-page.html" class="header__menu-link">collection</a>
+                            <div class="header__menu-box">
+                                <ul class="header__menu-box-list">
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Frooming</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Interior</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Furniture</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Tableware</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Decor</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Essentials</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="products-grid.html" class="header__menu-link">furniture</a>
+                            <div class="header__menu-box">
+                                <ul class="header__menu-box-list">
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Frooming</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Interior</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Furniture</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Tableware</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Decor</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Essentials</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="contact-page.html" class="header__menu-link">Contact us</a>
+                            <div class="header__menu-box">
+                                <ul class="header__menu-box-list">
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Frooming</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Interior</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Furniture</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Tableware</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Decor</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-box-item">
+                                        <a href="#" class="header__menu-box-link">Essentials</a>
+                                        <div>
+                                            <a class="header__menu-box-link" href="">Bathroom</a>
+                                            <a class="header__menu-box-link" href="">Livingroom</a>
+                                            <a class="header__menu-box-link" href="">Officeroom</a>
+                                            <a class="header__menu-box-link" href="">Bedroom</a>
+                                            <a class="header__menu-box-link" href="">Diningroom</a>
+                                            <a class="header__menu-box-link" href="">Kitchen</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="blog-page.html" class="header__menu-link">blog</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="filter-page.html" class="header__menu-link">service</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__bottom-search">
+                    <div class="header__bottom-search-content">
+                        <input type="text" class="header__bottom-search-input" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hero">
+    <div class="container-fluid">
+        <div class="hero__bg" style="background-image: url(./images/hero-bg.jpg);">
+            <div class="hero__bg-inner">
+                <div class="hero__bg-description">shopping cart</div>
+                <div class="hero__bg-title">shopping cart</div>
+                <div class="hero__bg-breadcrumb">
+                    <a href="#" class="hero__bg-breadcrumb-link">Homepage</a>
+                    <a href="#" class="hero__bg-breadcrumb-link">Go shopping</a>
+                    <a href="#" class="hero__bg-breadcrumb-link">Shopping cart</a>
+                </div>
+            </div>
+            <div class="hero__bg-line icon-currency"></div>
+        </div>
+    </div>
+</section>
+<section class="checkout-step">
+    <div class="container">
+        <div class="checkout-step__inner">
+            <div class="checkout-step__item">
+                <div class="checkout-step__number --on"><span>01</span></div>
+                <div class="checkout-step__title">shopping cart</div>
+                <div class="checkout-step__description">Manager your items</div>
+            </div>
+            <div class="checkout-step__item --off">
+                <div class="checkout-step__number"><span>02</span></div>
+                <div class="checkout-step__title">checkout</div>
+                <div class="checkout-step__description">Checkout your items</div>
+            </div>
+            <div class="checkout-step__item --off">
+                <div class="checkout-step__number"><span>03</span></div>
+                <div class="checkout-step__title">complete order</div>
+                <div class="checkout-step__description">Review & Submit your order</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="shopping-cart">
+    <div class="container">
+        <div class="shopping-cart__inner">
+            <div class="shopping-cart__content cart-products">
+                <ul class="cart-products__list">
+                    <li class="cart-products__item">product</li>
+                    <li class="cart-products__item">Title</li>
+                    <li class="cart-products__item">Quantity</li>
+                    <li class="cart-products__item">Price</li>
+                    <li class="cart-products__item">delete</li>
+                </ul>
+                <div class="cart-products__wrapper">
+                    <div class="cart-product">
+                        <div class="cart-product__images">
+                            <img src="./images/product-list__img01.jpg" alt="">
+                        </div>
+                        <div class="cart-product__title">
+                            <span class="cart-product__title-name">aster 3 seater</span>
+                            <span class="cart-product__title-description">Bambeco BIC Camel Red Sofa</span>
+                        </div>
+                        <div class="cart-product__quantity">
+                            <span class="cart-product__quantity-minus icon-quantity"></span>
+                            <input class="cart-product__quantity-number" type="number" value="1">
+                            <span class="cart-product__quantity-plus icon-quantity"></span>
+                        </div>
+                        <div class="cart-product__price total-price" data-price="120">
+                           $ 170
+                        </div>
+                        <div class="cart-product__delete btn-danger">
+                            <button class="cart-product__delete-btn" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="cart-product">
+                        <div class="cart-product__images">
+                            <img src="./images/product-list__img01.jpg" alt="">
+                        </div>
+                        <div class="cart-product__title">
+                            <span class="cart-product__title-name">aster 3 seater</span>
+                            <span class="cart-product__title-description">Bambeco BIC Camel Red Sofa</span>
+                        </div>
+                        <div class="cart-product__quantity">
+                            <span class="cart-product__quantity-minus icon-quantity"></span>
+                            <input class="cart-product__quantity-number" type="number" value="2">
+                            <span class="cart-product__quantity-plus icon-quantity"></span>
+                        </div>
+                        <div class="cart-product__price total-price" data-price="120">
+                           $ 100
+                        </div>
+                        <div class="cart-product__delete btn-danger">
+                            <button class="cart-product__delete-btn" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="cart-product">
+                        <div class="cart-product__images">
+                            <img src="./images/product-list__img01.jpg" alt="">
+                        </div>
+                        <div class="cart-product__title">
+                            <span class="cart-product__title-name">aster 3 seater</span>
+                            <span class="cart-product__title-description">Bambeco BIC Camel Red Sofa</span>
+                        </div>
+                        <div class="cart-product__quantity">
+                            <span class="cart-product__quantity-minus icon-quantity"></span>
+                            <input class="cart-product__quantity-number product-quantity" type="number" value="3">
+                            <span class="cart-product__quantity-plus icon-quantity"></span>
+                        </div>
+                        <div class="cart-product__price total-price" data-price="120">
+                           $ 120
+                        </div>
+                        <div class="cart-product__delete btn-danger">
+                            <button class="cart-product__delete-btn" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="cart-product">
+                        <div class="cart-product__images">
+                            <img src="./images/product-list__img01.jpg" alt="">
+                        </div>
+                        <div class="cart-product__title">
+                            <span class="cart-product__title-name">aster 3 seater</span>
+                            <span class="cart-product__title-description">Bambeco BIC Camel Red Sofa</span>
+                        </div>
+                        <div class="cart-product__quantity">
+                            <span class="cart-product__quantity-minus icon-quantity"></span>
+                            <input class="cart-product__quantity-number product-quantity" type="number" value="4">
+                            <span class="cart-product__quantity-plus icon-quantity"></span>
+                        </div>
+                        <div class="cart-product__price total-price" data-price="120">
+                           $ 140
+                        </div>
+                        <div class="cart-product__delete btn-danger">
+                            <button class="cart-product__delete-btn" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-products__bottom">
+                    <a href="sidebar-page.html" class="cart-products__bottom-btn btn-continue">Continue shopping</a>
+                    <a href="#" class="cart-products__bottom-btn btn-update">update shopping cart</a>
+                    <a href="#" class="cart-products__bottom-btn btn-clear">clear shopping cart</a>
+                </div>
+            </div>
+
+            <nav class="shopping-cart__sidebar shopping-sidebar">
+                <div class="shopping-sidebar__title"><strong>Discount codes</strong>
+                    <span></span>
+                    <div class="shopping-sidebar__line"></div>
+                </div>
+                <form action="#" class="shopping-sidebar__form">
+                    <input type="text" class="shopping-sidebar__form-input" required>
+                    <div class="shopping-sidebar__form-bottom">
+                        <button class="shopping-sidebar__form-btn" type="submit"><span>apply coupon</span></button>
+                        <a href="#" class="shopping-sidebar__form-link">Enter your coupon if you have one</a>
+                    </div>
+                </form>
+                <div class="shopping-sidebar__tax">
+                    <div class="shopping-sidebar__title"><strong>estimate shipping and tax</strong>
+                        <span></span>
+                        <div class="shopping-sidebar__line"></div>
+                    </div>
+                    <div class="shopping-sidebar__tax-subtitle">Enter your destination to get shipping & tax</div>
+                    <div class="shopping-sidebar__tax-item">
+                        <span class="shopping-sidebar__tax-title">Country</span>
+                        <select class="shopping-sidebar__tax-select">
+                            <option value="51">Armenia</option>
+                            <option value="4">Afghanistan</option>
+                            <option value="248">Åland Islands</option>
+                            <option value="8">Albania</option>
+                            <option value="12">Algeria</option>
+                            <option value="16">American Samoa</option>
+                            <option value="20">Andorra</option>
+                            <option value="24">Angola</option>
+                            <option value="660">Anguilla</option>
+                            <option value="10">Antarctica</option>
+                            <option value="28">Antigua and Barbuda</option>
+                            <option value="32">Argentina</option>
+                            <option value="533">Aruba</option>
+                            <option value="36">Australia</option>
+                            <option value="40">Austria</option>
+                            <option value="31">Azerbaijan</option>
+                            <option value="44">Bahamas</option>
+                            <option value="48">Bahrain</option>
+                            <option value="50">Bangladesh</option>
+                            <option value="52">Barbados</option>
+                            <option value="112">Belarus</option>
+                            <option value="56">Belgium</option>
+                            <option value="84">Belize</option>
+                            <option value="204">Benin</option>
+                            <option value="60">Bermuda</option>
+                            <option value="64">Bhutan</option>
+                            <option value="68">Bolivia, Plurinational State of</option>
+                            <option value="535">Bonaire, Sint Eustatius and Saba</option>
+                            <option value="70">Bosnia and Herzegovina</option>
+                            <option value="72">Botswana</option>
+                            <option value="74">Bouvet Island</option>
+                            <option value="76">Brazil</option>
+                            <option value="86">British Indian Ocean Territory</option>
+                            <option value="96">Brunei Darussalam</option>
+                            <option value="100">Bulgaria</option>
+                            <option value="854">Burkina Faso</option>
+                            <option value="108">Burundi</option>
+                            <option value="116">Cambodia</option>
+                            <option value="120">Cameroon</option>
+                            <option value="124">Canada</option>
+                            <option value="132">Cape Verde</option>
+                            <option value="136">Cayman Islands</option>
+                            <option value="140">Central African Republic</option>
+                            <option value="148">Chad</option>
+                            <option value="152">Chile</option>
+                            <option value="156">China</option>
+                            <option value="162">Christmas Island</option>
+                            <option value="166">Cocos (Keeling) Islands</option>
+                            <option value="170">Colombia</option>
+                            <option value="174">Comoros</option>
+                            <option value="178">Congo</option>
+                            <option value="180">Congo, the Democratic Republic of the</option>
+                            <option value="184">Cook Islands</option>
+                            <option value="188">Costa Rica</option>
+                            <option value="384">Côte d'Ivoire</option>
+                            <option value="191">Croatia</option>
+                            <option value="192">Cuba</option>
+                            <option value="531">Curaçao</option>
+                            <option value="196">Cyprus</option>
+                            <option value="203">Czech Republic</option>
+                            <option value="208">Denmark</option>
+                            <option value="262">Djibouti</option>
+                            <option value="212">Dominica</option>
+                            <option value="214">Dominican Republic</option>
+                            <option value="218">Ecuador</option>
+                            <option value="818">Egypt</option>
+                            <option value="222">El Salvador</option>
+                            <option value="226">Equatorial Guinea</option>
+                            <option value="232">Eritrea</option>
+                            <option value="233">Estonia</option>
+                            <option value="231">Ethiopia</option>
+                            <option value="238">Falkland Islands (Malvinas)</option>
+                            <option value="234">Faroe Islands</option>
+                            <option value="242">Fiji</option>
+                            <option value="246">Finland</option>
+                            <option value="250">France</option>
+                            <option value="254">French Guiana</option>
+                            <option value="258">French Polynesia</option>
+                            <option value="260">French Southern Territories</option>
+                            <option value="266">Gabon</option>
+                            <option value="270">Gambia</option>
+                            <option value="268">Georgia</option>
+                            <option value="276">Germany</option>
+                            <option value="288">Ghana</option>
+                            <option value="292">Gibraltar</option>
+                            <option value="300">Greece</option>
+                            <option value="304">Greenland</option>
+                            <option value="308">Grenada</option>
+                            <option value="312">Guadeloupe</option>
+                            <option value="316">Guam</option>
+                            <option value="320">Guatemala</option>
+                            <option value="831">Guernsey</option>
+                            <option value="324">Guinea</option>
+                            <option value="624">Guinea-Bissau</option>
+                            <option value="328">Guyana</option>
+                            <option value="332">Haiti</option>
+                            <option value="334">Heard Island and McDonald Islands</option>
+                            <option value="336">Holy See (Vatican City State)</option>
+                            <option value="340">Honduras</option>
+                            <option value="344">Hong Kong</option>
+                            <option value="348">Hungary</option>
+                            <option value="352">Iceland</option>
+                            <option value="356">India</option>
+                            <option value="360">Indonesia</option>
+                            <option value="364">Iran, Islamic Republic of</option>
+                            <option value="368">Iraq</option>
+                            <option value="372">Ireland</option>
+                            <option value="833">Isle of Man</option>
+                            <option value="376">Israel</option>
+                            <option value="380">Italy</option>
+                            <option value="388">Jamaica</option>
+                            <option value="392">Japan</option>
+                            <option value="832">Jersey</option>
+                            <option value="400">Jordan</option>
+                            <option value="398">Kazakhstan</option>
+                            <option value="404">Kenya</option>
+                            <option value="296">Kiribati</option>
+                            <option value="408">Korea, Democratic People's Republic of</option>
+                            <option value="410">Korea, Republic of</option>
+                            <option value="414">Kuwait</option>
+                            <option value="417">Kyrgyzstan</option>
+                            <option value="418">Lao People's Democratic Republic</option>
+                            <option value="428">Latvia</option>
+                            <option value="422">Lebanon</option>
+                            <option value="426">Lesotho</option>
+                            <option value="430">Liberia</option>
+                            <option value="434">Libya</option>
+                            <option value="438">Liechtenstein</option>
+                            <option value="440">Lithuania</option>
+                            <option value="442">Luxembourg</option>
+                            <option value="446">Macao</option>
+                            <option value="807">Macedonia, the former Yugoslav Republic of</option>
+                            <option value="450">Madagascar</option>
+                            <option value="454">Malawi</option>
+                            <option value="458">Malaysia</option>
+                            <option value="462">Maldives</option>
+                            <option value="466">Mali</option>
+                            <option value="470">Malta</option>
+                            <option value="584">Marshall Islands</option>
+                            <option value="474">Martinique</option>
+                            <option value="478">Mauritania</option>
+                            <option value="480">Mauritius</option>
+                            <option value="175">Mayotte</option>
+                            <option value="484">Mexico</option>
+                            <option value="583">Micronesia, Federated States of</option>
+                            <option value="498">Moldova, Republic of</option>
+                            <option value="492">Monaco</option>
+                            <option value="496">Mongolia</option>
+                            <option value="499">Montenegro</option>
+                            <option value="500">Montserrat</option>
+                            <option value="504">Morocco</option>
+                            <option value="508">Mozambique</option>
+                            <option value="104">Myanmar</option>
+                            <option value="516">Namibia</option>
+                            <option value="520">Nauru</option>
+                            <option value="524">Nepal</option>
+                            <option value="528">Netherlands</option>
+                            <option value="540">New Caledonia</option>
+                            <option value="554">New Zealand</option>
+                            <option value="558">Nicaragua</option>
+                            <option value="562">Niger</option>
+                            <option value="566">Nigeria</option>
+                            <option value="570">Niue</option>
+                            <option value="574">Norfolk Island</option>
+                            <option value="580">Northern Mariana Islands</option>
+                            <option value="578">Norway</option>
+                            <option value="512">Oman</option>
+                            <option value="586">Pakistan</option>
+                            <option value="585">Palau</option>
+                            <option value="275">Palestinian Territory, Occupied</option>
+                            <option value="591">Panama</option>
+                            <option value="598">Papua New Guinea</option>
+                            <option value="600">Paraguay</option>
+                            <option value="604">Peru</option>
+                            <option value="608">Philippines</option>
+                            <option value="612">Pitcairn</option>
+                            <option value="616">Poland</option>
+                            <option value="620">Portugal</option>
+                            <option value="630">Puerto Rico</option>
+                            <option value="634">Qatar</option>
+                            <option value="638">Réunion</option>
+                            <option value="642">Romania</option>
+                            <option value="643">Russian Federation</option>
+                            <option value="646">Rwanda</option>
+                            <option value="652">Saint Barthélemy</option>
+                            <option value="654">Saint Helena, Ascension and Tristan da Cunha</option>
+                            <option value="659">Saint Kitts and Nevis</option>
+                            <option value="662">Saint Lucia</option>
+                            <option value="663">Saint Martin (French part)</option>
+                            <option value="666">Saint Pierre and Miquelon</option>
+                            <option value="670">Saint Vincent and the Grenadines</option>
+                            <option value="882">Samoa</option>
+                            <option value="674">San Marino</option>
+                            <option value="678">Sao Tome and Principe</option>
+                            <option value="682">Saudi Arabia</option>
+                            <option value="686">Senegal</option>
+                            <option value="688">Serbia</option>
+                            <option value="690">Seychelles</option>
+                            <option value="694">Sierra Leone</option>
+                            <option value="702">Singapore</option>
+                            <option value="534">Sint Maarten (Dutch part)</option>
+                            <option value="703">Slovakia</option>
+                            <option value="705">Slovenia</option>
+                            <option value="90">Solomon Islands</option>
+                            <option value="706">Somalia</option>
+                            <option value="710">South Africa</option>
+                            <option value="239">South Georgia and the South Sandwich Islands</option>
+                            <option value="728">South Sudan</option>
+                            <option value="724">Spain</option>
+                            <option value="144">Sri Lanka</option>
+                            <option value="729">Sudan</option>
+                            <option value="740">Suriname</option>
+                            <option value="744">Svalbard and Jan Mayen</option>
+                            <option value="748">Swaziland</option>
+                            <option value="752">Sweden</option>
+                            <option value="756">Switzerland</option>
+                            <option value="760">Syrian Arab Republic</option>
+                            <option value="158">Taiwan, Province of China</option>
+                            <option value="762">Tajikistan</option>
+                            <option value="834">Tanzania, United Republic of</option>
+                            <option value="764">Thailand</option>
+                            <option value="626">Timor-Leste</option>
+                            <option value="768">Togo</option>
+                            <option value="772">Tokelau</option>
+                            <option value="776">Tonga</option>
+                            <option value="780">Trinidad and Tobago</option>
+                            <option value="788">Tunisia</option>
+                            <option value="792">Turkey</option>
+                            <option value="795">Turkmenistan</option>
+                            <option value="796">Turks and Caicos Islands</option>
+                            <option value="798">Tuvalu</option>
+                            <option value="800">Uganda</option>
+                            <option value="804">Ukraine</option>
+                            <option value="784">United Arab Emirates</option>
+                            <option value="826">United Kingdom</option>
+                            <option value="840">United States</option>
+                            <option value="581">United States Minor Outlying Islands</option>
+                            <option value="858">Uruguay</option>
+                            <option value="860">Uzbekistan</option>
+                            <option value="548">Vanuatu</option>
+                            <option value="862">Venezuela, Bolivarian Republic of</option>
+                            <option value="704">Viet Nam</option>
+                            <option value="92">Virgin Islands, British</option>
+                            <option value="850">Virgin Islands, U.S.</option>
+                            <option value="876">Wallis and Futuna</option>
+                            <option value="732">Western Sahara</option>
+                            <option value="887">Yemen</option>
+                            <option value="894">Zambia</option>
+                            <option value="716">Zimbabwe</option>
+                        </select>
+                    </div>
+                    <div class="shopping-sidebar__tax-item">
+                        <span class="shopping-sidebar__tax-title">State / Province</span>
+                        <select class="shopping-sidebar__tax-select">
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                    <div class="shopping-sidebar__tax-item">
+                        <span class="shopping-sidebar__tax-title">ZIP / Postal Code</span>
+                        <select class="shopping-sidebar__tax-select">
+                            <option>Select options</option>
+                            <option>Select options</option>
+                            <option>Select options</option>
+                        </select>
+                    </div>
+                    <button class="shopping-sidebar__tax-btn" type="button"><span>get a quote</span></button>
+                </div>
+                <div class="shopping-sidebar__total">
+                    <div class="shopping-sidebar__total-box">
+                        <ul class="shopping-sidebar__total-list">
+                            <li class="shopping-sidebar__total-item">
+                                <span class="shopping-sidebar__total-subtitle">Sub total:</span>
+                                <span class="shopping-sidebar__total-price sub-price">3660</span>
+                            </li>
+                            <li class="shopping-sidebar__total-item">
+                                <strong class="shopping-sidebar__total-title">Grand total:</strong>
+                                <span class="shopping-sidebar__total-price grand-price">3660</span>
+                            </li>
+                        </ul>
+                        <div class="shopping-sidebar__total-text">
+                            Checkout with multiple address
+                        </div>
+                        <div class="shopping-sidebar__total-btn">
+                            <a href="./checkout.html" class="shopping-sidebar__total-link">proceed to checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+<section class="banner">
+    <div class="container-fluid">
+        <div class="banner-wrapper wow zoomInDown" style="background-image: url(./images/banner-bg.jpg);">
+            <div class="container">
+                <div class="banner__inner">
+                    <div class="banner__item banner__item-phone">
+                        <a href="tel:+840123456799" class="banner__item-phone-link"><span>(+84)</span> 0123 456 799</a>
+                        <a href="tel:+840123456799" class="banner__item-phone-link"><span>(+84)</span> 0123 456 799</a>
+                    </div>
+                    <div class="banner__item banner__item-envelope">
+                        <a href="mailto:tkietdesign@gmail.com"
+                           class="banner__item-envelope-link">tkietdesign@gmail.com</a>
+                        <a href="mailto:tkietdesign@gmail.com" class="banner__item-envelope-link">thankforlove2012</a>
+                    </div>
+                    <a href="#" class="banner__back-to-top"></a>
+                    <div class="banner__item banner__item-like">
+                        <div class="banner__item-like-text">
+                            you like this ? purchase <span>fenicha</span> shop
+                        </div>
+                        <div class="banner__item-like-description">
+                            Lorem ipsum is simply text lorem ipsum text.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner wow fadeInUp">
+            <a href="#" class="footer__logo">
+                <img src="./images/logo.jpg" alt="">
+            </a>
+            <div class="footer__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Wisi enim ad minim veniam quis nostrud exerci tation
+            </div>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link social_facebook"></a>
+                <a href="#" class="footer__social-link social_twitter"></a>
+                <a href="#" class="footer__social-link social_googleplus"></a>
+                <a href="#" class="footer__social-link social_pinterest"></a>
+                <a href="#" class="footer__social-link social_rss"></a>
+                <a href="#" class="footer__social-link social_vimeo"></a>
+                <a href="#" class="footer__social-link social_dribbble"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copy">
+        <div class="container">
+            <div class="footer__copy-inner">
+                <div class="footer__copy-payment wow fadeInLeft" data-wow-offset="100">
+                    <span class="footer__copy-icon icon-cc-visa"></span>
+                    <span class="footer__copy-icon icon-cc-mastercard"></span>
+                    <span class="footer__copy-icon icon-cc-discover"></span>
+                    <span class="footer__copy-icon icon-cc-amex"></span>
+                    <span class="footer__copy-icon icon-cc-paypal"></span>
+                    <span class="footer__copy-icon icon-cc-stripe "></span>
+                </div>
+                <div class="footer__copy-description">
+                    Copyright © 2016 Tonydat. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/libs.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
