@@ -1,0 +1,116 @@
+@import "vars";
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+form,
+input,
+button,
+select,
+option {
+  outline: none;
+}
+button {
+  border: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #a7a7a7;
+  min-width: 320px;
+  overflow-x: hidden;  
+}
+
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+}
+.container {
+  max-width: 1530px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.main {
+  background-color: #000;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+
+  &-number {
+    color: $color-orange;
+    font-size: 72px;
+    display: block;
+    font-weight: 800;
+    line-height: 60px;
+  }
+  &-text {
+    font-weight: 600;
+    display: block;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+.button{
+  border-radius: 2px;
+  background-color: $color-orange;
+  padding: 17.3px 62px;
+ font-size: 20.5px;
+  font-weight: bold;
+  letter-spacing: 4.1px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: .3s linear;
+  &:hover{
+    border-color: $color-orange;
+    background-color: transparent;
+    color: $color-orange;
+  }
+}
+// font-weight 300 light;
+// font-weight 400 regular;
+// font-weight 600 semi-bold;
