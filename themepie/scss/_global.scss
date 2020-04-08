@@ -1,0 +1,119 @@
+@import "vars";
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+span {
+	display: inline-block;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+}
+
+form,
+input,
+button,
+select,
+option {
+	outline: none;
+}
+
+img {
+	display: block;
+}
+
+body {
+	font-size: 15px;
+	font-weight: 400;
+	font-family: "Open Sans", sans-serif;
+	color: #666;
+  position: relative;
+  min-width: 320px;
+  overflow-x: hidden;
+	// font-family: 'Roboto', sans-serif;
+}
+
+.slick-slide,
+.slick-slide * {
+	outline: none !important;
+}
+.container {
+	max-width: 1190px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+.logo {
+	max-width: 200px;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.main {
+	background-color: #efefef;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+.button {
+	padding: 14.3px 33px 16.3px 20px;
+	background-color: $color-blue;
+	font-size: 13px;
+	letter-spacing: 0.65px;
+	color: #fff;
+	font-weight: 700;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		background-color: #1565af;
+	}
+	&::before {
+		content: "\f105";
+		position: absolute;
+		@include icon;
+		right: 22px;
+		font-weight: 700;
+		top: 14px;
+	}
+}
+.title {
+	color: #333;
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+}

@@ -1,0 +1,23 @@
+$color-blue: #2888e2;
+
+@mixin icon {
+	font-family: "icomoon" !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+@mixin triangle-bottom {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: $color-blue transparent transparent transparent;
+}
+@mixin triangle-top {
+	width: 0;
+	height: 0;
+  border-style: solid;
+  border-color: transparent transparent $color-blue transparent;
+}
