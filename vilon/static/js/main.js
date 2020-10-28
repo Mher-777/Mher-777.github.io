@@ -245,7 +245,9 @@ $(function () {
       dotsClass: 'pagination intro__pagination pagination--white',
       cssEase: 'linear',
       touchThreshold: 40,
-      lazyLoad: 'ondemand'
+      lazyLoad: 'ondemand',
+      infinite: false,
+      autoplay: true
     });
   };
 
@@ -267,21 +269,77 @@ $(function () {
     $('.news__slider').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
+      touchThreshold: 40,
       prevArrow: '<button type="button" class="arrow arrow--left"><img class="arrow__icon" src="static/images/common/arrow-left.svg" alt=""></button>',
-      nextArrow: '<button type="button" class="arrow arrow--right"><img class="arrow__icon" src="static/images/common/arrow-right.svg" alt=""></button>'
+      nextArrow: '<button type="button" class="arrow arrow--right"><img class="arrow__icon" src="static/images/common/arrow-right.svg" alt=""></button>',
+      responsive: [{
+        breakpoint: 901,
+        settings: {
+          slidesToShow: 2
+        }
+      }, {
+        breakpoint: 651,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
     });
   };
 
+  var bannerSlider = function bannerSlider() {
+    $('.banner__slider').slick({
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      arrows: false,
+      dots: true,
+      dotsClass: 'pagination banner__slider-pagination pagination--white',
+      cssEase: 'linear',
+      touchThreshold: 40,
+      rows: 0
+    }).on('afterChange', function (event, slick, currentSlide) {
+      lazyLoad();
+    }).on('beforeChange', function (event, slick, currentSlide) {
+      lazyLoad();
+    });
+  };
+
+  var rangeSlider = function rangeSlider() {
+    var inputPrice = $('.input-range--price');
+    var inputCalorie = $('.input-range--calorie');
+    inputPrice.ionRangeSlider({
+      skin: "round",
+      type: "double",
+      hide_min_max: true,
+      hide_from_to: true,
+      onChange: function onChange(data) {
+        inputPrice.parent().find('.input-from').val(data.from);
+        inputPrice.parent().find('.input-to').val(data.to);
+      }
+    });
+    inputCalorie.ionRangeSlider({
+      skin: "round",
+      type: "double",
+      hide_min_max: true,
+      hide_from_to: true,
+      onChange: function onChange(data) {
+        inputCalorie.parent().find('.input-from').val(data.from);
+        inputCalorie.parent().find('.input-to').val(data.to);
+      }
+    });
+  };
+
+  rangeSlider();
   like();
   hoverProducts();
   toggle('.product__head', '.js-toggle', 'icon-heart--active');
   mainSliders();
-  sliderSpace();
   menuToggle();
   counter();
   lazyLoad();
   introSlider();
   newsSlider();
+  bannerSlider();
+  sliderSpace();
 });
 
 function browser() {
