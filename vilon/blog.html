@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Контакты</title><!--[if IE]>
+    <title>Новости</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -48,12 +48,12 @@
             </div>
           </div>
         </div>
-        <div class="header__bottom header__bottom--shadow header__bottom--shadow-light">
+        <div class="header__bottom header__bottom--shadow">
           <div class="container">
             <nav class="header__menu">
               <button class="hamburger hamburger--spring" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
               <ul class="header__menu-list">
-                <li class="header__menu-item header__menu-item--dropdown"><a class="header__menu-link" href="about.html">О компании</a>
+                <li class="header__menu-item header__menu-item--dropdown header__menu-item--current"><a class="header__menu-link" href="about.html">О компании</a>
                   <svg class="icon icon-arrow-down header__menu-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
                   </svg>
@@ -130,48 +130,67 @@
                     <li class="header__dropdown-item"><a class="header__dropdown-link" href="#">Правильное питание</a></li>
                   </ul>
                 </li>
-                <li class="header__menu-item header__menu-item--current"><a class="header__menu-link" href="contacts.html">Контакты</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="contacts.html">Контакты</a></li>
               </ul>
             </nav>
           </div>
         </div>
-      </header>
-      <div class="content">
-        <div class="breadcrumbs breadcrumbs--margin">
+        <div class="header__submenu">
           <div class="container">
-            <div class="breadcrumbs__inner"><a class="breadcrumbs__link" href="index.html">Главная</a><a class="breadcrumbs__link" href="#">Контакты</a></div>
+            <div class="header__submenu-inner"><a class="header__submenu-link" href="history.html">История</a><a class="header__submenu-link header__submenu-link--current" href="news.html">Новости</a><a class="header__submenu-link" href="production.html">Производство</a><a class="header__submenu-link" href="quality.html">Качество</a><a class="header__submenu-link" href="awards.html">Наши награды</a><a class="header__submenu-link" href="works.html">Вакансии</a></div>
           </div>
         </div>
-        <section class="contacts">
+      </header>
+      <div class="content">
+        <div class="breadcrumbs">
           <div class="container">
-            <div class="contacts__banner"><a class="contacts__link" href="tel:+74952239749">
-                <svg class="icon icon-phone contacts__link-icon">
-                  <use xlink:href="static/images/sprite/symbol/sprite.svg#phone"></use>
-                </svg><span class="contacts__link-text">+7 (495) 223-97-49</span></a><a class="contacts__link" href="mailto:info@vilon.ru">
-                <svg class="icon icon-email contacts__link-icon">
-                  <use xlink:href="static/images/sprite/symbol/sprite.svg#email"></use>
-                </svg><span class="contacts__link-text">info@vilon.ru</span></a></div>
-            <div class="contacts__content">
-              <div class="contacts__col">
-                <h2 class="title contacts__title">СВЯЗАТЬСЯ С НАМИ</h2>
-                <ul class="contacts__list">
-                  <li class="contacts__item">Отдел продаж: <br> доб.тел.: 290, 183, 235, 204 эл. почта: zakaz@vilon.ru</li>
-                  <li class="contacts__item">Отдел кадров: <br> доб.тел.: 232, эл. почта: recruiting@vilon.ru</li>
-                  <li class="contacts__item">Отдел маркетинга и рекламы: <br> доб.тел.: 241</li>
-                  <li class="contacts__item">Отдел снабжения: <br> эл. почта: snab@vilon.ru</li>
-                </ul>
+            <div class="breadcrumbs__inner"><a class="breadcrumbs__link" href="index.html">Главная</a><a class="breadcrumbs__link" href="about.html">О компании</a><a class="breadcrumbs__link" href="news.html">Новости</a><a class="breadcrumbs__link" href="#">Попробуй стройность от “Balansika</a></div>
+          </div>
+        </div>
+        <section class="blog">
+          <div class="container">
+            <div class="blog__wrapper">
+              <h2 class="blog__title title">ПОПРОБУЙ СТРОЙНОСТЬ ОТ "BALANSIKA"</h2>
+              <div class="blog__bg lazy" data-src="static/images/content/blog/blog-image-1.jpg">
+                <svg class="icon icon-heart blog__bg-icon js-toggle">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
+                </svg>
               </div>
-              <div class="contacts__col">
-                <h2 class="title contacts__title">РЕКВИЗИТЫ</h2>
-                <p class="contacts__text">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ТОРГОВО-ПРОМЫШЛЕННАЯ КОМПАНИЯ "ВИЛОН" <br> ООО «ТПК «Вилон»</p>
-                <p class="contacts__text"><span>ИНН 5050040449</span><span>КПП 505001001</span><span>ОГРН 1025006522243</span><span>р.сч № 40702810740480101679</span><span>ПАО Сбербанк г. Москва</span><span>кор. сч № 30101810400000000225</span><span>БИК 044525225</span><span>ОКПО - 23493844</span><span>ОКТМО - 46659101001</span></p>
-              </div>
-              <div class="contacts__col">
-                <h2 class="title contacts__title">АДРЕС И СХЕМА ПРОЕЗДА</h2>
-                <p class="contacts__text">ООО «ТПК «Вилон» <br> 141102, Московская обл, город Щелково, район Щелковский, улица Поварская, владение 1</p>
-                <div class="contacts__map">
-                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2568a7384a85fd05fc7f634c7342c63b956305764ab910b3e4eb494d1c2e624&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+              <div class="blog__content">
+                <p class="blog__text">Готовое питание на работу или домой может быть полезным, вкусным и сбалансированным, если выбирать питание нашей торговой марки "Балансика".</p>
+                <blockquote class="blog__blockquote">Здоровые и вкусные продукты <br> с натуральными ингредиентами</blockquote>
+                <p class="blog__text">Продукция ТМ "Балансика" представляет собой линейку готовых низкокаллорийных блюд. Готовая еда имеет исключительно натуральные компоненты, польза которых сохраняется за счет специальной герметичной упаковки. Полностью сбалансированные блюда по составу жиров, белков и углеводов не оставят равнодушным приверженцев здорового питания. Низкая каллорийность обеспечивает поддержание организма в нужной форме, без набора лишнего веса. Замороженные готовые блюда удобно брать с собой в офис или кушать дома, когда нет времени готовить. Супы и вторые блюда Balansika имеют ярко выраженный и насыщенный вкус, как дома.  Все, что потребуется, — разогреть еду в микроволновке в течение пары минут.</p>
+                <div class="blog__content-col">
+                  <h3 class="blog__subtitle title">Коллекция блюд для здорового питания:</h3>
+                  <ul class="blog__list">
+                    <li class="blog__list-item">Первые блюда:</li>
+                    <li class="blog__list-item">Тыквенный крем-суп</li>
+                    <li class="blog__list-item">Крем-суп куриный</li>
+                    <li class="blog__list-item">Крем-суп из брокколи</li>
+                  </ul>
                 </div>
+                <div class="blog__content-col">
+                  <h3 class="blog__subtitle title">Вторые блюда:</h3>
+                  <ul class="blog__list">
+                    <li class="blog__list-item">Филе кеты на пару с рисом "Босто"</li>
+                    <li class="blog__list-item">Треска отварная с картофелем и соусом из шпината</li>
+                    <li class="blog__list-item">Кус-кус с курочкой под овощным пуншем</li>
+                    <li class="blog__list-item">Курица в сливочном соусе с грибами и рисом "Босто"</li>
+                    <li class="blog__list-item">Индейка с овощным ассорти и соусом "Бешамель"</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blog__info">
+                <div class="blog__info-statistics">
+                  <time class="blog__info-day" datetime="01.02.2020">01.02.2020</time><span class="blog__info-statistic">
+                    <svg class="icon icon-eye blog__info-icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
+                    </svg><span>1025</span></span><span class="blog__info-statistic js-like">
+                    <svg class="icon icon-like blog__info-icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
+                    </svg><span>1025</span></span>
+                </div>
+                <div class="blog__socials"><span class="blog__socials-text">Поделиться:</span><a class="blog__socials-link" href="#"><img class="blog__socials-icon lazy" data-src="static/images/common/vk.svg"></a><a class="blog__socials-link" href="#"><img class="blog__socials-icon lazy" data-src="static/images/common/facebook.svg"></a><a class="blog__socials-link" href="#"><img class="blog__socials-icon lazy" data-src="static/images/common/ok.svg"></a><a class="blog__socials-link" href="#"><img class="blog__socials-icon lazy" data-src="static/images/common/email.svg"></a><a class="blog__socials-link" href="#"><img class="blog__socials-icon lazy" data-src="static/images/common/twitter.svg"></a></div>
               </div>
             </div>
           </div>

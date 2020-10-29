@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Контакты</title><!--[if IE]>
+    <title>Качество</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -48,12 +48,12 @@
             </div>
           </div>
         </div>
-        <div class="header__bottom header__bottom--shadow header__bottom--shadow-light">
+        <div class="header__bottom header__bottom--shadow">
           <div class="container">
             <nav class="header__menu">
               <button class="hamburger hamburger--spring" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
               <ul class="header__menu-list">
-                <li class="header__menu-item header__menu-item--dropdown"><a class="header__menu-link" href="about.html">О компании</a>
+                <li class="header__menu-item header__menu-item--dropdown header__menu-item--current"><a class="header__menu-link" href="about.html">О компании</a>
                   <svg class="icon icon-arrow-down header__menu-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
                   </svg>
@@ -130,50 +130,67 @@
                     <li class="header__dropdown-item"><a class="header__dropdown-link" href="#">Правильное питание</a></li>
                   </ul>
                 </li>
-                <li class="header__menu-item header__menu-item--current"><a class="header__menu-link" href="contacts.html">Контакты</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="contacts.html">Контакты</a></li>
               </ul>
             </nav>
           </div>
         </div>
-      </header>
-      <div class="content">
-        <div class="breadcrumbs breadcrumbs--margin">
+        <div class="header__submenu">
           <div class="container">
-            <div class="breadcrumbs__inner"><a class="breadcrumbs__link" href="index.html">Главная</a><a class="breadcrumbs__link" href="#">Контакты</a></div>
+            <div class="header__submenu-inner"><a class="header__submenu-link" href="history.html">История</a><a class="header__submenu-link" href="news.html">Новости</a><a class="header__submenu-link" href="production.html">Производство</a><a class="header__submenu-link header__submenu-link--current" href="quality.html">Качество</a><a class="header__submenu-link" href="awards.html">Наши награды</a><a class="header__submenu-link" href="works.html">Вакансии</a></div>
           </div>
         </div>
-        <section class="contacts">
+      </header>
+      <div class="content">
+        <div class="breadcrumbs">
           <div class="container">
-            <div class="contacts__banner"><a class="contacts__link" href="tel:+74952239749">
-                <svg class="icon icon-phone contacts__link-icon">
-                  <use xlink:href="static/images/sprite/symbol/sprite.svg#phone"></use>
-                </svg><span class="contacts__link-text">+7 (495) 223-97-49</span></a><a class="contacts__link" href="mailto:info@vilon.ru">
-                <svg class="icon icon-email contacts__link-icon">
-                  <use xlink:href="static/images/sprite/symbol/sprite.svg#email"></use>
-                </svg><span class="contacts__link-text">info@vilon.ru</span></a></div>
-            <div class="contacts__content">
-              <div class="contacts__col">
-                <h2 class="title contacts__title">СВЯЗАТЬСЯ С НАМИ</h2>
-                <ul class="contacts__list">
-                  <li class="contacts__item">Отдел продаж: <br> доб.тел.: 290, 183, 235, 204 эл. почта: zakaz@vilon.ru</li>
-                  <li class="contacts__item">Отдел кадров: <br> доб.тел.: 232, эл. почта: recruiting@vilon.ru</li>
-                  <li class="contacts__item">Отдел маркетинга и рекламы: <br> доб.тел.: 241</li>
-                  <li class="contacts__item">Отдел снабжения: <br> эл. почта: snab@vilon.ru</li>
+            <div class="breadcrumbs__inner"><a class="breadcrumbs__link" href="index.html">Главная</a><a class="breadcrumbs__link" href="about.html">О компании</a><a class="breadcrumbs__link" href="news.html">Качество</a></div>
+          </div>
+        </div>
+        <section class="quality">
+          <div class="container">
+            <div class="review quality__review">
+              <div class="review__top">
+                <h2 class="review__title title title--color-white">МЫ СТАРАЕМСЯ ДЛЯ ВАС!</h2><span class="review__subtitle">Помогите нам улучшить качество нашей продукции.</span>
+              </div>
+              <form class="review__form" action="#"><span class="review__desc">Оцените каждый вопрос <br> по шкале от 1 (плохо) до 5 (отлично)</span>
+                <ul class="review__list">
+                  <li class="review__item">
+                    <div class="js-stars review__item-stars"></div><span class="review__item-text">Доступность организации, каналов связи</span>
+                  </li>
+                  <li class="review__item">
+                    <div class="js-stars review__item-stars"></div><span class="review__item-text">Компетентность сотрудников</span>
+                  </li>
+                  <li class="review__item">
+                    <div class="js-stars review__item-stars"></div><span class="review__item-text">Уровень качества нашей продукции</span>
+                  </li>
+                  <li class="review__item">
+                    <div class="js-stars review__item-stars"></div><span class="review__item-text">Разнообразие ассортимента</span>
+                  </li>
+                  <li class="review__item">
+                    <div class="js-stars review__item-stars"></div><span class="review__item-text">Уровень цен на продукцию</span>
+                  </li>
+                  <li class="review__item">
+                    <div class="js-stars review__item-stars"></div><span class="review__item-text">Внешний вид упаковки</span>
+                  </li>
+                  <li class="review__item">
+                    <div class="js-stars review__item-stars"></div><span class="review__item-text">Соблюдение сроков поставки</span>
+                  </li>
                 </ul>
-              </div>
-              <div class="contacts__col">
-                <h2 class="title contacts__title">РЕКВИЗИТЫ</h2>
-                <p class="contacts__text">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ТОРГОВО-ПРОМЫШЛЕННАЯ КОМПАНИЯ "ВИЛОН" <br> ООО «ТПК «Вилон»</p>
-                <p class="contacts__text"><span>ИНН 5050040449</span><span>КПП 505001001</span><span>ОГРН 1025006522243</span><span>р.сч № 40702810740480101679</span><span>ПАО Сбербанк г. Москва</span><span>кор. сч № 30101810400000000225</span><span>БИК 044525225</span><span>ОКПО - 23493844</span><span>ОКТМО - 46659101001</span></p>
-              </div>
-              <div class="contacts__col">
-                <h2 class="title contacts__title">АДРЕС И СХЕМА ПРОЕЗДА</h2>
-                <p class="contacts__text">ООО «ТПК «Вилон» <br> 141102, Московская обл, город Щелково, район Щелковский, улица Поварская, владение 1</p>
-                <div class="contacts__map">
-                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2568a7384a85fd05fc7f634c7342c63b956305764ab910b3e4eb494d1c2e624&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-                </div>
-              </div>
+                <textarea class="textarea review__textarea" placeholder="Напишите ваши пожелания или замечания"></textarea>
+                <button class="review__btn btn btn--bg-yellow btn--color-black" type="submit">ОТПРАВИТЬ</button>
+              </form>
             </div>
+            <div class="section-top">
+              <h2 class="section-top__title">ВИЛОН – КАЧЕСТВО ПРОДУКЦИИ</h2><span class="section-top__desc">При помощи технологии шоковой заморозки наша приготовленная еда сохраняет свои качества и все необходимые витамины и микроэлементы для организма человека. Но не стоит забывать о качестве самих продуктов</span>
+            </div>
+            <div class="quality__document"><img class="lazy quality__document-image" data-src="static/images/content/quality/document.png" src="static/images/common/loader.gif" alt="Сертификат"><a class="btn btn--sectio btn--color-black btn--bg-yellow quality__document-link" href="#">
+                <svg class="icon icon-spoon btn-icon">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#spoon"></use>
+                </svg>НАДОЕЛО ГОТОВИТЬ? <br> ЖМИ!
+                <svg class="icon icon-fork btn-icon">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#fork"></use>
+                </svg></a></div>
           </div>
         </section>
       </div>
