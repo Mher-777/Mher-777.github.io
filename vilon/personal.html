@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Покупателям</title><!--[if IE]>
+    <title>Личный кабинет</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -136,7 +136,7 @@
                     <li class="header__dropdown-item"><a class="header__dropdown-link" href="#">Готовые рационы</a></li>
                   </ul>
                 </li>
-                <li class="header__menu-item header__menu-item--dropdown header__menu-item--current"><a class="header__menu-link" href="buyers.html">Покупателям</a>
+                <li class="header__menu-item header__menu-item--dropdown"><a class="header__menu-link" href="buyers.html">Покупателям</a>
                   <svg class="icon icon-arrow-down header__menu-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
                   </svg>
@@ -165,72 +165,186 @@
             </nav>
           </div>
         </div>
-        <div class="header__submenu">
-          <div class="container">
-            <div class="header__submenu-inner"><a class="header__submenu-link" href="#">Где купить</a><a class="header__submenu-link" href="#">Как заказать</a><a class="header__submenu-link" href="#">Акции</a><a class="header__submenu-link" href="#">Вопрос / ответ</a><a class="header__submenu-link" href="#">Доставка / оплата</a><a class="header__submenu-link" href="#">Возврат товара</a><a class="header__submenu-link" href="#">Образцы документов</a></div>
-          </div>
-        </div>
       </header>
       <div class="content">
-        <div class="breadcrumbs">
+        <section class="personal">
           <div class="container">
-            <div class="breadcrumbs__inner"><a class="breadcrumbs__link" href="index.html">Главная</a><a class="breadcrumbs__link" href="#">Покупателям</a></div>
-          </div>
-        </div>
-        <section class="advantages advantages--is-margin">
-          <div class="container">
-            <div class="advantages__wrapper advantages__wrapper--margin">
-              <div class="container">
-                <div class="section-top">
-                  <h2 class="section-top__title title">ОСОБЕННОСТИ НАШЕЙ ЕДЫ</h2>
+            <div class="personal__inner">
+              <div class="personal__row">
+                <h2 class="personal__title title">ЛИЧНЫЙ КАБИНЕТ</h2>
+                <div class="personal__items"><a class="personal__item personal__item--active personal__item--tab" href="details">
+                    <div class="personal__item-icon">
+                      <svg class="icon icon-user ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#user"></use>
+                      </svg>
+                    </div><span class="personal__item-text">МОИ <br> ДАННЫЕ</span></a><a class="personal__item personal__item--tab" href="address">
+                    <div class="personal__item-icon">
+                      <svg class="icon icon-address ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#address"></use>
+                      </svg>
+                    </div><span class="personal__item-text">АДРЕС <br> ДОСТАВКИ</span></a><a class="personal__item personal__item--tab" href="password">
+                    <div class="personal__item-icon">
+                      <svg class="icon icon-password ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#password"></use>
+                      </svg>
+                    </div><span class="personal__item-text">ПАРОЛЬ</span></a><a class="personal__item personal__item--tab" href="notify">
+                    <div class="personal__item-icon">
+                      <svg class="icon icon-notifications ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#notifications"></use>
+                      </svg>
+                    </div><span class="personal__item-text">УВЕДОМЛЕНИЯ</span></a></div>
+                <div class="personal__content personal__content--active" id="details">
+                  <h2 class="personal__title title">МОИ ДАННЫЕ</h2>
+                  <form class="personal__form" action="#">
+                    <div class="personal__controls">
+                      <label class="personal__control"><span class="personal__control-title">Имя</span>
+                        <input class="input personal__control-input" type="text" value="Иван" disabled>
+                      </label>
+                      <label class="personal__control"><span class="personal__control-title">E-mail</span>
+                        <input class="input personal__control-input js-email-mask" type="text" value="ivan@ya.ru" disabled>
+                      </label>
+                      <label class="personal__control"><span class="personal__control-title">Фамилия</span>
+                        <input class="input personal__control-input" type="text" value="Иванов" disabled>
+                      </label>
+                      <label class="personal__control"><span class="personal__control-title">Телефон</span>
+                        <input class="input personal__control-input" type="text" value="89101234567" disabled>
+                      </label>
+                      <label class="personal__control"><span class="personal__control-title">Отчество</span>
+                        <input class="input personal__control-input" type="text" value="89101234567" disabled>
+                      </label>
+                      <div class="personal__group">
+                        <label class="personal__control"><span class="personal__control-title">Пол</span>
+                          <select class="select" disabled>
+                            <option class="select__option">Мужской</option>
+                            <option class="select__option">Женский</option>
+                          </select>
+                        </label>
+                        <label class="personal__control"><span class="personal__control-title">Дата рождения</span>
+                          <input class="input personal__control-input js-date-mask" type="text" value="01.01.2000" disabled>
+                        </label>
+                      </div>
+                    </div>
+                    <button class="personal__btn btn btn--color-black btn--bg-yellow js-is-disabled" type="submit" data-save="СОХРАНИТЬ">РЕДАКТИРОВАТЬ</button>
+                  </form>
+                </div>
+                <div class="personal__content" id="address">
+                  <h2 class="personal__title title">АДРЕС ДОСТАВКИ</h2>
+                  <form class="personal__form" action="#">
+                    <div class="personal__controls">
+                      <label class="personal__control"><span class="personal__control-title">Населенный пункт</span>
+                        <input class="input personal__control-input" type="text" value="Москва" disabled>
+                      </label>
+                      <div class="personal__group">
+                        <label class="personal__control"><span class="personal__control-title">Номер дома</span>
+                          <input class="input personal__control-input" type="text" value="1" disabled>
+                        </label>
+                        <label class="personal__control"><span class="personal__control-title">Этаж</span>
+                          <input class="input personal__control-input" type="text" value="3" disabled>
+                        </label>
+                      </div>
+                      <label class="personal__control"><span class="personal__control-title">Улица</span>
+                        <input class="input personal__control-input" type="text" value="Тверская" disabled>
+                      </label>
+                      <div class="personal__group">
+                        <label class="personal__control"><span class="personal__control-title">Подъезд</span>
+                          <input class="input personal__control-input" type="text" value="2" disabled>
+                        </label>
+                        <label class="personal__control"><span class="personal__control-title">Номер квартиры / офиса</span>
+                          <input class="input personal__control-input" type="text" value="4" disabled>
+                        </label>
+                      </div>
+                    </div>
+                    <button class="personal__btn btn btn--color-black btn--bg-yellow js-is-disabled" type="submit" data-save="СОХРАНИТЬ">РЕДАКТИРОВАТЬ</button>
+                  </form>
+                </div>
+                <div class="personal__content" id="password">
+                  <h2 class="personal__title title">ИЗМЕНИТЬ ПАРОЛЬ</h2>
+                  <form class="personal__form" action="#">
+                    <div class="personal__controls">
+                      <label class="personal__control"><span class="personal__control-title">Текущий пароль</span>
+                        <input class="input personal__control-input" type="password" value="randomParol" disabled>
+                      </label>
+                      <label class="personal__control"><span class="personal__control-title">Новый пароль</span>
+                        <input class="input personal__control-input" type="password" disabled>
+                      </label>
+                      <label class="personal__control"><span class="personal__control-title">Повторите новый пароль</span>
+                        <input class="input personal__control-input" type="password" disabled>
+                      </label>
+                    </div>
+                    <button class="personal__btn btn btn--color-black btn--bg-yellow js-is-disabled" type="submit" data-save="СОХРАНИТЬ">РЕДАКТИРОВАТЬ</button>
+                  </form>
+                </div>
+                <div class="personal__content" id="notify">
+                  <h2 class="personal__title title">МОИ ДАННЫЕ</h2>
+                  <form class="personal__form" action="#">
+                    <div class="personal__controls personal__controls--block">
+                      <div class="personal__control">
+                        <input class="input-radio" type="radio" name="stock" id="stock">
+                        <label class="catalog__filter-text" for="stock">Акции и персональные скидки</label>
+                      </div>
+                      <div class="personal__control">
+                        <input class="input-radio" type="radio" name="news" id="news">
+                        <label class="catalog__filter-text" for="news">Новости компании</label>
+                      </div>
+                      <div class="personal__control">
+                        <input class="input-radio" type="radio" name="status" id="status">
+                        <label class="catalog__filter-text" for="status">Статус заказа</label>
+                      </div>
+                    </div>
+                    <button class="personal__btn btn btn--color-black btn--bg-yellow js-is-disabled" type="submit" data-save="СОХРАНИТЬ">РЕДАКТИРОВАТЬ</button>
+                  </form>
                 </div>
               </div>
-              <div class="advantages__items">
-                <div class="advantages__item advantages__item--grid">
-                  <svg class="icon icon-range advantages__item-icon">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#range"></use>
-                  </svg>
-                  <h3 class="advantages__item-title">ШИРОКИЙ <br> АССОРТИМЕНТ</h3><span class="advantages__item-text">блюда <br> на любой вкус</span>
-                </div>
-                <div class="advantages__item advantages__item--grid">
-                  <svg class="icon icon-quality advantages__item-icon">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#quality"></use>
-                  </svg>
-                  <h3 class="advantages__item-title">ВЫГОДНЫЕ <br> ЦЕНЫ</h3><span class="advantages__item-text">акции и скидки  <br> постоянным клиентам</span>
-                </div>
-                <div class="advantages__item advantages__item--grid">
-                  <svg class="icon icon-pendant advantages__item-icon">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#pendant"></use>
-                  </svg>
-                  <h3 class="advantages__item-title">КАЧЕСТВЕННЫЕ <br> ПРОДУКТЫ</h3><span class="advantages__item-text">сертификат <br> FSSC 22000</span>
-                </div>
-                <div class="advantages__item advantages__item--grid">
-                  <svg class="icon icon-processes advantages__item-icon">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#processes"></use>
-                  </svg>
-                  <h3 class="advantages__item-title">ШОКОВАЯ <br> ЗАМОРОЗКА</h3><span class="advantages__item-text">естественный  <br> консервант</span>
-                </div>
-                <div class="advantages__item advantages__item--grid">
-                  <svg class="icon icon-delivery advantages__item-icon">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#delivery"></use>
-                  </svg>
-                  <h3 class="advantages__item-title">ДОСТАВКА <br> В ОБЛАСТЬ</h3><span class="advantages__item-text">автопарк с  <br> холодильными установками</span>
-                </div>
+              <div class="personal__row">
+                <h2 class="personal__title title">МОИ ЗАКАЗЫ</h2>
+                <div class="personal__items"><a class="personal__item" href="#">
+                    <div class="personal__item-icon personal__item-icon--number" data-number="2">
+                      <svg class="icon icon-basket ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#basket"></use>
+                      </svg>
+                    </div><span class="personal__item-text">КОРЗИНА</span></a><a class="personal__item" href="personal-history.html">
+                    <div class="personal__item-icon">
+                      <svg class="icon icon-history ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#history"></use>
+                      </svg>
+                    </div><span class="personal__item-text">ИСТОРИЯ <br> ЗАКАЗОВ</span></a><a class="personal__item" href="#">
+                    <div class="personal__item-icon">
+                      <svg class="icon icon-faq ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#faq"></use>
+                      </svg>
+                    </div><span class="personal__item-text">ЗАДАТЬ <br> ВОПРОС</span></a></div>
+              </div>
+              <div class="personal__row">
+                <h2 class="personal__title title">ИЗБРАННОЕ</h2>
+                <div class="personal__items"><a class="personal__item" href="#">
+                    <div class="personal__item-icon personal__item-icon--number" data-number="2">
+                      <svg class="icon icon-goods ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#goods"></use>
+                      </svg>
+                    </div><span class="personal__item-text">ТОВАРЫ</span></a><a class="personal__item" href="#">
+                    <div class="personal__item-icon">
+                      <svg class="icon icon-food ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#food"></use>
+                      </svg>
+                    </div><span class="personal__item-text">ИНТЕРЕСНО <br> ПРО ЕДУ</span></a><a class="personal__item" href="#">
+                    <div class="personal__item-icon">
+                      <svg class="icon icon-school ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#school"></use>
+                      </svg>
+                    </div><span class="personal__item-text">КУЛИНАРНАЯ <br> ШКОЛА</span></a><a class="personal__item" href="#">
+                    <div class="personal__item-icon">
+                      <svg class="icon icon-news ">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#news"></use>
+                      </svg>
+                    </div><span class="personal__item-text">ПРАВИЛЬНОЕ <br> ПИТАНИЕ</span></a></div>
               </div>
             </div>
           </div>
         </section>
-        <section class="statistics">
+        <section class="recommend recommend--bg-white">
           <div class="container">
-            <h3 class="statistics__title title">В ЭТОМ МЕСЯЦЕ МЫ ПРОДАЛИ</h3>
-            <div class="statistics__counter"><span class="statistics__counter-number">0</span><span class="statistics__counter-number">6</span><span class="statistics__counter-number">0</span><span class="statistics__counter-number">4</span><span class="statistics__counter-number">0</span><span class="statistics__counter-number">0</span><span class="statistics__counter-number">0</span></div>
-            <h3 class="statistics__title title">КГ ПРОДУКЦИИ</h3>
-          </div>
-        </section>
-        <section class="recommend">
-          <div class="container">
-            <div class="section-top">
-              <h2 class="section-top__title title">РЕКОМЕНДУЕМ ПОПРОБОВАТЬ</h2>
+            <div class="section-top section-top--padding section-top--left">
+              <h2 class="section-top__title title">ВЫ СМОТРЕЛИ</h2>
             </div>
           </div>
           <div class="recommend__slider">
@@ -239,7 +353,7 @@
                 <div class="product__head">
                   <div class="product__head-slider">
                     <div class="product__head-slide js-parent">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -248,7 +362,7 @@
                       </svg>
                     </div>
                     <div class="product__head-slide">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -292,7 +406,7 @@
                 <div class="product__head">
                   <div class="product__head-slider">
                     <div class="product__head-slide js-parent">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -301,7 +415,7 @@
                       </svg>
                     </div>
                     <div class="product__head-slide">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -345,7 +459,7 @@
                 <div class="product__head">
                   <div class="product__head-slider">
                     <div class="product__head-slide js-parent">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -354,7 +468,7 @@
                       </svg>
                     </div>
                     <div class="product__head-slide">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -398,7 +512,7 @@
                 <div class="product__head">
                   <div class="product__head-slider">
                     <div class="product__head-slide js-parent">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -407,7 +521,7 @@
                       </svg>
                     </div>
                     <div class="product__head-slide">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -451,7 +565,7 @@
                 <div class="product__head">
                   <div class="product__head-slider">
                     <div class="product__head-slide js-parent">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -460,7 +574,7 @@
                       </svg>
                     </div>
                     <div class="product__head-slide">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -504,7 +618,7 @@
                 <div class="product__head">
                   <div class="product__head-slider">
                     <div class="product__head-slide js-parent">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -513,7 +627,7 @@
                       </svg>
                     </div>
                     <div class="product__head-slide">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -557,7 +671,7 @@
                 <div class="product__head">
                   <div class="product__head-slider">
                     <div class="product__head-slide js-parent">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -566,7 +680,7 @@
                       </svg>
                     </div>
                     <div class="product__head-slide">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -610,7 +724,7 @@
                 <div class="product__head">
                   <div class="product__head-slider">
                     <div class="product__head-slide js-parent">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -619,7 +733,7 @@
                       </svg>
                     </div>
                     <div class="product__head-slide">
-                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#catalog-view-1" data-fancybox><span class="product__head-text">Быстрый просмотр</span>
+                      <div class="product__head-image lazy" data-src="static/images/content/category/category-2.jpg"><a class="product__head-viewing" href="#"><span class="product__head-text">Быстрый просмотр</span>
                           <svg class="icon icon-search product__head-viewing-icon">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
                           </svg></a></div>
@@ -658,22 +772,6 @@
                 </div>
               </article>
             </div>
-          </div>
-        </section>
-        <section class="info-block">
-          <div class="container">
-            <h2 class="info-block__title title">МЫ СТАРАЕМСЯ СДЕЛАТЬ МАГАЗИН ЕЩЕ ЛУЧШЕ!</h2>
-            <p class="info-block__text">
-              В этом разделе вы можете найти подробную информацию о нашшоварах, особенностях логистики или узнать все о сотрудничестве снами. Мы приглашаем к сотрудничеству с ООО ТПК “Вилон”. С нашими партнерами мы готовы разделить успешные результаты
-              оизводства и реализацию высококачественной продукции замороженных готовых блюд и полуфабрикатов.
-              <br> Если у Вас возникли вопросы, мы с радостью наатветим!
-            </p><a class="info-block__link info-block__link--margin btn btn--bg-yellow btn--color-black" href="#">
-              <svg class="icon icon-spoon btn-icon">
-                <use xlink:href="static/images/sprite/symbol/sprite.svg#spoon"></use>
-              </svg>ХОЧУ ПОЕСТЬ!
-              <svg class="icon icon-fork btn-icon">
-                <use xlink:href="static/images/sprite/symbol/sprite.svg#fork"></use>
-              </svg></a>
           </div>
         </section>
       </div>
