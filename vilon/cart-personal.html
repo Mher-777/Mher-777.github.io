@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Интересно про еду</title><!--[if IE]>
+    <title>Корзина</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -70,7 +70,7 @@
                       </svg></span></a><a class="header__request-link" href="#"><span class="header__request-box header__request-box--number" data-count="2">
                       <svg class="icon icon-basket header__request-icon">
                         <use xlink:href="static/images/sprite/symbol/sprite.svg#basket"></use>
-                      </svg></span><span class="header__request-text">10,500 р</span></a><a class="header__request-link header__request-link--size-small" href="#"><span class="header__request-box">
+                      </svg></span><span class="header__request-text">10,500 р</span></a><a class="header__request-link header__request-link--size-small" href="#login" data-fancybox><span class="header__request-box">
                       <svg class="icon icon-user header__request-icon">
                         <use xlink:href="static/images/sprite/symbol/sprite.svg#user"></use>
                       </svg></span><span class="header__request-text">Вход</span></a></div><a class="btn btn--color-black btn--bg-yellow header__btn" href="#" data-da="header__menu-list, last, 500">ОСТАВИТЬ ЗАЯВКУ</a>
@@ -150,7 +150,7 @@
                     <li class="header__dropdown-item"><a class="header__dropdown-link" href="#">Образцы документов</a></li>
                   </ul>
                 </li>
-                <li class="header__menu-item header__menu-item--dropdown header__menu-item--current"><a class="header__menu-link" href="vilon-life.html">Vilon Life</a>
+                <li class="header__menu-item header__menu-item--dropdown"><a class="header__menu-link" href="vilon-life.html">Vilon Life</a>
                   <svg class="icon icon-arrow-down header__menu-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
                   </svg>
@@ -167,255 +167,173 @@
         </div>
         <div class="header__submenu">
           <div class="container">
-            <div class="header__submenu-inner"><a class="header__submenu-link" href="fact-1.html">Кулинарная школа</a><a class="header__submenu-link header__submenu-link--current" href="fact-2.html">Интересно про еду</a><a class="header__submenu-link" href="fact-3.html">Правильное питание</a></div>
+            <div class="header__submenu-inner"><a class="header__submenu-link" href="#">Продолжить покупки</a><a class="header__submenu-link" href="#">Доставка и оплата</a></div>
           </div>
         </div>
       </header>
       <div class="content">
         <div class="breadcrumbs">
           <div class="container">
-            <div class="breadcrumbs__inner"><a class="breadcrumbs__link" href="index.html">Главная</a><a class="breadcrumbs__link" href="vilon-life.html">Vilon Life</a><a class="breadcrumbs__link" href="fact-1.html">Интересно про еду</a></div>
+            <div class="breadcrumbs__inner"><a class="breadcrumbs__link" href="index.html">Главная</a><a class="breadcrumbs__link" href="#">Магазин</a><a class="breadcrumbs__link" href="#">Корзина</a></div>
           </div>
         </div>
-        <section class="fact">
+        <section class="cart">
           <div class="container">
-            <div class="section-top">
-              <h2 class="section-top__title title">ИНТЕРЕСНО ПРО ЕДУ</h2>
+            <div class="order cart__order">
+              <div class="order__top">
+                <h2 class="order__title title">ВАШ ЗАКАЗ</h2><span class="order__snippet" data-da="order__bottom, first, 500">Беслатная доставка от 2500 р</span>
+                <div class="order__top-icons"><a class="order__top-save" href="#" download data-tippy-content="&lt;span class='tooltip'&gt;скачать&lt;/span&gt;" data-tippy-placement="top-end">
+                    <svg class="icon icon-save order__top-icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#save"></use>
+                    </svg></a>
+                  <svg class="icon icon-close order__top-close" data-tippy-content="&lt;span class='tooltip'&gt;очистить&lt;/span&gt;" data-tippy-placement="top-start">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="order__wrapper">
+                <table class="order__table">
+                  <thead class="order__head">
+                    <tr class="order__head-row">
+                      <td class="order__head-col order__head-col--padding"><span class="order__head-title">Товар</span></td>
+                      <td class="order__head-col order__head-col--align-center"><span class="order__head-title">Количество</span></td>
+                      <td class="order__head-col order__head-col--align-center"><span class="order__head-title">Розничная цена</span></td>
+                      <td class="order__head-col order__head-col--align-right"><span class="order__head-title">Сумма</span></td>
+                    </tr>
+                  </thead>
+                  <tbody class="order__body">
+                    <tr class="order__body-row">
+                      <td class="order__body-col order__body-col--align-left">
+                        <div class="order__item"><a class="order__item-image" href="#" style="background-image: url(static/images/common/example-1.jpg)"></a>
+                          <div class="order__item-info"><a class="order__body-title" href="#">СУП-ЛАПША ДОМАШНЯЯ С КУРИЦЕЙ</a>
+                            <p class="order__item-text"><span>350 гр.</span><span>150 Ккал</span><span>Артикул: 123</span></p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="order__body-col">
+                        <div class="counter order__counter">
+                          <button class="counter__btn" data-direction="minus">
+                            <svg class="icon icon-minus counter__icon">
+                              <use xlink:href="static/images/sprite/symbol/sprite.svg#minus"></use>
+                            </svg>
+                          </button>
+                          <input class="counter__input" value="20" disabled>
+                          <button class="counter__btn" data-direction="plus">
+                            <svg class="icon icon-plus counter__icon">
+                              <use xlink:href="static/images/sprite/symbol/sprite.svg#plus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="order__body-col"><span class="order__price">120 р</span></td>
+                      <td class="order__body-col order__body-col--align-right">
+                        <svg class="icon icon-close order__close">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
+                        </svg><span class="order__price order__price--weight-bold">2400 р</span>
+                      </td>
+                    </tr>
+                    <tr class="order__body-row">
+                      <td class="order__body-col order__body-col--align-left">
+                        <div class="order__item"><a class="order__item-image" href="#" style="background-image: url(static/images/common/example-1.jpg)"></a>
+                          <div class="order__item-info"><a class="order__body-title" href="#">БОРЩ ЧЕРНИГОВСКИЙ</a>
+                            <p class="order__item-text"><span>350 гр.</span><span>150 Ккал</span><span>Артикул: 123</span></p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="order__body-col">
+                        <div class="counter order__counter">
+                          <button class="counter__btn" data-direction="minus">
+                            <svg class="icon icon-minus counter__icon">
+                              <use xlink:href="static/images/sprite/symbol/sprite.svg#minus"></use>
+                            </svg>
+                          </button>
+                          <input class="counter__input" value="1" disabled>
+                          <button class="counter__btn" data-direction="plus">
+                            <svg class="icon icon-plus counter__icon">
+                              <use xlink:href="static/images/sprite/symbol/sprite.svg#plus"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="order__body-col"><span class="order__price">120 р</span></td>
+                      <td class="order__body-col order__body-col--align-right">
+                        <svg class="icon icon-close order__close">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
+                        </svg><span class="order__price order__price--weight-bold">120 р</span>
+                      </td>
+                    </tr>
+                    <tr class="order__body-row">
+                      <td class="order__body-col order__body-col--align-left">
+                        <div class="order__item"><a class="order__item-image" href="#" style="background-image: url(static/images/common/example-1.jpg)"></a>
+                          <div class="order__item-info"><a class="order__body-title" href="#">СУП-ЛАПША ДОМАШНЯЯ С КУРИЦЕЙ</a>
+                            <p class="order__item-text"><span>350 гр.</span><span>150 Ккал</span><span>Артикул: 123</span></p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="order__body-col">
+                        <div class="counter order__counter">
+                          <div class="counter order__counter">
+                            <button class="counter__btn" data-direction="minus">
+                              <svg class="icon icon-minus counter__icon">
+                                <use xlink:href="static/images/sprite/symbol/sprite.svg#minus"></use>
+                              </svg>
+                            </button>
+                            <input class="counter__input" value="1" disabled>
+                            <button class="counter__btn" data-direction="plus">
+                              <svg class="icon icon-plus counter__icon">
+                                <use xlink:href="static/images/sprite/symbol/sprite.svg#plus"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="order__body-col"><span class="order__price">120 р</span></td>
+                      <td class="order__body-col order__body-col--align-right">
+                        <svg class="icon icon-close order__close">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
+                        </svg><span class="order__price order__price--weight-bold">120 р</span>
+                      </td>
+                    </tr>
+                    <tr class="order__body-row">
+                      <td class="order__body-col order__body-col--align-left">
+                        <div class="order__item order__item--vertical-center">
+                          <div class="order__item-image order__item-image--empty"></div>
+                          <!--(делается на весь заказ)-->
+                          <h2 class="order__body-title">ПЕРСОНАЛЬНАЯ СКИДКА<sup data-tippy-content="&lt;span class='tooltip'&gt;Персональная скидка: &lt;br&gt; 10% - при заказе на сумму от 10.000 руб.&lt;/span&gt;" data-tippy-placement="top-start">?</sup></h2>
+                        </div>
+                      </td>
+                      <td class="order__body-col"></td>
+                      <td class="order__body-col"><span class="order__price">5%</span></td>
+                      <td class="order__body-col order__body-col--align-right">
+                        <svg class="icon icon-close order__close">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
+                        </svg><span class="order__price order__price--weight-bold order__price--color-green">132 р</span>
+                      </td>
+                    </tr>
+                    <tr class="order__body-row">
+                      <td class="order__body-col order__body-col--align-left">
+                        <div class="order__item order__item--vertical-center">
+                          <div class="order__item-image order__item-image--empty"></div>
+                          <div class="order__item-info">
+                            <!-- (п.1 х 20 шт + п.2 + п.33)-->
+                            <p class="order__item-text order__item-text--size-small">Общая калорийность: 450 Ккал</p>
+                            <p class="order__item-text order__item-text--size-small">Для формирования заказа добавьте в корзину товаров на 1044 р.</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="order__body-col order__body-col--align-right"><span class="order__body-title order__body-title--size-small">Всего без доставки:</span></td>
+                      <td class="order__body-col"></td>
+                      <td class="order__body-col order__body-col--align-right"><span class="order__price order__price--weight-bold">456 р</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="order__bottom">
+                <button class="order__btn btn" type="button" disabled>ОФОРМИТЬ ЗАКАЗ</button>
+              </div>
             </div>
-            <div class="fact__items">
-              <article class="article fact__item">
-                <div class="article__head" style="background-image: url(static/images/common/example-2.jpg)">
-                  <svg class="icon icon-heart article__icon js-toggle">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
-                  </svg><a class="article__head-search js-popup-inline" href="#fact-view-1" data-fancybox><span class="article__head-text">Быстрый просмотр</span>
-                    <svg class="icon icon-search article__head-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
-                    </svg></a>
-                </div>
-                <div class="article__body article__body--hover"><a class="article__body-title" href="blog.html">ЧЕМ ПООБЕДАТЬ НА РАБОТЕ? ВТОРАЯ СТРОЧКА ЗАГОЛОВКА</a>
-                  <div class="article__body-info">
-                    <time class="article__body-day" datetime="01.02.2020">01.02.2020</time>
-                    <div class="article__body-statistics"><span class="article__body-statistic">
-                        <svg class="icon icon-eye article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
-                        </svg><span>1025</span></span><span class="article__body-statistic js-like">
-                        <svg class="icon icon-like article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
-                        </svg><span>1025</span></span></div>
-                  </div>
-                </div>
-              </article>
-              <article class="article fact__item">
-                <div class="article__head" style="background-image: url(static/images/common/example-2.jpg)">
-                  <svg class="icon icon-heart article__icon js-toggle">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
-                  </svg><a class="article__head-search js-popup-inline" href="#fact-view-1" data-fancybox><span class="article__head-text">Быстрый просмотр</span>
-                    <svg class="icon icon-search article__head-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
-                    </svg></a>
-                </div>
-                <div class="article__body article__body--hover"><a class="article__body-title" href="blog.html">10 СЕКРЕТОВ ПРИГОТОВЛЕНИЯ ИДЕАЛЬНОГО БОРЩА</a>
-                  <div class="article__body-info">
-                    <time class="article__body-day" datetime="01.02.2020">01.02.2020</time>
-                    <div class="article__body-statistics"><span class="article__body-statistic">
-                        <svg class="icon icon-eye article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
-                        </svg><span>1025</span></span><span class="article__body-statistic js-like">
-                        <svg class="icon icon-like article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
-                        </svg><span>1025</span></span></div>
-                  </div>
-                </div>
-              </article>
-              <article class="article fact__item">
-                <div class="article__head" style="background-image: url(static/images/common/example-2.jpg)">
-                  <svg class="icon icon-heart article__icon js-toggle">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
-                  </svg><a class="article__head-search js-popup-inline" href="#fact-view-1" data-fancybox><span class="article__head-text">Быстрый просмотр</span>
-                    <svg class="icon icon-search article__head-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
-                    </svg></a>
-                </div>
-                <div class="article__body article__body--hover"><a class="article__body-title" href="blog.html">САЙДА - КЛАДЕЗЬ МИКРОЭЛЕМЕНТОВ</a>
-                  <div class="article__body-info">
-                    <time class="article__body-day" datetime="01.02.2020">01.02.2020</time>
-                    <div class="article__body-statistics"><span class="article__body-statistic">
-                        <svg class="icon icon-eye article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
-                        </svg><span>1025</span></span><span class="article__body-statistic js-like">
-                        <svg class="icon icon-like article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
-                        </svg><span>1025</span></span></div>
-                  </div>
-                </div>
-              </article>
-              <article class="article fact__item">
-                <div class="article__head" style="background-image: url(static/images/common/example-2.jpg)">
-                  <svg class="icon icon-heart article__icon js-toggle">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
-                  </svg><a class="article__head-search js-popup-inline" href="#fact-view-1" data-fancybox><span class="article__head-text">Быстрый просмотр</span>
-                    <svg class="icon icon-search article__head-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
-                    </svg></a>
-                </div>
-                <div class="article__body article__body--hover"><a class="article__body-title" href="blog.html">ЧТО ТАКОЕ ПАНАЗИАТСКАЯ КУХНЯ?</a>
-                  <div class="article__body-info">
-                    <time class="article__body-day" datetime="01.02.2020">01.02.2020</time>
-                    <div class="article__body-statistics"><span class="article__body-statistic">
-                        <svg class="icon icon-eye article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
-                        </svg><span>1025</span></span><span class="article__body-statistic js-like">
-                        <svg class="icon icon-like article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
-                        </svg><span>1025</span></span></div>
-                  </div>
-                </div>
-              </article>
-              <article class="article fact__item">
-                <div class="article__head" style="background-image: url(static/images/common/example-2.jpg)">
-                  <svg class="icon icon-heart article__icon js-toggle">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
-                  </svg><a class="article__head-search js-popup-inline" href="#fact-view-1" data-fancybox><span class="article__head-text">Быстрый просмотр</span>
-                    <svg class="icon icon-search article__head-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
-                    </svg></a>
-                </div>
-                <div class="article__body article__body--hover"><a class="article__body-title" href="blog.html">ПОЛЬЗА ОВСЯНОЙ КАШИ</a>
-                  <div class="article__body-info">
-                    <time class="article__body-day" datetime="01.02.2020">01.02.2020</time>
-                    <div class="article__body-statistics"><span class="article__body-statistic">
-                        <svg class="icon icon-eye article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
-                        </svg><span>1025</span></span><span class="article__body-statistic js-like">
-                        <svg class="icon icon-like article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
-                        </svg><span>1025</span></span></div>
-                  </div>
-                </div>
-              </article>
-              <article class="article fact__item">
-                <div class="article__head" style="background-image: url(static/images/common/example-2.jpg)">
-                  <svg class="icon icon-heart article__icon js-toggle">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
-                  </svg><a class="article__head-search js-popup-inline" href="#fact-view-1" data-fancybox><span class="article__head-text">Быстрый просмотр</span>
-                    <svg class="icon icon-search article__head-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
-                    </svg></a>
-                </div>
-                <div class="article__body article__body--hover"><a class="article__body-title" href="blog.html">ЧТО ТАКОЕ ЧИСТАЯ ЭТИКЕТКА?</a>
-                  <div class="article__body-info">
-                    <time class="article__body-day" datetime="01.02.2020">01.02.2020</time>
-                    <div class="article__body-statistics"><span class="article__body-statistic">
-                        <svg class="icon icon-eye article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
-                        </svg><span>1025</span></span><span class="article__body-statistic js-like">
-                        <svg class="icon icon-like article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
-                        </svg><span>1025</span></span></div>
-                  </div>
-                </div>
-              </article>
-              <article class="article fact__item">
-                <div class="article__head" style="background-image: url(static/images/common/example-2.jpg)">
-                  <svg class="icon icon-heart article__icon js-toggle">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
-                  </svg><a class="article__head-search js-popup-inline" href="#fact-view-1" data-fancybox><span class="article__head-text">Быстрый просмотр</span>
-                    <svg class="icon icon-search article__head-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
-                    </svg></a>
-                </div>
-                <div class="article__body article__body--hover"><a class="article__body-title" href="blog.html">ЧТО ТАКОЕ ПАНАЗИАТСКАЯ КУХНЯ?</a>
-                  <div class="article__body-info">
-                    <time class="article__body-day" datetime="01.02.2020">01.02.2020</time>
-                    <div class="article__body-statistics"><span class="article__body-statistic">
-                        <svg class="icon icon-eye article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
-                        </svg><span>1025</span></span><span class="article__body-statistic js-like">
-                        <svg class="icon icon-like article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
-                        </svg><span>1025</span></span></div>
-                  </div>
-                </div>
-              </article>
-              <article class="article fact__item">
-                <div class="article__head" style="background-image: url(static/images/common/example-2.jpg)">
-                  <svg class="icon icon-heart article__icon js-toggle">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
-                  </svg><a class="article__head-search js-popup-inline" href="#fact-view-1" data-fancybox><span class="article__head-text">Быстрый просмотр</span>
-                    <svg class="icon icon-search article__head-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
-                    </svg></a>
-                </div>
-                <div class="article__body article__body--hover"><a class="article__body-title" href="blog.html">ПОЛЬЗА ОВСЯНОЙ КАШИ</a>
-                  <div class="article__body-info">
-                    <time class="article__body-day" datetime="01.02.2020">01.02.2020</time>
-                    <div class="article__body-statistics"><span class="article__body-statistic">
-                        <svg class="icon icon-eye article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
-                        </svg><span>1025</span></span><span class="article__body-statistic js-like">
-                        <svg class="icon icon-like article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
-                        </svg><span>1025</span></span></div>
-                  </div>
-                </div>
-              </article>
-              <article class="article fact__item">
-                <div class="article__head" style="background-image: url(static/images/common/example-2.jpg)">
-                  <svg class="icon icon-heart article__icon js-toggle">
-                    <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
-                  </svg><a class="article__head-search js-popup-inline" href="#fact-view-1" data-fancybox><span class="article__head-text">Быстрый просмотр</span>
-                    <svg class="icon icon-search article__head-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
-                    </svg></a>
-                </div>
-                <div class="article__body article__body--hover"><a class="article__body-title" href="blog.html">ЧТО ТАКОЕ ЧИСТАЯ ЭТИКЕТКА?</a>
-                  <div class="article__body-info">
-                    <time class="article__body-day" datetime="01.02.2020">01.02.2020</time>
-                    <div class="article__body-statistics"><span class="article__body-statistic">
-                        <svg class="icon icon-eye article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
-                        </svg><span>1025</span></span><span class="article__body-statistic js-like">
-                        <svg class="icon icon-like article__body-icon">
-                          <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
-                        </svg><span>1025</span></span></div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <button class="fact__btn btn btn--bg-yellow btn--color-black" type="button">ЗАГРУЗИТЬ ЕЩЕ</button>
           </div>
         </section>
-        <div class="blog blog__popup popup" id="fact-view-1">
-          <div class="container">
-            <div class="blog__wrapper blog__wrapper--shadow blog__wrapper--padding">
-              <h2 class="blog__title title">ЧЕМ ПООБЕДАТЬ НА РАБОТЕ?</h2>
-              <div class="blog__bg lazy" data-src="static/images/content/blog/blog-image-1.jpg">
-                <svg class="icon icon-heart blog__bg-icon js-toggle">
-                  <use xlink:href="static/images/sprite/symbol/sprite.svg#heart"></use>
-                </svg>
-              </div>
-              <div class="blog__content">
-                <p class="blog__text">Если вы считаете, что единственный вариант поесть на работе – это фаст-фуд, то сильно ошибаетесь. Здоровой и вкусной альтернативой может стать готовая еда, которую перед употреблением стоит всего лишь разогреть несколько минут в микроволновке.</p>
-                <p class="blog__text">Современные технологии производства позволяют предложить покупателю максимально удобные и вкусные продукты питания. Российским первопроходцем в этом деле стала Торгово-промышленная компания «Вилон». Она, пожалуй, первой предложила отечественному покупателю новый формат культуры потребления: готовые натуральные замороженные первые и вторые блюда и закуски в удобных однопорционных лотках. Потребители это оценили. Больше никаких многочасовых хлопот на кухне, чтобы собрать контейнер с едой на работу, никаких ожиданий бизнес-ланча и ффовых потерь в кафе и ресторанах. Все уже приготовлено и готово к доставке прямо в офис!</p>
-                <p class="blog__text">Из внушительного ассортимента, который выпускает «Вилон», можно составить полноценный рацион на целый день. Например, не успели позавтракать дома – попробуйте творожную запеканку, пообедать можно вкусным Борщом и Шницелем с картофельным пюре под красным соусом. Весь набор блюд обойдется в 240 рублей. При этом никакой вредной пищи – ингредиенты и рецептура блюд не отличаются от еды домашнего или ресторанного приготовления. Разница лишь в том, что для удобства транспортировки, хранения и потребления блюда сразу после приготовления и упаковки, еще горячие, отправляются в камеры шоковой заморозки. Все полезные вещества – на месте, вкус – на высоте!</p>
-                <p class="blog__text">Готовые замороженные блюда от «Вилон», выпускаемые под торговыми марками «Сытоедов», «Добрые съести», «Чебуречье» и «Обожамс!» представлены во многих магазинах и во всех федеральных сетях. А если нет времени на поход в магазин, можно воспользоваться услугами Интернет-магазина «Вилон».</p>
-                <p class="blog__text">Приятного аппетита!</p>
-              </div>
-              <div class="blog__info">
-                <div class="blog__info-statistics">
-                  <time class="blog__info-day" datetime="01.02.2020">01.02.2020</time><span class="blog__info-statistic">
-                    <svg class="icon icon-eye blog__info-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#eye"></use>
-                    </svg><span>1025</span></span><span class="blog__info-statistic js-like">
-                    <svg class="icon icon-like blog__info-icon">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#like"></use>
-                    </svg><span>1025</span></span>
-                </div>
-                <div class="blog__socials"><span class="blog__socials-text">Поделиться:</span><a class="blog__socials-link" href="#"><img class="blog__socials-icon lazy" src="static/images/common/vk.svg" alt="view-1.pug"></a><a class="blog__socials-link" href="#"><img class="blog__socials-icon lazy" src="static/images/common/facebook.svg" alt="view-1.pug"></a><a class="blog__socials-link" href="#"><img class="blog__socials-icon lazy" src="static/images/common/ok.svg" alt="view-1.pug"></a><a class="blog__socials-link" href="#"><img class="blog__socials-icon lazy" src="static/images/common/email.svg" alt="view-1.pug"></a><a class="blog__socials-link" href="#"><img class="blog__socials-icon lazy" src="static/images/common/twitter.svg" alt="view-1.pug"></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <footer class="footer">
         <div class="container">
