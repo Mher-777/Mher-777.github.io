@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="icon" href="static/images/common/site/favicon.ico" sizes="48x48" type="image/icon">
+    <link rel="icon" href="static/images/common/site/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="static/images/common/site/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/images/common/site/apple-touch-icon.png">
+    <link rel="shortcut" sizes="60x60" href="static/images/common/site/android-chrome-192x192.png">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="logo"><a class="logo__link" href="#">
+                <picture>
+                  <source srcset="static/images/common/logo.webp" type="image/webp"/>
+                  <source srcset="static/images/common/logo.png" type="image/png"/><img class="logo__image" src="static/images/common/logo.png" alt="logo"/>
+                </picture></a></div>
+            <nav class="menu">
+              <ul class="menu__list" data-title-mobile="Меню">
+                <li class="menu__item"><a class="menu__link" href="#">IT-продукты</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Наши проекты</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Наша команда</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+              </ul>
+              <!--текущая страница класс .active добавить к menu__link-->
+            </nav>
+            <button class="hamburger hamburger--collapse" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="intro">
+          <div class="parallax">
+            <div class="intro__bg" data-bg="static/images/content/intro/intro-bg.jpg" data-bg-webp="static/images/content/intro/intro-bg.webp"></div>
+            <div class="container">
+              <div class="intro__content">
+                <div class="intro__box">
+                  <h1 class="title title--big title--center intro__title">Разработка IT&nbsp;-&nbsp;решений <br> любой сложности</h1>
+                  <div class="intro__group"><a class="intro__link btn" href="#">Узнать больше</a><a class="intro__link btn btn--transparent" href="#">Вернусь позже</a></div>
+                </div>
+                <button class="down js-btn-slide" type="text" data-elem="#advantages">
+                  <svg class="icon icon-arrow-down down__icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
+                  </svg><span class="down__text">листай вниз листай вниз</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantages" id="advantages">
+          <div class="container">
+            <div class="section-top">
+              <h3 class="subtitle">01 – Наши преимущества</h3>
+              <h2 class="title advantages__title">Современные технологии должны развивать бизнес</h2>
+            </div>
+            <div class="advantages__slider">
+              <div class="advantages__slide">
+                <div class="advantages__item">
+                  <svg class="icon icon-clock advantages__item-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#clock"></use>
+                  </svg>
+                  <h3 class="advantages__item-title advantages__item-title--pink">Режим работы 24/7</h3><span class="advantages__item-text">Режим работы знакомый каждому предпринимателю можно усовершенствовать</span>
+                </div>
+              </div>
+              <div class="advantages__slide">
+                <div class="advantages__item">
+                  <svg class="icon icon-process advantages__item-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#process"></use>
+                  </svg>
+                  <h3 class="advantages__item-title advantages__item-title--yellow">Бизнес-процессы</h3><span class="advantages__item-text">Из-за которых вы проводите бессонные ночи, можно упростить. Ведь вы же не готовы жертвовать своим временем?</span>
+                </div>
+              </div>
+              <div class="advantages__slide">
+                <div class="advantages__item">
+                  <svg class="icon icon-pc advantages__item-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#pc"></use>
+                  </svg>
+                  <h3 class="advantages__item-title advantages__item-title--red">IT-система</h3><span class="advantages__item-text">Разработанная нами IT-система позволит вам сэкономить драгоценное время и увеличить свою прибыль</span>
+                </div>
+              </div>
+              <div class="advantages__slide">
+                <div class="advantages__item">
+                  <svg class="icon icon-time advantages__item-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#time"></use>
+                  </svg>
+                  <h3 class="advantages__item-title advantages__item-title--blue">Время</h3><span class="advantages__item-text">Ценный ресурс, и то, что вы привыкли делать сами, за вас выполнит надежный помощник – разбработанное нами IT решение</span>
+                </div>
+              </div>
+            </div>
+            <div class="advantages__arrows arrows"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="static/js/libs.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
