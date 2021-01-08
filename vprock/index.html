@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
+    <meta name="description" content="Разработка IT - решений любой сложности">
+    <meta name="AdsBot-Google" content="noindex">
     <link rel="icon" href="static/images/common/site/favicon.ico" sizes="48x48" type="image/icon">
     <link rel="icon" href="static/images/common/site/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="static/images/common/site/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" sizes="60x60" href="static/images/common/site/apple-touch-icon.png" type="image/png">
     <link rel="icon" sizes="60x60" href="static/images/common/site/android-chrome-192x192.png" type="image/png">
+    <!--link(rel="preload" href="static/fonts/Gotham-Pro/regular/GothamPro.woff2" as="font" type="font/woff2" crossorigin)-->
+    <!--link(rel="preload" href="static/fonts/Gotham-Pro/medium/GothamPro-Medium.woff2" as="font" type="font/woff2" crossorigin)-->
+    <!--link(rel="preload" href="static/fonts/Gotham-Pro/light/GothamPro-Light.woff2" as="font" type="font/woff2" crossorigin)-->
+    <!--link(rel="preload" href="static/fonts/Gotham-Pro/bold/GothamPro-Bold.woff2" as="font" type="font/woff2" crossorigin)-->
+    <!--link(rel="preload" href="static/fonts/Gotham-Pro/black/GothamPro-Black.woff2" as="font" type="font/woff2" crossorigin)-->
     <link rel="stylesheet" type="text/css" href="static/css/styles.css">
   </head>
   <body>
@@ -18,18 +25,18 @@
       <header class="header">
         <div class="container">
           <div class="header__inner">
-            <div class="logo"><a class="logo__link" href="#">
+            <div class="logo" data-aos="fade-down"><a class="logo__link" href="#">
                 <picture>
                   <source srcset="static/images/common/logo.webp" type="image/webp"/>
                   <source srcset="static/images/common/logo.png" type="image/png"/><img class="logo__image" src="static/images/common/logo.png" alt="logo"/>
                 </picture></a></div>
             <nav class="menu">
               <ul class="menu__list" data-title-mobile="Меню">
-                <li class="menu__item"><a class="menu__link" href="#">IT-продукты</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Наши проекты</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Наша команда</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                <li class="menu__item" data-aos="fade-down" data-aos-delay="100"><a class="menu__link js-btn-slide" href="#" data-elem="#products">IT-продукты</a></li>
+                <li class="menu__item" data-aos="fade-down" data-aos-delay="200"><a class="menu__link js-btn-slide" href="#" data-elem="#services">Услуги</a></li>
+                <li class="menu__item" data-aos="fade-down" data-aos-delay="300"><a class="menu__link js-btn-slide" href="#" data-elem="#works">Наши проекты</a></li>
+                <li class="menu__item" data-aos="fade-down" data-aos-delay="400"><a class="menu__link js-btn-slide" href="#" data-elem="#team">Наша команда</a></li>
+                <li class="menu__item" data-aos="fade-down" data-aos-delay="500"><a class="menu__link js-btn-slide" href="#" data-elem="#contact">Контакты</a></li>
               </ul>
               <!--текущая страница класс .active добавить к menu__link-->
             </nav>
@@ -44,10 +51,10 @@
             <div class="container">
               <div class="intro__content">
                 <div class="intro__box">
-                  <h1 class="title title--big title--center intro__title">Разработка IT&nbsp;-&nbsp;решений <br> любой сложности</h1>
-                  <div class="intro__group"><a class="intro__link btn" href="#">Узнать больше</a><a class="intro__link btn btn--transparent" href="#">Вернусь позже</a></div>
+                  <h1 class="title title--big title--center intro__title" data-aos="zoom-in-down" data-aos-delay="800">Разработка IT&nbsp;-&nbsp;решений <br> любой сложности</h1>
+                  <div class="intro__group"><a class="intro__link btn" href="#" data-aos="zoom-in" data-aos-delay="850">Узнать больше</a><a class="intro__link btn btn--transparent" href="#" data-aos="zoom-in" data-aos-delay="900">Вернусь позже</a></div>
                 </div>
-                <button class="down js-btn-slide" type="button" data-elem="#advantages">
+                <button class="down js-btn-slide" type="button" aria-label="Прокрутка вниз" data-elem="#advantages">
                   <svg class="icon icon-arrow-down down__icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
                   </svg><span class="down__text">листай вниз листай вниз</span>
@@ -58,12 +65,11 @@
         </section>
         <section class="advantages" id="advantages">
           <div class="container">
-            <div class="section-top">
-              <h3 class="subtitle">01 – Наши преимущества</h3>
-              <h2 class="title advantages__title">Современные технологии должны развивать бизнес</h2>
+            <div class="section-top"><span class="subtitle" data-aos="fade-right"><span data-count="01">01</span> – Наши преимущества</span>
+              <h2 class="title advantages__title" data-aos="fade-right" data-aos-delay="100">Современные технологии должны развивать бизнес</h2>
             </div>
             <div class="advantages__slider">
-              <div class="advantages__slide">
+              <div class="advantages__slide" data-aos="fade-right" data-aos-delay="150">
                 <div class="advantages__item">
                   <svg class="icon icon-clock advantages__item-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#clock"></use>
@@ -71,7 +77,15 @@
                   <h3 class="advantages__item-title advantages__item-title--pink">Режим работы 24/7</h3><span class="advantages__item-text">Режим работы знакомый каждому предпринимателю можно усовершенствовать</span>
                 </div>
               </div>
-              <div class="advantages__slide">
+              <div class="advantages__slide" data-aos="fade-right" data-aos-delay="150">
+                <div class="advantages__item">
+                  <svg class="icon icon-clock advantages__item-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#clock"></use>
+                  </svg>
+                  <h3 class="advantages__item-title advantages__item-title--pink">Режим работы 24/7</h3><span class="advantages__item-text">Режим работы знакомый каждому предпринимателю можно усовершенствовать</span>
+                </div>
+              </div>
+              <div class="advantages__slide" data-aos="fade-right" data-aos-delay="200">
                 <div class="advantages__item">
                   <svg class="icon icon-process advantages__item-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#process"></use>
@@ -79,7 +93,7 @@
                   <h3 class="advantages__item-title advantages__item-title--yellow">Бизнес-процессы</h3><span class="advantages__item-text">Из-за которых вы проводите бессонные ночи, можно упростить. Ведь вы же не готовы жертвовать своим временем?</span>
                 </div>
               </div>
-              <div class="advantages__slide">
+              <div class="advantages__slide" data-aos="fade-right" data-aos-delay="250">
                 <div class="advantages__item">
                   <svg class="icon icon-pc advantages__item-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#pc"></use>
@@ -87,7 +101,7 @@
                   <h3 class="advantages__item-title advantages__item-title--red">IT-система</h3><span class="advantages__item-text">Разработанная нами IT-система позволит вам сэкономить драгоценное время и увеличить свою прибыль</span>
                 </div>
               </div>
-              <div class="advantages__slide">
+              <div class="advantages__slide" data-aos="fade-right" data-aos-delay="300">
                 <div class="advantages__item">
                   <svg class="icon icon-time advantages__item-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#time"></use>
@@ -99,17 +113,15 @@
             <div class="advantages__arrows arrows"></div>
           </div>
         </section>
-        <section class="products"><img class="products__decor products__decor--1" src="static/images/common/decor-1.svg" alt=""><img class="products__decor products__decor--2" src="static/images/common/decor-2.svg" alt=""><img class="products__decor products__decor--3" src="static/images/common/decor-3.svg" alt=""><img class="products__decor products__decor--4" src="static/images/common/decor-4.svg" alt="">
+        <section class="products" id="products"><img class="products__decor products__decor--1" src="static/images/common/decor-1.svg" alt="" data-aos="fade-right"><img class="products__decor products__decor--2" src="static/images/common/decor-2.svg" alt="" data-aos="fade-left"><img class="products__decor products__decor--3" src="static/images/common/decor-3.svg" alt="" data-aos="fade-left"><img class="products__decor products__decor--4" src="static/images/common/decor-4.svg" alt="" data-aos="fade-right">
           <div class="container">
-            <div class="section-top section-top--padding">
-              <h3 class="subtitle">02 – IT–продукты</h3>
-            </div>
+            <div class="section-top section-top--padding"><span class="subtitle" data-aos="fade-right"><span data-count="02">02</span> – IT–продукты</span></div>
             <div class="products__inner">
               <div class="products__top">
-                <h2 class="title products__title">Эксклюзивный и уникальный IT-продукт для Вашего бизнеса</h2><span class="desc">Нужно наладить онлайн-поставки, отследить наличие товара на складе или создать обучающую платформу? Упакуем и реализуем «под ключ» вашу самую смелую идею в эффективный IT-продукт</span>
+                <h2 class="title products__title" data-aos="fade-right" data-aos-delay="100">Эксклюзивный и уникальный IT-продукт для Вашего бизнеса</h2><span class="desc" data-aos="fade-right" data-aos-delay="150">Нужно наладить онлайн-поставки, отследить наличие товара на складе или создать обучающую платформу? Упакуем и реализуем «под ключ» вашу самую смелую идею в эффективный IT-продукт</span>
               </div>
               <div class="products__slider">
-                <div class="products__slide">
+                <div class="products__slide" data-aos="zoom-in">
                   <div class="product">
                     <div class="product__image" data-bg="static/images/content/products/product-1.jpg" data-bg-webp="static/images/content/products/product-1.webp"></div>
                     <div class="product__content"><span class="product__number">01</span>
@@ -117,7 +129,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="products__slide">
+                <div class="products__slide" data-aos="zoom-in" data-aos-delay="100">
                   <div class="product">
                     <div class="product__image" data-bg="static/images/content/products/product-2.jpg" data-bg-webp="static/images/content/products/product-2.webp"></div>
                     <div class="product__content"><span class="product__number">02</span>
@@ -162,14 +174,13 @@
             <div class="products__arrows arrows"></div>
           </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
           <div class="container">
-            <div class="section-top">
-              <h3 class="subtitle">03 – Услуги</h3>
-              <h2 class="title services__title">Выполним и окажем поддержку на всех этапах развития:</h2>
+            <div class="section-top"><span class="subtitle" data-aos="fade-right"><span data-count="03">03</span> – Услуги</span>
+              <h2 class="title services__title" data-aos="fade-right" data-aos-delay="100">Выполним и окажем поддержку на всех этапах развития:</h2>
             </div>
             <div class="services__slider">
-              <div class="services__slide">
+              <div class="services__slide" data-aos="fade-right" data-aos-delay="100">
                 <div class="services__item"><span class="services__item-number">01</span>
                   <svg class="icon icon-pen services__item-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#pen"></use>
@@ -177,7 +188,7 @@
                   <h3 class="services__item-title services__item-title--pink">Продающий текст</h3><span class="services__item-text">Продающий текст для привлечения лидов</span>
                 </div>
               </div>
-              <div class="services__slide">
+              <div class="services__slide" data-aos="fade-right" data-aos-delay="150">
                 <div class="services__item"><span class="services__item-number">02</span>
                   <svg class="icon icon-design services__item-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#design"></use>
@@ -185,7 +196,7 @@
                   <h3 class="services__item-title services__item-title--yellow">современный дизайн</h3><span class="services__item-text">Современный дизайн и понятный, удобный для пользователя  интерфейс</span>
                 </div>
               </div>
-              <div class="services__slide">
+              <div class="services__slide" data-aos="fade-right" data-aos-delay="200">
                 <div class="services__item"><span class="services__item-number">03</span>
                   <svg class="icon icon-language services__item-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#language"></use>
@@ -193,7 +204,7 @@
                   <h3 class="services__item-title services__item-title--red">front-end</h3><span class="services__item-text">Адаптируем макет сайта в рабочий инструмент. Клиенты найдут вас в любом поисковике</span>
                 </div>
               </div>
-              <div class="services__slide">
+              <div class="services__slide" data-aos="fade-right" data-aos-delay="250">
                 <div class="services__item"><span class="services__item-number">04</span>
                   <svg class="icon icon-settings services__item-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#settings"></use>
@@ -201,7 +212,7 @@
                   <h3 class="services__item-title services__item-title--blue">BACK-END</h3><span class="services__item-text">Подключим надежный хостинг, системы оплаты и ssl сертификаты безопастности</span>
                 </div>
               </div>
-              <div class="services__slide">
+              <div class="services__slide" data-aos="fade-right" data-aos-delay="300">
                 <div class="services__item"><span class="services__item-number">05</span>
                   <svg class="icon icon-product services__item-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#product"></use>
@@ -253,44 +264,104 @@
             <div class="services__arrows arrows"></div>
           </div>
         </section>
+        <section class="team" id="team"><img class="team__decor team__decor--1" src="static/images/common/decor-1.svg" alt="" data-aos="fade-right"><img class="team__decor team__decor--2" src="static/images/common/decor-2.svg" alt="" data-aos="fade-left"><img class="team__decor team__decor--3" src="static/images/common/decor-3.svg" alt="" data-aos="fade-left"><img class="team__decor team__decor--4" src="static/images/common/decor-2.svg" alt="" data-aos="fade-right">
+          <div class="container">
+            <div class="section-top"><span class="subtitle" data-aos="fade-right"><span data-count="04">04</span> – Наша команда</span>
+              <h2 class="title team__title" data-aos="fade-right" data-aos-delay="100">Мы любим нашу работу</h2>
+            </div>
+            <div class="team__slider">
+              <div class="team__slide" data-aos="fade-right" data-aos-delay="50"><a class="team__item" href="#">
+                  <div class="team__item-top"><img class="team__item-image" src="https://via.placeholder.com/250/" alt="" width="275" height="275"></div>
+                  <div class="team__item-bottom"><span class="team__item-name">Степан Романов</span><span class="team__item-desc">Дизайнер, Россия</span></div></a></div>
+              <div class="team__slide" data-aos="fade-right" data-aos-delay="100"><a class="team__item" href="#">
+                  <div class="team__item-top"><img class="team__item-image" src="https://via.placeholder.com/275/" alt="" width="275" height="275"></div>
+                  <div class="team__item-bottom"><span class="team__item-name">Степан Романов</span><span class="team__item-desc">Дизайнер, Россия</span></div></a></div>
+              <div class="team__slide" data-aos="fade-right" data-aos-delay="150"><a class="team__item" href="#">
+                  <div class="team__item-top"><img class="team__item-image" src="https://via.placeholder.com/275/" alt="" width="275" height="275"></div>
+                  <div class="team__item-bottom"><span class="team__item-name">Степан Романов</span><span class="team__item-desc">Дизайнер, Россия</span></div></a></div>
+              <div class="team__slide" data-aos="fade-right" data-aos-delay="200"><a class="team__item" href="#">
+                  <div class="team__item-top"><img class="team__item-image" src="https://via.placeholder.com/275/" alt="" width="275" height="275"></div>
+                  <div class="team__item-bottom"><span class="team__item-name">Степан Романов</span><span class="team__item-desc">Дизайнер, Россия</span></div></a></div>
+            </div>
+            <div class="team__arrows arrows"></div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <div class="section-top section-top--padding"><span class="subtitle" data-aos="fade-right"><span data-count="05">05</span> – О нас</span></div>
+            <h2 class="title about__title" data-aos="fade-right">Позвольте вашему бизнесу работать пока вы спите</h2>
+            <div class="about__inner">
+              <div class="about__content" data-aos="fade-right">
+                <p>Очевидный факт что ситуация с пандемией короновируса привела к закрытию большинства офлайн бизнесов (рестораны, кинотеатры, фитнес центры, и многое другое)</p>
+                <p>🎯 Мы команда разработчиков которая помогает <br> автоматизировать бизнес.</p>
+                <p>С помощью</p>
+                <ul>
+                  <li>💻 Продающих сайтов (любой сложности)</li>
+                  <li>📲 Мобильных приложений</li>
+                  <li>📩 Чат ботов для любых мессенджеров</li>
+                  <li>💰 А также банковских систем</li>
+                  <li>💡 Каждый проект на 100% эксклюзивен, разрабатываем системы специально под ваши предпочтения.</li>
+                </ul>
+                <p>Если у вас есть офлайн бизнес мы поможем вам автоматизировать процессы,а если ваш бизнес в сфере онлайн создадим уникальную систему под вас для упрощения работы и экономии времени.</p>
+                <p>🔽 Кроме того, сделаем скидку в 20% на первый заказ.</p>
+              </div>
+              <div class="about__video embed" data-aos="fade-left">
+                <iframe class="js-lazyload" data-src="https://www.youtube.com/embed/LXb3EKWsInQ" title="Посмотреть видео" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="about__contact">
+              <h3 class="about__contact-title">Контакты</h3>
+              <ul class="about__contact-list">
+                <li class="about__contact-item"><a class="about__contact-link" href="mailto:vprockit@gmail.com" aria-label="Ссылка на электронная почта">
+                    <svg class="icon icon-email about__contact-icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#email"></use>
+                    </svg><span class="about__contact-text">vprockit@gmail.com</span></a></li>
+                <li class="about__contact-item"><a class="about__contact-link" href="https://desktop.telegram.org/" rel="noopener" aria-label="Ссылка на телеграмм" target="_blank">
+                    <svg class="icon icon-telegram about__contact-icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#telegram"></use>
+                    </svg><span class="about__contact-text">+77771958271</span></a></li>
+                <li class="about__contact-item"><a class="about__contact-link" href="https://wa.me/+77771958271" rel="noopener" aria-label="Ссылка на ватсап" target="_blank">
+                    <svg class="icon icon-whatsapp about__contact-icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#whatsapp"></use>
+                    </svg><span class="about__contact-text">+77771958271</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <section class="choice"><img class="choice__decor choice__decor--1" src="static/images/common/decor-1.svg" alt=""><img class="choice__decor choice__decor--2" src="static/images/common/decor-2.svg" alt="">
           <div class="container">
-            <div class="section-top section-top--padding">
-              <h3 class="subtitle">04 – Выбор за вами</h3>
-            </div>
+            <div class="section-top section-top--padding"><span class="subtitle" data-aos="fade-right"><span data-count="06">06</span> – Выбор за вами</span></div>
             <div class="choice__inner">
-              <h2 class="choice__title title title--center">Как провести свое время, выбираете только Вы!</h2>
+              <h2 class="choice__title title title--center" data-aos="fade-right" data-aos-delay="100">Как провести свое время, выбираете только Вы!</h2>
               <div class="choice__images">
-                <div class="choice__image" data-bg="static/images/content/choice/choice-image-1.jpg" data-bg-webp="static/images/content/choice/choice-image-1.webp"></div>
-                <div class="choice__image" data-bg="static/images/content/choice/choice-image-2.jpg" data-bg-webp="static/images/content/choice/choice-image-2.webp"></div>
+                <div class="choice__image" data-aos="fade-right" data-aos-delay="300" data-bg="static/images/content/choice/choice-image-1.jpg" data-bg-webp="static/images/content/choice/choice-image-1.webp"></div>
+                <div class="choice__image" data-aos="fade-right" data-aos-delay="350" data-bg="static/images/content/choice/choice-image-2.jpg" data-bg-webp="static/images/content/choice/choice-image-2.webp"></div>
               </div>
             </div>
           </div>
         </section>
-        <section class="works">
+        <section class="works" id="works">
           <div class="container">
-            <div class="section-top section-top--padding">
-              <h3 class="subtitle">05 – Проекты</h3>
-            </div>
+            <div class="section-top section-top--padding"><span class="subtitle" data-aos="fade-right"><span data-count="07">07</span> – Проекты</span></div>
             <div class="works__inner">
-              <h2 class="works__title title title--center">Убедитесь сами в эффективности наших IT–продуктов</h2>
+              <h2 class="works__title title title--center" data-aos="fade-right" data-aos-delay="100">Убедитесь сами в эффективности наших IT–продуктов</h2>
               <div class="works__row">
-                <div class="works__col">
+                <div class="works__col" data-aos="fade-right" data-aos-delay="50">
                   <div class="works__col-content" data-bg="static/images/content/works/works-1.jpg" data-bg-webp="static/images/content/works/works-1.webp"><span class="works__col-subtitle">Сайт</span>
                     <h3 class="works__col-title title title--small">Mamma Mia</h3><a class="works__col-link btn btn--transparent btn--small" href="#">Подробнее</a>
                   </div>
                 </div>
-                <div class="works__col">
+                <div class="works__col" data-aos="fade-right" data-aos-delay="50">
                   <div class="works__col-content" data-bg="static/images/content/works/works-2.jpg" data-bg-webp="static/images/content/works/works-2.webp"><span class="works__col-subtitle">Приложение</span>
                     <h3 class="works__col-title title title--small">Boardteam</h3><a class="works__col-link btn btn--transparent btn--small btn--white" href="#">Подробнее</a>
                   </div>
                 </div>
-                <div class="works__col">
+                <div class="works__col" data-aos="fade-right" data-aos-delay="100">
                   <div class="works__col-content" data-bg="static/images/content/works/works-3.jpg" data-bg-webp="static/images/content/works/works-3.webp"><span class="works__col-subtitle">Landing page</span>
                     <h3 class="works__col-title title title--small">Прими себя</h3><a class="works__col-link btn btn--transparent btn--small btn--white" href="#">Подробнее</a>
                   </div>
                 </div>
-                <div class="works__col">
+                <div class="works__col" data-aos="fade-right" data-aos-delay="100">
                   <div class="works__col-content" data-bg="static/images/content/works/works-4.jpg" data-bg-webp="static/images/content/works/works-4.webp"><span class="works__col-subtitle">Приложение</span>
                     <h3 class="works__col-title title title--small">InVEST Appart</h3><a class="works__col-link btn btn--transparent btn--small" href="#">Подробнее</a>
                   </div>
@@ -300,9 +371,130 @@
             </div>
           </div>
         </section>
+        <section class="request"><img class="request__decor request__decor--1" src="static/images/common/decor-3.svg" alt=""><img class="request__decor request__decor--2" src="static/images/common/decor-4.svg" alt="">
+          <div class="container">
+            <div class="request__inner">
+              <div class="section-top"><span class="subtitle" data-aos="fade-right"><span data-count="08">08</span> – Оставьте заявку</span>
+                <h2 class="title request__title" data-aos="fade-right" data-aos-delay="100">Готовы воплотить Вашу мечту в&nbsp;жизнь?</h2><span class="desc request__desc" data-aos="fade-right" data-aos-delay="150">Заполните форму, и менеджеры компании VPROK окажут вам полную поддержку и консультацию</span>
+              </div>
+              <div class="request__content">
+                <button class="btn request__btn js-modal" type="submit" data-modal-open="message" aria-label="Оставить заявку" data-aos="fade-right" data-aos-delay="100">Оставить заявку</button>
+              </div>
+              <div class="request__image" data-aos="fade-left" data-aos-delay="150" data-bg="static/images/content/request/request-image.png" data-bg-webp="static/images/content/request/request-image.webp"><img class="request__decor request__decor--3" src="static/images/common/decor-5.svg" alt=""></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer"><img class="footer__decor" src="static/images/common/decor-2.svg" alt="">
+        <div class="container">
+          <div class="footer__main">
+            <div class="footer__left">
+              <h3 class="footer__title">Навигация
+                <svg class="icon icon-arrow-down ">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
+                </svg>
+              </h3>
+              <div class="footer__content">
+                <nav class="footer__menu"><a class="footer__menu-link" href="#">IT-продукты</a><a class="footer__menu-link" href="#">Услуги</a><a class="footer__menu-link" href="#">Наши проекты</a><a class="footer__menu-link" href="#">Наша команда</a><a class="footer__menu-link" href="#">О нас</a><a class="footer__menu-link" href="#">Контакты</a></nav><a class="footer__logo" href="#" data-da="footer__left, first, 1200"><img src="static/images/common/logo-footer.svg" alt="logo footer"></a>
+              </div>
+            </div>
+            <div class="footer__right" id="contact">
+              <h3 class="footer__title">Контакты
+                <svg class="icon icon-arrow-down ">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
+                </svg>
+              </h3>
+              <div class="footer__content footer__content--block"><a class="footer__email" href="mailto:vprockit@gmail.com">vprockit@gmail.com</a>
+                <ul class="socials">
+                        <li class="socials__item"><a class="socials__link" href="#" aria-label="Ссылка на электронная инстаграм">
+                            <svg class="icon icon-instagram socials__icon">
+                              <use xlink:href="static/images/sprite/symbol/sprite.svg#instagram"></use>
+                            </svg></a></li>
+                        <li class="socials__item"><a class="socials__link" href="#" aria-label="Ссылка на электронная телеграм">
+                            <svg class="icon icon-telegram socials__icon">
+                              <use xlink:href="static/images/sprite/symbol/sprite.svg#telegram"></use>
+                            </svg></a></li>
+                        <li class="socials__item"><a class="socials__link" href="#" aria-label="Ссылка на электронная ватсап">
+                            <svg class="icon icon-whatsapp socials__icon">
+                              <use xlink:href="static/images/sprite/symbol/sprite.svg#whatsapp"></use>
+                            </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright"><span class="footer__copyright-text">© 2020 VPROCK IT - All rights reserved</span><a class="footer__copyright-link" href="#">Политика конфиденциальности</a></div>
+        </div>
+      </footer>
+      <div class="modal" id="message" aria-hidden="true">
+        <div class="modal__wrapper">
+          <div class="modal__box" tabindex="-1" data-modal-close="message">
+            <div class="modal__content">
+              <button class="modal__close" type="button" data-modal-close="message" aria-label="Закрывать модальное окно">
+                <svg class="icon icon-close modal__close-icon">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
+                </svg>
+              </button>
+              <h2 class="title modal__title title--center">Оставьте ваше сообщение</h2>
+              <form class="modal__form" action="/">
+                <!-- пример валидации, просто .control__input добавить класс .error-->
+                <div class="control error" data-aos="fade-right" data-aos-delay="100">
+                  <label class="hidden" for="control-name">это текст не важно, не обращайте на это, внимание и не удалите при натяжке</label>
+                  <input class="control__input" type="text" placeholder="Ваше имя" required id="control-name">
+                  <svg class="icon icon-user control__icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#user"></use>
+                  </svg><span class="control__text">Введите полное имя</span>
+                </div>
+                <div class="control" data-aos="fade-right" data-aos-delay="100">
+                  <label class="hidden" for="control-phone">это текст не важно, не обращайте на это, внимание и не удалите при натяжке</label>
+                  <input class="control__input" type="tel" placeholder="Номер телефона" required id="control-phone">
+                  <svg class="icon icon-phone control__icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#phone"></use>
+                  </svg><span class="control__text">Введите полное номер телефона</span>
+                </div>
+                <div class="control" data-aos="fade-right" data-aos-delay="100">
+                  <label class="hidden" for="control-text">это текст не важно, не обращайте на это, внимание и не удалите при натяжке</label>
+                  <textarea class="control__textarea" placeholder="Ваше сообщение" required id="control-text"></textarea>
+                  <svg class="icon icon-text control__icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#text"></use>
+                  </svg><span class="control__text">Введите полное номер телефона</span>
+                </div>
+                <div class="modal__bottom">
+                  <button class="modal__btn btn btn--small" type="submit" data-modal-close="message" data-modal-open="success">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="success" aria-hidden="true">
+        <div class="modal__wrapper">
+          <div class="modal__box" tabindex="-1" data-modal-close="success">
+            <div class="modal__content modal__content--center">
+              <button class="modal__close" type="button" data-modal-close="success" aria-label="Закрывать модальное окно">
+                <svg class="icon icon-close modal__close-icon">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
+                </svg>
+              </button>
+              <h2 class="title modal__title title--center">Оставьте ваше сообщение</h2>
+              <div class="success-icon">
+                <div class="success-icon__tip"></div>
+                <div class="success-icon__long"></div>
+              </div><span class="modal__text">Сообщение успешно <br> отправлено</span>
+              <div class="modal__bottom">
+                <button class="modal__btn btn btn--small" type="button" data-modal-close="success">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="static/js/libs.js"></script>
-    <script src="static/js/main.js"></script>
+    <script src="static/js/libs-min.js"></script>
+    <script>
+      var sNew = document.createElement("script");
+      sNew.async = true;
+      sNew.src = "static/js/main.js";
+      var s0 = document.getElementsByTagName('script')[0];
+      s0.parentNode.insertBefore(sNew, s0);
+    </script>
   </body>
 </html>
