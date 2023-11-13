@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Главная страница</title>
-    <link rel="stylesheet" href="./app/css/app.css?v=1699715051127">
+    <link rel="stylesheet" href="./app/css/app.css?v=1699862676270">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -83,14 +83,20 @@
             </div>
         </div>
     </header>
-    <section class="intro">
+    <div class="quadrangle-decor">
+        <img class="quadrangle-decor__image" src="./app/img/quadrangle.svg" alt="quadrangle">
+    </div>
+    <section class="intro" data-logo-text="D-comm">
         <div class="intro__bg">
             <!--.intro__image-->
             <!--    img(src="/img/bg.jpeg" alt="bg").object-fit-->
             <div class="intro__video">
-                <video class="absolute" preload="auto" autoplay loop playsinline muted>
+                <video class="absolute" preload="auto" autoplay="" muted="" playsinline="" loop id="vid">
                     <source type="video/mp4" src="video-bg.mp4" no-controls>
                 </video>
+                <script>
+                    document.getElementById('vid').play()
+                </script>
             </div>
         </div>
         <div class="container">
@@ -325,7 +331,7 @@
                     </div>
                 </div><a class="footer__link footer__link_tiny desktop-hidden" href="#">Политика конфиденциальности</a><a class="footer__link footer__link_tiny desktop-hidden" href="#">Пользовательское соглашение</a>
             </div>
-            <div class="footer__copyright flex flex_vertical"><span>© ООО «Цифровые коммуникации» 2023. Все права защищены.</span>
+            <div class="footer__copyright flex flex_vertical"><span class="footer__copyright-text">© ООО «Цифровые коммуникации» 2023. Все права защищены.</span>
                 <div class="socials footer__socials mobile-hidden">
                     <div class="socials__item">
                         <a class="socials__link socials__link_vk" href="#" target="_blank">
@@ -393,7 +399,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="./app/js/app.js?v=1699715051133"></script>
+    <script src="./app/js/app.js?v=1699862676280"></script>
 </body>
 
 </html>
