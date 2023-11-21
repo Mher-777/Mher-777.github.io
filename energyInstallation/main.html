@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./app/css/app.css?v=1700575898339">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner flex flex_vertical flex_justify">
+            <div class="logo header__logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__image" src="app/img/logo.svg" alt="Энерго Строй Монтаж">
+                </a>
+            </div>
+            <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="is-active"><a href="#">Главная</a>
+                    </li>
+                    <li><a href="#">О компании</a>
+                    </li>
+                    <li><a href="#">Услуги</a><span class="menu__icon table-show js-dropdown"><svg class="icon icon-arrowForward" viewBox="0 0 24 24"><use xlink:href="/app/icons/sprite.svg#arrowForward"></use></svg></span>
+                        <ul class="dropdown">
+                            <li><a href="#">Проектирование</a>
+                            </li>
+                            <li><a href="#">Строительно-монтажные работы</a>
+                            </li>
+                            <li><a href="#">Строительство зданий</a>
+                            </li>
+                            <li><a href="#">Производство</a>
+                            </li>
+                            <li><a href="#">Аренда спецтехники</a>
+                            </li>
+                            <li><a href="#">Комплексное обслуживание ж/д <br> и&nbsp;гражданских объектов</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Проекты</a>
+                    </li>
+                    <li><a href="#">Новости</a>
+                    </li>
+                    <li><a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <button class="js-btn btn header__btn table-show" type="button"><span class="btn__back js-circles"></span><span class="btn__text">Заказать звонок</span>
+                    <svg class="icon icon-arrowRight" viewBox="0 0 24 24">
+                        <use xlink:href="/app/icons/sprite.svg#arrowRight"></use>
+                    </svg>
+                </button>
+            </nav>
+            <a class="phone header__phone flex_inline flex_vertical" href="tel:+78123749999">
+                <div class="phone__icon">
+                    <svg class="icon icon-phone" viewBox="0 0 24 24">
+                        <use xlink:href="/app/icons/sprite.svg#phone"></use>
+                    </svg>
+                </div><span class="phone__text">+7 (812) 374-99-99</span>
+            </a>
+            <a class="email header__email flex_inline flex_vertical" href="mailto:info@energostm.ru">
+                <div class="phone__icon">
+                    <svg class="icon icon-email" viewBox="0 0 24 24">
+                        <use xlink:href="/app/icons/sprite.svg#email"></use>
+                    </svg>
+                </div><span class="phone__text">info@energostm.ru</span>
+            </a>
+            <button class="js-btn btn header__btn table-hidden" type="button"><span class="btn__back js-circles"></span><span class="btn__text">Заказать звонок</span>
+                <svg class="icon icon-arrowRight" viewBox="0 0 24 24">
+                    <use xlink:href="/app/icons/sprite.svg#arrowRight"></use>
+                </svg>
+            </button>
+            <button class="hamburger js-hamburger">
+                <svg class="icon icon-hamburgerOpen" viewBox="0 0 22 21">
+                    <use xlink:href="/app/icons/sprite.svg#hamburgerOpen"></use>
+                </svg>
+                <svg class="icon icon-hamburgerClose" viewBox="0 0 26 19">
+                    <use xlink:href="/app/icons/sprite.svg#hamburgerClose"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="intro__wrapper">
+            <div class="swiper intro__slider js-slider js-video-autoplay" data-settings="{&quot;effect&quot;:&quot;fade&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:{&quot;delay&quot;:5000,&quot;disableOnInteraction&quot;:false,&quot;pauseOnMouseEnter&quot;:true,&quot;loop&quot;:true},&quot;navigation&quot;:{&quot;nextEl&quot;:&quot;.slider-arrow_next&quot;,&quot;prevEl&quot;:&quot;.slider-arrow_prev&quot;},&quot;pagination&quot;:{&quot;el&quot;:&quot;.intro__pagination&quot;,&quot;clickable&quot;:true}}">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="intro__slide">
+                                <div class="intro__bg absolute">
+                                    <video class="video js-video-slider" preload="auto" autoplay="autoplay" no-controls muted playsinline="">
+                                        <source type="video/mp4" src="video-bg.mp4">
+                                    </video>
+                                </div>
+                                <div class="intro__content">
+                                    <h1 class="intro__title h1">Обеспечение <br> объектов энергетики</h1>
+                                    <div class="intro__info">
+                                        <p class="intro__text">Создание, проектирование, монтаж
+                                            <br>и&nbsp;комплексное обеспечение энергетических объектов России</p><a class="link intro__link" href="#">подробнее<svg class="icon icon-arrowRight" viewBox="0 0 24 24"><use xlink:href="/app/icons/sprite.svg#arrowRight"></use></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="intro__slide">
+                                <div class="intro__bg absolute">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width:580px)" srcset="app/img/intro-bg-2_mobile.webp">
+                                            <source media="(max-width:580px)" srcset="app/img/intro-bg-2_mobile.webp">
+                                                <img src="app/img/intro-bg-2.jpeg" class="object-fit" alt="" />
+                                    </picture>
+                                </div>
+                                <div class="intro__content">
+                                    <h2 class="intro__title h1">Производство, поставка и&nbsp;монтаж энергосистем</h2>
+                                    <div class="intro__info">
+                                        <p class="intro__text">Осуществляем полный цикл производства энерго- и&nbsp;светотехнической продукции</p><a class="link intro__link" href="#">подробнее<svg class="icon icon-arrowRight" viewBox="0 0 24 24"><use xlink:href="/app/icons/sprite.svg#arrowRight"></use></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="intro__slide">
+                                <div class="intro__bg absolute">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width:580px)" srcset="app/img/intro-bg-3_mobile.webp">
+                                            <source media="(max-width:580px)" srcset="app/img/intro-bg-3_mobile.webp">
+                                                <img src="app/img/intro-bg-3.jpeg" class="object-fit" alt="" />
+                                    </picture>
+                                </div>
+                                <div class="intro__content">
+                                    <h2 class="intro__title h1">Строительство <br> и&nbsp;обеспечение энергообъектов</h2>
+                                    <div class="intro__info">
+                                        <p class="intro__text">Предлагаем качественные решения для&nbsp;любых промышленных работ</p><a class="link intro__link" href="#">подробнее<svg class="icon icon-arrowRight" viewBox="0 0 24 24"><use xlink:href="/app/icons/sprite.svg#arrowRight"></use></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-arrow slider-arrow_next">
+                    <svg class="icon icon-arrowForward" viewBox="0 0 24 24">
+                        <use xlink:href="/app/icons/sprite.svg#arrowForward"></use>
+                    </svg>
+                </div>
+                <div class="slider-arrow slider-arrow_prev">
+                    <svg class="icon icon-arrowForward" viewBox="0 0 24 24">
+                        <use xlink:href="/app/icons/sprite.svg#arrowForward"></use>
+                    </svg>
+                </div>
+                <div class="slider-pagination intro__pagination"></div>
+            </div>
+        </div><a class="btn-more intro__more" href="#">подробнее о&nbsp;нас<picture>
+		                            <source type="image/webp" srcset="app/img/arrow-down.webp">
+		                            <img src="app/img/arrow-down.png" class="btn-more__icon" />
+		                        </picture></a>
+    </section>
+    <footer class="footer"></footer>
+    <div class="modals modals_recall mfp-hide" id="recall"></div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./app/js/app.js?v=1700575898370"></script>
+</body>
+
+</html>
