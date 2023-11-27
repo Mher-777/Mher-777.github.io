@@ -23,6 +23,7 @@
   --font-base: "Inter", Areal, Sans-serif;
   --color-primary: #F17E00;
   --color-white: #FFFFFF;
+  --color-red: #FF6767;
   --color-cyan: #51C0C4;
   --color-bg: #27333A;
   --color-mirage: #162031;
@@ -1142,6 +1143,83 @@ video::-webkit-media-controls {
   visibility: hidden;
 }
 
+.input__parent {
+  position: relative;
+}
+.input__parent .error {
+  position: absolute;
+  display: block;
+  line-height: 1em;
+  font-size: 1rem;
+  color: var(--color-red);
+  bottom: 1rem;
+  white-space: nowrap;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.input__parent.is-focus .input__placeholder {
+  opacity: 0;
+  visibility: hidden;
+}
+.input__parent.error .input__placeholder {
+  padding-bottom: 1rem;
+  color: var(--color-red);
+}
+.input__parent.error .input__field {
+  color: var(--color-red);
+  border-color: var(--color-red);
+  padding-bottom: 1rem;
+}
+.input__placeholder {
+  position: absolute;
+  font-size: 1.6rem;
+  left: 0;
+  pointer-events: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--color-mercury);
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+@media only screen and (max-width: 580px) {
+  .input__placeholder {
+    font-size: 1.3rem;
+  }
+}
+.input__field {
+  display: block;
+  background-color: transparent;
+  border: none;
+  height: 5.8rem;
+  border-bottom: 1px solid var(--color-white);
+  font-size: 1.6rem;
+  color: var(--color-white);
+  width: 100%;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+.input__field::-webkit-input-placeholder {
+  display: none;
+}
+.input__field:-moz-placeholder {
+  display: none;
+}
+.input__field::-moz-placeholder {
+  display: none;
+}
+.input__field:-ms-input-placeholder {
+  display: none;
+}
+@media only screen and (max-width: 580px) {
+  .input__field {
+    font-size: 1.3rem;
+  }
+}
+
 .item {
   padding: 4.5rem;
   display: -webkit-box;
@@ -1446,6 +1524,17 @@ video::-webkit-media-controls {
 .slider-pagination span.swiper-pagination-bullet-active {
   border-color: var(--color-primary);
 }
+.slider-pagination.swiper-pagination-bullets-dynamic {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 6.5rem !important;
+}
+.slider-pagination.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  position: relative;
+}
 
 .steps {
   display: -webkit-box;
@@ -1608,9 +1697,17 @@ video::-webkit-media-controls {
   }
 }
 
+.advantages {
+  margin-bottom: 8rem;
+}
+@media only screen and (max-width: 992px) {
+  .advantages {
+    margin-bottom: 5rem;
+  }
+}
 @media only screen and (max-width: 580px) {
   .advantages {
-    padding: 3rem 0;
+    margin: 3rem 0;
   }
 }
 .advantages__inner {
@@ -1778,6 +1875,87 @@ video::-webkit-media-controls {
   }
   .advantages__item:not(:last-child) {
     margin-right: 2rem;
+  }
+}
+
+.feedback {
+  background-color: #172031;
+  padding: 7rem 0;
+}
+@media only screen and (max-width: 992px) {
+  .feedback {
+    padding: 5rem 0;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .feedback {
+    padding: 2rem 0;
+  }
+}
+.feedback__title {
+  color: var(--color-white);
+  margin-bottom: 3rem;
+}
+.feedback__title::before {
+  opacity: 0.5;
+}
+@media only screen and (max-width: 992px) {
+  .feedback__title {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .feedback__title {
+    margin-bottom: 2rem;
+    width: 20rem;
+    min-height: 11rem;
+  }
+}
+.feedback__row {
+  margin-bottom: 2rem;
+}
+.feedback__field {
+  margin-right: 0.8rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+@media only screen and (max-width: 992px) {
+  .feedback__field {
+    width: calc(50% - .8rem);
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    margin-bottom: 1.2rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .feedback__field {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .feedback__btn {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .feedback__btn {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.feedback__text {
+  display: block;
+  font-size: 1.3rem;
+  color: rgba(185, 191, 195, 0.5);
+}
+@media only screen and (max-width: 580px) {
+  .feedback__text {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5833333333;
   }
 }
 
@@ -2049,5 +2227,84 @@ html.open_menu .header {
   }
   .intro .slider-arrow_prev {
     bottom: 7.7rem;
+  }
+}
+
+.partners {
+  margin: 18rem 0;
+}
+@media only screen and (max-width: 1440px) {
+  .partners {
+    margin: 15rem 0 10rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .partners {
+    margin: 5rem 0;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .partners {
+    margin: 3rem 0;
+  }
+}
+.partners__title {
+  max-width: 60rem;
+}
+@media only screen and (max-width: 992px) {
+  .partners__title {
+    max-width: 50rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .partners__title {
+    max-width: 25rem;
+  }
+}
+.partners__top {
+  margin-bottom: 6rem;
+}
+@media only screen and (max-width: 992px) {
+  .partners__top {
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .partners__top {
+    margin-bottom: 2rem;
+  }
+}
+.partners__link {
+  height: 100%;
+  border: 1px solid var(--color-mercury);
+  padding: 1rem 2rem;
+  min-height: 16rem;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+.partners__link:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.partners__link:hover .partners__image {
+  -webkit-filter: invert(28%) sepia(65%) saturate(7337%) hue-rotate(353deg) brightness(92%) contrast(93%);
+          filter: invert(28%) sepia(65%) saturate(7337%) hue-rotate(353deg) brightness(92%) contrast(93%);
+}
+@media only screen and (max-width: 992px) {
+  .partners__link {
+    min-height: 12rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .partners__slider {
+    margin: 0 -2rem;
+    padding: 0 2rem;
+  }
+  .partners__slider .swiper-slide {
+    max-width: 10rem;
+  }
+  .partners__slider .partners__link {
+    min-height: 9rem;
+    padding: 0 1rem;
   }
 }
