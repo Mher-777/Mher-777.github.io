@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="./app/css/app.css?v=1701268078926">
+    <title>О нас</title>
+    <link rel="stylesheet" href="./app/css/app.css?v=1701268076863">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -22,9 +22,9 @@
             </div>
             <nav class="menu header__menu">
                 <ul class="menu__list">
-                    <li class="is-active"><a href="main.html">Главная</a>
+                    <li><a href="main.html">Главная</a>
                     </li>
-                    <li><a href="about.html">О компании</a>
+                    <li class="is-active"><a href="about.html">О компании</a>
                     </li>
                     <li><a href="#">Услуги</a><span class="menu__icon table-show js-dropdown"><svg class="icon icon-arrowForward" viewBox="0 0 24 24"><use xlink:href="app/icons/sprite.svg#arrowForward"></use></svg></span>
                         <ul class="dropdown">
@@ -85,83 +85,29 @@
         </div>
     </header>
     <div class="wrapper">
-        <section class="intro">
+        <section class="intro intro_light">
             <div class="intro__wrapper">
-                <div class="swiper intro__slider js-slider-video js-video-autoplay" data-settings="{&quot;effect&quot;:&quot;fade&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:{&quot;delay&quot;:5000,&quot;disableOnInteraction&quot;:false,&quot;loop&quot;:true},&quot;navigation&quot;:{&quot;nextEl&quot;:&quot;.slider-arrow_next&quot;,&quot;prevEl&quot;:&quot;.slider-arrow_prev&quot;},&quot;pagination&quot;:{&quot;el&quot;:&quot;.intro__pagination&quot;,&quot;clickable&quot;:true}}">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="container">
-                                <div class="intro__slide">
-                                    <div class="intro__bg absolute">
-                                        <video class="video js-video-slider" preload="auto" autoplay="autoplay" no-controls muted playsinline="">
-                                            <source type="video/mp4" src="video-bg.mp4">
-                                        </video>
-                                    </div>
-                                    <div class="intro__content">
-                                        <h1 class="intro__title h1">Обеспечение <br> объектов энергетики</h1>
-                                        <div class="intro__info">
-                                            <p class="intro__text">Создание, проектирование, монтаж
-                                                <br>и&nbsp;комплексное обеспечение энергетических объектов России</p><a class="link intro__link" href="#">подробнее<svg class="icon icon-arrowRight" viewBox="0 0 24 24"><use xlink:href="app/icons/sprite.svg#arrowRight"></use></svg></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="container">
-                                <div class="intro__slide">
-                                    <div class="intro__bg absolute">
-                                        <picture>
-                                            <source type="image/webp" media="(max-width:580px)" srcset="app/img/intro-bg-2_mobile.webp">
-                                                <source media="(max-width:580px)" srcset="app/img/intro-bg-2_mobile.webp">
-                                                    <img src="app/img/intro-bg-2.jpeg" class="object-fit" alt="" />
-                                        </picture>
-                                    </div>
-                                    <div class="intro__content">
-                                        <h2 class="intro__title h1">Производство, поставка и&nbsp;монтаж энергосистем</h2>
-                                        <div class="intro__info">
-                                            <p class="intro__text">Осуществляем полный цикл производства энерго- и&nbsp;светотехнической продукции</p><a class="link intro__link" href="#">подробнее<svg class="icon icon-arrowRight" viewBox="0 0 24 24"><use xlink:href="app/icons/sprite.svg#arrowRight"></use></svg></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="container">
-                                <div class="intro__slide">
-                                    <div class="intro__bg absolute">
-                                        <picture>
-                                            <source type="image/webp" media="(max-width:580px)" srcset="app/img/intro-bg-3_mobile.webp">
-                                                <source media="(max-width:580px)" srcset="app/img/intro-bg-3_mobile.webp">
-                                                    <img src="app/img/intro-bg-3.jpeg" class="object-fit" alt="" />
-                                        </picture>
-                                    </div>
-                                    <div class="intro__content">
-                                        <h2 class="intro__title h1">Строительство <br> и&nbsp;обеспечение энергообъектов</h2>
-                                        <div class="intro__info">
-                                            <p class="intro__text">Предлагаем качественные решения для&nbsp;любых промышленных работ</p><a class="link intro__link" href="#">подробнее<svg class="icon icon-arrowRight" viewBox="0 0 24 24"><use xlink:href="app/icons/sprite.svg#arrowRight"></use></svg></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="container">
+                    <div class="intro__bg absolute">
+                        <picture>
+                            <source type="image/webp" media="(max-width:580px)" srcset="app/img/intro-bg-4_mobile.webp">
+                                <source media="(max-width:580px)" srcset="app/img/intro-bg-4_mobile.webp">
+                                    <img src="app/img/intro-bg-4.jpeg" class="object-fit" alt="" />
+                        </picture>
                     </div>
-                    <div class="slider-arrow slider-arrow_next">
-                        <svg class="icon icon-arrowForward" viewBox="0 0 24 24">
-                            <use xlink:href="app/icons/sprite.svg#arrowForward"></use>
-                        </svg>
+                    <div class="intro__content">
+                        <div class="breadcrumb intro__breadcrumb">
+                            <ul class="breadcrumb__list">
+                                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb__item breadcrumb__item_current"><span class="breadcrumb__link">О нас</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h2 class="intro__title h3">Ведущая компания по созданию <br> и&nbsp;обеспечению объектов энергетики <br> в&nbsp;Санкт-Петербурге</h2>
                     </div>
-                    <div class="slider-arrow slider-arrow_prev">
-                        <svg class="icon icon-arrowForward" viewBox="0 0 24 24">
-                            <use xlink:href="app/icons/sprite.svg#arrowForward"></use>
-                        </svg>
-                    </div>
-                    <div class="slider-pagination intro__pagination"></div>
                 </div>
-            </div><a class="btn-more intro__more js-scroll" href="#section1">подробнее о&nbsp;нас<picture>
-		                            <source type="image/webp" srcset="app/img/arrow-down.webp">
-		                            <img src="app/img/arrow-down.png" class="btn-more__icon" />
-		                        </picture></a>
+            </div>
         </section>
         <section class="about" id="section1">
             <div class="container">
@@ -176,29 +122,31 @@
                         </div>
                     </div>
                     <div class="about__cell about__cell_right">
-                        <div class="about__content content about__content_light">
+                        <div class="about__content content">
                             <h5>Обеспечение качественных решений для&nbsp;различных сфер промышленности</h5>
-                            <p>Наша компания входит в&nbsp;список самых крупных предприятий Санкт-Петербурга в&nbsp;области создания, проектирования, монтажа и&nbsp;комплексного обеспечения объектов энергетики.</p>
-                            <p>В спектр наших услуг входит:</p>
+                            <p>ООО «ЭнергоСтройМонтаж» – одно из&nbsp;крупнейших предприятий в&nbsp;Санкт-Петербурге, специализирующееся на&nbsp;создании, проектировании, монтаже и&nbsp;комплексном обеспечении объектов энергетики. Мы входим в&nbsp;Топ-100
+                                крупнейших компаний вданной области. Также наша компания является одним из&nbsp;крупнейших владельцев генерирующих активов на&nbsp;территории СЗФО. Стремимся предоставить высококачественные решения для&nbsp;любой отрасли
+                                промышленности независимо от&nbsp;объемов производства.</p>
+                            <blockquote cite="https://">
+                                <h6>Полный комплекс работ</h6>
+                                <p>Выполняем полный комплекс работ по созданию энергообъектов, включая проектирование и&nbsp;строительство систем электроснабжения на&nbsp;промышленных предприятиях, общественных зданиях и&nbsp;сооружениях под&nbsp;ключ.</p>
+                            </blockquote>
+                            <p>Кроме того, мы производим и&nbsp;поставляем широкий спектр систем освещения для&nbsp;промышленных предприятий. Компания также предоставляет услуги аренды специализированной техники и&nbsp;имеет лицензию и&nbsp;необходимые разрешения
+                                на&nbsp;выполнение пусконаладочных работ на&nbsp;малых, средних и&nbsp;крупных производствах. Политика нашей компании заключается во внимательном отношении к&nbsp;каждому клиенту, грамотное ценообразование и&nbsp;четкое
+                                соблюдение сроков поставки и&nbsp;выполнения работ. Благодаря этому мы заслужили уважение крупнейших предприятий России, таких как ГУП «Петербургский метрополитен», ОАО «РЖД» и&nbsp;других крупных компаний.</p>
+                            <blockquote
+                            cite="https://">
+                                <h6>Работаем с&nbsp;февраля 2011</h6>
+                                <p>Компания существует с&nbsp;февраля 2011 года и&nbsp;уже успела зарекомендовать себя как надежного партнера на&nbsp;российском рынке.</p>
+                                </blockquote>
+                                <p>Более 12 лет мы помогаем снижать стоимость проектов, выполняя широкий спектр работ по энергетическому оснащению предприятий.</p>
                         </div>
-                        <ul class="steps about__steps">
-                            <li class="steps__item">Строительство энергообъектов и&nbsp;пусконаладочные работы</li>
-                            <li class="steps__item">Производство и&nbsp;поставка систем освещения;</li>
-                            <li class="steps__item">Производство и&nbsp;поставка приборов и&nbsp;систем пожарной сигнализации;</li>
-                            <li class="steps__item">Аренда спецтехники</li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </section>
         <section class="advantages">
             <div class="container">
-                <div class="advantages__top flex flex_justify">
-                    <h2 class="h2 base-title advantages__top-title" data-sub-title="преимущества">Реализуем проекты <span class="color-blue">с&nbsp;2011 г</span></h2>
-                    <div class="advantages__info">
-                        <h5 class="h5 advantages__subtitle" data-da=".advantages__top-title, 580, last">Зарекомендовали себя, как надежного и&nbsp;ценного партнера на&nbsp;Российском рынке</h5><a class="js-btn btn advantages__btn" href="#" data-da=".advantages .container, 580, last"><span class="btn__back js-circles"></span><span class="btn__text">подробнее о&nbsp;компании</span><svg class="icon icon-arrowRight" viewBox="0 0 24 24"><use xlink:href="app/icons/sprite.svg#arrowRight"></use></svg></a>
-                    </div>
-                </div>
                 <div class="advantages__inner">
                     <div class="advantages__bg">
                         <picture>
@@ -271,191 +219,101 @@
                 </div>
             </div>
         </section>
-        <section class="partners">
+        <section class="gallery">
             <div class="container">
-                <div class="partners__top flex flex_justify flex_bottom">
-                    <h2 class="h4 base-title partners__title" data-sub-title="партнеры">Нам доверяют крупнейшие компании страны</h2>
-                    <div class="slider-pagination partners__pagination"></div>
+                <div class="gallery__top flex flex_justify flex_bottom">
+                    <h2 class="h4 base-title gallery__title" data-sub-title="галерея">Предлагаем комплексное обеспечение объектов энергетики</h2>
+                    <div class="slider-pagination gallery__pagination"></div>
                 </div>
-                <div class="swiper partners__slider js-slider" data-settings="{&quot;slidesPerView&quot;:&quot;auto&quot;,&quot;loop&quot;:true,&quot;pagination&quot;:{&quot;el&quot;:&quot;.partners__pagination&quot;,&quot;dynamicBullets&quot;:true,&quot;dynamicMainBullets&quot;:3,&quot;clickable&quot;:true},&quot;breakpoints&quot;:{&quot;580&quot;:{&quot;slidesPerView&quot;:7}}}">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <img class="partners__image" src="app/img/partner-1.svg" alt="" width="90">
-                            </a>
+                <div class="gallery__wrapper">
+                    <div class="swiper gallery__slider js-slider" data-settings="{&quot;slidesPerView&quot;:&quot;auto&quot;,&quot;loop&quot;:false,&quot;spaceBetween&quot;:20,&quot;freeMode&quot;:true,&quot;navigation&quot;:{&quot;enabled&quot;:false},&quot;pagination&quot;:{&quot;el&quot;:&quot;.gallery__pagination&quot;,&quot;dynamicBullets&quot;:true,&quot;dynamicMainBullets&quot;:3,&quot;clickable&quot;:true},&quot;breakpoints&quot;:{&quot;580&quot;:{&quot;slidesPerView&quot;:3,&quot;spaceBetween&quot;:30,&quot;navigation&quot;:{&quot;nextEl&quot;:&quot;.slider-arrow_next&quot;,&quot;prevEl&quot;:&quot;.slider-arrow_prev&quot;,&quot;enabled&quot;:true},&quot;loop&quot;:true,&quot;freeMode&quot;:false}}}">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-1.webp">
+		                            <img src="app/img/gallery-item-1.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 1</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-2.webp">
+		                            <img src="app/img/gallery-item-2.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 2</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-3.webp">
+		                            <img src="app/img/gallery-item-3.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 3</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-1.webp">
+		                            <img src="app/img/gallery-item-1.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 1</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-2.webp">
+		                            <img src="app/img/gallery-item-2.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 2</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-3.webp">
+		                            <img src="app/img/gallery-item-3.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 3</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <img class="partners__image" src="app/img/partner-2.svg" alt="" width="146">
-                            </a>
+                    </div>
+                    <div class="gallery__arrows">
+                        <div class="slider-arrow slider-arrow_small slider-arrow_next">
+                            <svg class="icon icon-arrowForward" viewBox="0 0 24 24">
+                                <use xlink:href="app/icons/sprite.svg#arrowForward"></use>
+                            </svg>
                         </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-3.webp">
-                                        <img src="app/img/partner-3.png" class="partners__image" alt="" width="138" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-4.webp">
-                                        <img src="app/img/partner-4.png" class="partners__image" alt="" width="96" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-5.webp">
-                                        <img src="app/img/partner-5.png" class="partners__image" alt="" width="138" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-6.webp">
-                                        <img src="app/img/partner-6.png" class="partners__image" alt="" width="145" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <img class="partners__image" src="app/img/partner-7.svg" alt="" width="67">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <img class="partners__image" src="app/img/partner-1.svg" alt="" width="90">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <img class="partners__image" src="app/img/partner-2.svg" alt="" width="146">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-3.webp">
-                                        <img src="app/img/partner-3.png" class="partners__image" alt="" width="138" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-4.webp">
-                                        <img src="app/img/partner-4.png" class="partners__image" alt="" width="96" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-5.webp">
-                                        <img src="app/img/partner-5.png" class="partners__image" alt="" width="138" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-6.webp">
-                                        <img src="app/img/partner-6.png" class="partners__image" alt="" width="145" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <img class="partners__image" src="app/img/partner-7.svg" alt="" width="67">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <img class="partners__image" src="app/img/partner-1.svg" alt="" width="90">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <img class="partners__image" src="app/img/partner-2.svg" alt="" width="146">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-3.webp">
-                                        <img src="app/img/partner-3.png" class="partners__image" alt="" width="138" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-4.webp">
-                                        <img src="app/img/partner-4.png" class="partners__image" alt="" width="96" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-5.webp">
-                                        <img src="app/img/partner-5.png" class="partners__image" alt="" width="138" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <picture>
-                                    <source type="image/webp" srcset="app/img/partner-6.webp">
-                                        <img src="app/img/partner-6.png" class="partners__image" alt="" width="145" />
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="partners__link flex flex_center flex_vertical" href="#">
-                                <img class="partners__image" src="app/img/partner-7.svg" alt="" width="67">
-                            </a>
+                        <div class="slider-arrow slider-arrow_small slider-arrow_prev">
+                            <svg class="icon icon-arrowForward" viewBox="0 0 24 24">
+                                <use xlink:href="app/icons/sprite.svg#arrowForward"></use>
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="feedback">
+        <section class="achievements">
             <div class="container">
-                <div class="feedback__top">
-                    <h2 class="feedback__title h4 base-title" data-sub-title="связаться с&nbsp;нами">Хотите задать вопрос?</h2>
+                <div class="achievements__top flex flex_justify flex_bottom">
+                    <h2 class="h4 base-title achievements__title" data-sub-title="достижения">Наши достижения</h2>
+                    <div class="slider-pagination achievements__pagination"></div>
                 </div>
-                <div class="feedback__inner">
-                    <form class="feedback__form js-validate" action="#">
-                        <div class="feedback__row flex">
-                            <div class="input feedback__field">
-                                <div class="input__parent"><span class="input__placeholder">Ваше имя</span>
-                                    <input class="input__field" name="name" type="text" />
-                                </div>
-                            </div>
-                            <div class="input feedback__field">
-                                <div class="input__parent"><span class="input__placeholder">Телефон</span>
-                                    <input class="input__field js-mask-phone" name="phone" type="text" />
-                                </div>
-                            </div>
-                            <div class="input feedback__field">
-                                <div class="input__parent"><span class="input__placeholder">Email</span>
-                                    <input class="input__field js-mask-email" name="email" type="text" />
-                                </div>
-                            </div>
-                            <div class="input feedback__field">
-                                <div class="input__parent"><span class="input__placeholder">Cообщение</span>
-                                    <input class="input__field" name="message" type="text" />
-                                </div>
-                            </div>
-                            <button class="js-btn btn btn_border feedback__btn" type="submit"><span class="btn__back js-circles"></span><span class="btn__text">Оставить заявку</span>
-                            </button>
-                        </div><span class="feedback__text">Нажимая на&nbsp;кнопку «Оставить заявку, Вы соглашаетесь на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;пользовательским соглашением</span>
-                    </form>
+                <div class="swiper achievements__slider js-slider" data-settings="{&quot;slidesPerView&quot;:&quot;auto&quot;,&quot;loop&quot;:true,&quot;spaceBetween&quot;:20,&quot;freeMode&quot;:true,&quot;pagination&quot;:{&quot;el&quot;:&quot;.achievements__pagination&quot;,&quot;dynamicBullets&quot;:true,&quot;dynamicMainBullets&quot;:3,&quot;clickable&quot;:true},&quot;breakpoints&quot;:{&quot;580&quot;:{&quot;slidesPerView&quot;:3,&quot;spaceBetween&quot;:30,&quot;loop&quot;:true,&quot;freeMode&quot;:false}}}">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/achievements-item-1.webp">
+		                            <img src="app/img/achievements-item-1.png" class="object-fit" alt="#" />
+		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Диплом</h3><span class="achievements-item__text">За активное участие в&nbsp;фестивале энергосбережения</span></span></a>
+                        </div>
+                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/achievements-item-2.webp">
+		                            <img src="app/img/achievements-item-2.png" class="object-fit" alt="#" />
+		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Благодарность</h3><span class="achievements-item__text">За большой вклад в&nbsp;организацию и&nbsp;проведение мероприятий</span></span></a>
+                        </div>
+                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/achievements-item-3.webp">
+		                            <img src="app/img/achievements-item-3.png" class="object-fit" alt="#" />
+		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Диплом</h3><span class="achievements-item__text">За участие в&nbsp;организации проведения II всероссийского совещания центров энергосбережения</span></span></a>
+                        </div>
+                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/achievements-item-1.webp">
+		                            <img src="app/img/achievements-item-1.png" class="object-fit" alt="#" />
+		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Диплом</h3><span class="achievements-item__text">За активное участие в&nbsp;фестивале энергосбережения</span></span></a>
+                        </div>
+                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/achievements-item-2.webp">
+		                            <img src="app/img/achievements-item-2.png" class="object-fit" alt="#" />
+		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Благодарность</h3><span class="achievements-item__text">За большой вклад в&nbsp;организацию и&nbsp;проведение мероприятий</span></span></a>
+                        </div>
+                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/achievements-item-3.webp">
+		                            <img src="app/img/achievements-item-3.png" class="object-fit" alt="#" />
+		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Диплом</h3><span class="achievements-item__text">За участие в&nbsp;организации проведения II всероссийского совещания центров энергосбережения</span></span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -626,7 +484,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./app/js/app.js?v=1701268078933"></script>
+    <script src="./app/js/app.js?v=1701268076868"></script>
 </body>
 
 </html>
