@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>О нас</title>
-    <link rel="stylesheet" href="./app/css/app.css?v=1701268076863">
+    <link rel="stylesheet" href="./app/css/app.css?v=1701355446240">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -17,7 +17,10 @@
         <div class="header__inner flex flex_vertical flex_justify">
             <div class="logo header__logo">
                 <a class="logo__link" href="#">
-                    <img class="logo__image" src="app/img/logo.svg" alt="Энерго Строй Монтаж">
+                    <svg class="icon icon-logo" viewBox="0 0 128 80">
+                        <use xlink:href="app/icons/sprite.svg#logo"></use>
+                    </svg>
+                    <!--img(src="app/img/logo.svg" alt="Энерго Строй Монтаж").logo__image-->
                 </a>
             </div>
             <nav class="menu header__menu">
@@ -26,23 +29,23 @@
                     </li>
                     <li class="is-active"><a href="about.html">О компании</a>
                     </li>
-                    <li><a href="#">Услуги</a><span class="menu__icon table-show js-dropdown"><svg class="icon icon-arrowForward" viewBox="0 0 24 24"><use xlink:href="app/icons/sprite.svg#arrowForward"></use></svg></span>
+                    <li><a href="services.html">Услуги</a><span class="menu__icon table-show js-dropdown"><svg class="icon icon-arrowForward" viewBox="0 0 24 24"><use xlink:href="app/icons/sprite.svg#arrowForward"></use></svg></span>
                         <ul class="dropdown">
-                            <li><a href="#">Проектирование</a>
+                            <li><a href="services.html">Проектирование</a>
                             </li>
-                            <li><a href="#">Строительно-монтажные работы</a>
+                            <li><a href="services.html">Строительно-монтажные работы</a>
                             </li>
-                            <li><a href="#">Строительство зданий</a>
+                            <li><a href="services.html">Строительство зданий</a>
                             </li>
-                            <li><a href="#">Производство</a>
+                            <li><a href="production.html">Производство</a>
                             </li>
-                            <li><a href="#">Аренда спецтехники</a>
+                            <li><a href="rent.html">Аренда спецтехники</a>
                             </li>
-                            <li><a href="#">Комплексное обслуживание ж/д <br> и&nbsp;гражданских объектов</a>
+                            <li><a href="maintenance.html">Комплексное обслуживание ж/д <br> и&nbsp;гражданских объектов</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Проекты</a>
+                    <li><a href="projects.html">Проекты</a>
                     </li>
                     <li><a href="#">Новости</a>
                     </li>
@@ -84,7 +87,7 @@
             </button>
         </div>
     </header>
-    <div class="wrapper">
+    <main class="wrapper">
         <section class="intro intro_light">
             <div class="intro__wrapper">
                 <div class="container">
@@ -228,32 +231,32 @@
                 <div class="gallery__wrapper">
                     <div class="swiper gallery__slider js-slider" data-settings="{&quot;slidesPerView&quot;:&quot;auto&quot;,&quot;loop&quot;:false,&quot;spaceBetween&quot;:20,&quot;freeMode&quot;:true,&quot;navigation&quot;:{&quot;enabled&quot;:false},&quot;pagination&quot;:{&quot;el&quot;:&quot;.gallery__pagination&quot;,&quot;dynamicBullets&quot;:true,&quot;dynamicMainBullets&quot;:3,&quot;clickable&quot;:true},&quot;breakpoints&quot;:{&quot;580&quot;:{&quot;slidesPerView&quot;:3,&quot;spaceBetween&quot;:30,&quot;navigation&quot;:{&quot;nextEl&quot;:&quot;.slider-arrow_next&quot;,&quot;prevEl&quot;:&quot;.slider-arrow_prev&quot;,&quot;enabled&quot;:true},&quot;loop&quot;:true,&quot;freeMode&quot;:false}}}">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+                            <div class="swiper-slide" data-hash="slide-gallery-1"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/gallery-item-1.webp">
 		                            <img src="app/img/gallery-item-1.jpeg" class="object-fit" alt="#" />
 		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 1</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
                             </div>
-                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+                            <div class="swiper-slide" data-hash="slide-gallery-2"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/gallery-item-2.webp">
 		                            <img src="app/img/gallery-item-2.jpeg" class="object-fit" alt="#" />
 		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 2</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
                             </div>
-                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+                            <div class="swiper-slide" data-hash="slide-gallery-3"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/gallery-item-3.webp">
 		                            <img src="app/img/gallery-item-3.jpeg" class="object-fit" alt="#" />
 		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 3</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
                             </div>
-                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+                            <div class="swiper-slide" data-hash="slide-gallery-4"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/gallery-item-1.webp">
 		                            <img src="app/img/gallery-item-1.jpeg" class="object-fit" alt="#" />
 		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 1</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
                             </div>
-                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+                            <div class="swiper-slide" data-hash="slide-gallery-5"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/gallery-item-2.webp">
 		                            <img src="app/img/gallery-item-2.jpeg" class="object-fit" alt="#" />
 		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 2</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
                             </div>
-                            <div class="swiper-slide"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+                            <div class="swiper-slide" data-hash="slide-gallery-6"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/gallery-item-3.webp">
 		                            <img src="app/img/gallery-item-3.jpeg" class="object-fit" alt="#" />
 		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 3</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
@@ -283,32 +286,32 @@
                 </div>
                 <div class="swiper achievements__slider js-slider" data-settings="{&quot;slidesPerView&quot;:&quot;auto&quot;,&quot;loop&quot;:true,&quot;spaceBetween&quot;:20,&quot;freeMode&quot;:true,&quot;pagination&quot;:{&quot;el&quot;:&quot;.achievements__pagination&quot;,&quot;dynamicBullets&quot;:true,&quot;dynamicMainBullets&quot;:3,&quot;clickable&quot;:true},&quot;breakpoints&quot;:{&quot;580&quot;:{&quot;slidesPerView&quot;:3,&quot;spaceBetween&quot;:30,&quot;loop&quot;:true,&quot;freeMode&quot;:false}}}">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+                        <div class="swiper-slide" data-hash="slide-achievements-1"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/achievements-item-1.webp">
 		                            <img src="app/img/achievements-item-1.png" class="object-fit" alt="#" />
 		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Диплом</h3><span class="achievements-item__text">За активное участие в&nbsp;фестивале энергосбережения</span></span></a>
                         </div>
-                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+                        <div class="swiper-slide" data-hash="slide-achievements-2"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/achievements-item-2.webp">
 		                            <img src="app/img/achievements-item-2.png" class="object-fit" alt="#" />
 		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Благодарность</h3><span class="achievements-item__text">За большой вклад в&nbsp;организацию и&nbsp;проведение мероприятий</span></span></a>
                         </div>
-                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+                        <div class="swiper-slide" data-hash="slide-achievements-3"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/achievements-item-3.webp">
 		                            <img src="app/img/achievements-item-3.png" class="object-fit" alt="#" />
 		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Диплом</h3><span class="achievements-item__text">За участие в&nbsp;организации проведения II всероссийского совещания центров энергосбережения</span></span></a>
                         </div>
-                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+                        <div class="swiper-slide" data-hash="slide-achievements-4"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/achievements-item-1.webp">
 		                            <img src="app/img/achievements-item-1.png" class="object-fit" alt="#" />
 		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Диплом</h3><span class="achievements-item__text">За активное участие в&nbsp;фестивале энергосбережения</span></span></a>
                         </div>
-                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+                        <div class="swiper-slide" data-hash="slide-achievements-5"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/achievements-item-2.webp">
 		                            <img src="app/img/achievements-item-2.png" class="object-fit" alt="#" />
 		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Благодарность</h3><span class="achievements-item__text">За большой вклад в&nbsp;организацию и&nbsp;проведение мероприятий</span></span></a>
                         </div>
-                        <div class="swiper-slide"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
+                        <div class="swiper-slide" data-hash="slide-achievements-6"><a class="achievements-item achievements__item" href="#"><span class="achievements-item__image"><picture>
 		                            <source type="image/webp" srcset="app/img/achievements-item-3.webp">
 		                            <img src="app/img/achievements-item-3.png" class="object-fit" alt="#" />
 		                        </picture></span><span class="achievements-item__content"><h3 class="achievements-item__title">Диплом</h3><span class="achievements-item__text">За участие в&nbsp;организации проведения II всероссийского совещания центров энергосбережения</span></span></a>
@@ -424,7 +427,7 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
     <footer class="footer">
         <div class="footer__inner">
             <div class="container">
@@ -484,7 +487,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./app/js/app.js?v=1701268076868"></script>
+    <script src="./app/js/app.js?v=1701355446246"></script>
 </body>
 
 </html>
