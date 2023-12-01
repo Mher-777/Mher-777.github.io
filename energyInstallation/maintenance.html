@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Комплексное обслуживание жд и&nbsp;гражданских объектов</title>
-    <link rel="stylesheet" href="./app/css/app.css?v=1701355447015">
+    <link rel="stylesheet" href="./app/css/app.css?v=1701428030451">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
 </head>
 
-<body>
+<body class="page-services">
     <header class="header">
         <div class="header__inner flex flex_vertical flex_justify">
             <div class="logo header__logo">
@@ -47,9 +47,9 @@
                     </li>
                     <li><a href="projects.html">Проекты</a>
                     </li>
-                    <li><a href="#">Новости</a>
+                    <li><a href="page.html">Новости</a>
                     </li>
-                    <li><a href="#">Контакты</a>
+                    <li><a href="contacts.html">Контакты</a>
                     </li>
                 </ul>
                 <button class="js-btn btn header__btn table-show" type="button"><span class="btn__back js-circles"></span><span class="btn__text">Заказать звонок</span>
@@ -149,6 +149,41 @@
                 </div>
             </div>
         </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__top">
+                    <h2 class="feedback__title h4 base-title" data-sub-title="связаться с&nbsp;нами">Хотите задать вопрос?</h2>
+                </div>
+                <div class="feedback__inner">
+                    <form class="feedback__form js-validate" action="#">
+                        <div class="feedback__row flex">
+                            <div class="input feedback__field">
+                                <div class="input__parent"><span class="input__placeholder">Ваше имя</span>
+                                    <input class="input__field" name="name" type="text" />
+                                </div>
+                            </div>
+                            <div class="input feedback__field">
+                                <div class="input__parent"><span class="input__placeholder">Телефон</span>
+                                    <input class="input__field js-mask-phone" name="phone" type="text" />
+                                </div>
+                            </div>
+                            <div class="input feedback__field">
+                                <div class="input__parent"><span class="input__placeholder">Email</span>
+                                    <input class="input__field js-mask-email" name="email" type="text" />
+                                </div>
+                            </div>
+                            <div class="input feedback__field">
+                                <div class="input__parent"><span class="input__placeholder">Cообщение</span>
+                                    <input class="input__field" name="message" type="text" />
+                                </div>
+                            </div>
+                            <button class="js-btn btn btn_border feedback__btn" type="submit"><span class="btn__back js-circles"></span><span class="btn__text">Оставить заявку</span>
+                            </button>
+                        </div><span class="feedback__text">Нажимая на&nbsp;кнопку «Оставить заявку, Вы соглашаетесь на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;пользовательским соглашением</span>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__inner">
@@ -170,15 +205,15 @@
                     <div class="footer__cell">
                         <h3 class="footer__title h6">Информация</h3>
                         <ul>
-                            <li><a href="#">Главная</a>
+                            <li><a href="main.html">Главная</a>
                             </li>
-                            <li><a href="#">О компании</a>
+                            <li><a href="about.html">О компании</a>
                             </li>
-                            <li><a href="#">Проекты</a>
+                            <li><a href="projects.html">Проекты</a>
                             </li>
-                            <li><a href="#">Новости</a>
+                            <li><a href="404.html">Новости</a>
                             </li>
-                            <li><a href="#">Контакты</a>
+                            <li><a href="contacts.html">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -209,7 +244,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./app/js/app.js?v=1701355447020"></script>
+    <script src="./app/js/app.js?v=1701428030459"></script>
 </body>
 
 </html>

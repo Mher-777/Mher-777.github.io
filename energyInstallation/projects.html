@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <title>ЖЕЛЕЗНОДОРОЖНАЯ СТАНЦИЯ «ЛУЖСКАЯ-ГЕНЕРАЛЬНАЯ»</title>
-    <link rel="stylesheet" href="./app/css/app.css?v=1701355447450">
+    <title>Проекты</title>
+    <link rel="stylesheet" href="./app/css/app.css?v=1701428031033">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
 </head>
 
-<body>
+<body class="page-projects">
     <header class="header">
         <div class="header__inner flex flex_vertical flex_justify">
             <div class="logo header__logo">
@@ -29,7 +29,7 @@
                     </li>
                     <li><a href="about.html">О компании</a>
                     </li>
-                    <li class="is-active"><a href="services.html">Услуги</a><span class="menu__icon table-show js-dropdown"><svg class="icon icon-arrowForward" viewBox="0 0 24 24"><use xlink:href="app/icons/sprite.svg#arrowForward"></use></svg></span>
+                    <li><a href="services.html">Услуги</a><span class="menu__icon table-show js-dropdown"><svg class="icon icon-arrowForward" viewBox="0 0 24 24"><use xlink:href="app/icons/sprite.svg#arrowForward"></use></svg></span>
                         <ul class="dropdown">
                             <li><a href="services.html">Проектирование</a>
                             </li>
@@ -45,11 +45,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="projects.html">Проекты</a>
+                    <li class="is-active"><a href="projects.html">Проекты</a>
                     </li>
-                    <li><a href="#">Новости</a>
+                    <li><a href="page.html">Новости</a>
                     </li>
-                    <li><a href="#">Контакты</a>
+                    <li><a href="contacts.html">Контакты</a>
                     </li>
                 </ul>
                 <button class="js-btn btn header__btn table-show" type="button"><span class="btn__back js-circles"></span><span class="btn__text">Заказать звонок</span>
@@ -116,7 +116,7 @@
         </section>
         <section class="project">
             <div class="container">
-                <div class="project__inner flex flex_justify">
+                <div class="project__inner flex flex_justify" data-sub-title="о&nbsp;проекте">
                     <div class="project__content">
                         <div class="project__image">
                             <picture>
@@ -150,6 +150,97 @@
                 </div>
             </div>
         </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__top flex flex_justify flex_bottom">
+                    <h2 class="h4 base-title gallery__title" data-sub-title="галерея">1 этап: Строительство путей <br> на&nbsp;новой площадке</h2>
+                    <div class="slider-pagination gallery__pagination"></div>
+                </div>
+                <div class="gallery__wrapper">
+                    <div class="swiper gallery__slider js-slider" data-settings="{&quot;slidesPerView&quot;:&quot;auto&quot;,&quot;loop&quot;:false,&quot;spaceBetween&quot;:20,&quot;freeMode&quot;:true,&quot;navigation&quot;:{&quot;enabled&quot;:false},&quot;pagination&quot;:{&quot;el&quot;:&quot;.gallery__pagination&quot;,&quot;dynamicBullets&quot;:true,&quot;dynamicMainBullets&quot;:3,&quot;clickable&quot;:true},&quot;breakpoints&quot;:{&quot;580&quot;:{&quot;slidesPerView&quot;:3,&quot;spaceBetween&quot;:30,&quot;navigation&quot;:{&quot;nextEl&quot;:&quot;.slider-arrow_next&quot;,&quot;prevEl&quot;:&quot;.slider-arrow_prev&quot;,&quot;enabled&quot;:true},&quot;loop&quot;:true,&quot;freeMode&quot;:false}}}">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-hash="slide-gallery-1"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-7.webp">
+		                            <img src="app/img/gallery-item-7.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 1</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                            <div class="swiper-slide" data-hash="slide-gallery-2"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-8.webp">
+		                            <img src="app/img/gallery-item-8.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 2</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                            <div class="swiper-slide" data-hash="slide-gallery-3"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-9.webp">
+		                            <img src="app/img/gallery-item-9.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 3</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                            <div class="swiper-slide" data-hash="slide-gallery-4"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-7.webp">
+		                            <img src="app/img/gallery-item-7.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 1</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                            <div class="swiper-slide" data-hash="slide-gallery-5"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-8.webp">
+		                            <img src="app/img/gallery-item-8.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 2</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                            <div class="swiper-slide" data-hash="slide-gallery-6"><a class="gallery-item gallery__item" href="#"><span class="gallery-item__image"><picture>
+		                            <source type="image/webp" srcset="app/img/gallery-item-9.webp">
+		                            <img src="app/img/gallery-item-9.jpeg" class="object-fit" alt="#" />
+		                        </picture></span><span class="gallery-item__content"><h3 class="gallery-item__title">Проект 3</h3><span class="gallery-item__text">Ленинградская обл., Кингисеппский р-р, с.п. Котельское, ст. «Лужская»</span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery__arrows">
+                        <div class="slider-arrow slider-arrow_small slider-arrow_next">
+                            <svg class="icon icon-arrowForward" viewBox="0 0 24 24">
+                                <use xlink:href="app/icons/sprite.svg#arrowForward"></use>
+                            </svg>
+                        </div>
+                        <div class="slider-arrow slider-arrow_small slider-arrow_prev">
+                            <svg class="icon icon-arrowForward" viewBox="0 0 24 24">
+                                <use xlink:href="app/icons/sprite.svg#arrowForward"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__top">
+                    <h2 class="feedback__title h4 base-title" data-sub-title="связаться с&nbsp;нами">Хотите задать вопрос?</h2>
+                </div>
+                <div class="feedback__inner">
+                    <form class="feedback__form js-validate" action="#">
+                        <div class="feedback__row flex">
+                            <div class="input feedback__field">
+                                <div class="input__parent"><span class="input__placeholder">Ваше имя</span>
+                                    <input class="input__field" name="name" type="text" />
+                                </div>
+                            </div>
+                            <div class="input feedback__field">
+                                <div class="input__parent"><span class="input__placeholder">Телефон</span>
+                                    <input class="input__field js-mask-phone" name="phone" type="text" />
+                                </div>
+                            </div>
+                            <div class="input feedback__field">
+                                <div class="input__parent"><span class="input__placeholder">Email</span>
+                                    <input class="input__field js-mask-email" name="email" type="text" />
+                                </div>
+                            </div>
+                            <div class="input feedback__field">
+                                <div class="input__parent"><span class="input__placeholder">Cообщение</span>
+                                    <input class="input__field" name="message" type="text" />
+                                </div>
+                            </div>
+                            <button class="js-btn btn btn_border feedback__btn" type="submit"><span class="btn__back js-circles"></span><span class="btn__text">Оставить заявку</span>
+                            </button>
+                        </div><span class="feedback__text">Нажимая на&nbsp;кнопку «Оставить заявку, Вы соглашаетесь на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;пользовательским соглашением</span>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__inner">
@@ -171,15 +262,15 @@
                     <div class="footer__cell">
                         <h3 class="footer__title h6">Информация</h3>
                         <ul>
-                            <li><a href="#">Главная</a>
+                            <li><a href="main.html">Главная</a>
                             </li>
-                            <li><a href="#">О компании</a>
+                            <li><a href="about.html">О компании</a>
                             </li>
-                            <li><a href="#">Проекты</a>
+                            <li><a href="projects.html">Проекты</a>
                             </li>
-                            <li><a href="#">Новости</a>
+                            <li><a href="404.html">Новости</a>
                             </li>
-                            <li><a href="#">Контакты</a>
+                            <li><a href="contacts.html">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -210,7 +301,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./app/js/app.js?v=1701355447458"></script>
+    <script src="./app/js/app.js?v=1701428031039"></script>
 </body>
 
 </html>
