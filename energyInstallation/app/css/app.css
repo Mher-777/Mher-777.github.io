@@ -3338,11 +3338,11 @@ video::-webkit-media-controls {
   width: 8.6rem;
 }
 .header.is-sticky .menu__list > li:hover .dropdown {
-  top: calc(100% + 5.5rem);
+  top: calc(100% + 5.4rem);
 }
 .header.is-sticky .menu__list > li:hover .dropdown:before {
-  top: -5.5rem;
-  height: 5.5rem;
+  top: -5.4rem;
+  height: 5.4rem;
 }
 .header__inner {
   padding: 2.4rem 6.8rem;
