@@ -1,0 +1,210 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+}
+
+html {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 0.5208333333vw;
+  background-color: #fff;
+}
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 0.6944444444vw;
+  }
+}
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 1.1990407674vw;
+  }
+}
+@media only screen and (max-width: 580px) {
+  html {
+    font-size: 2.5445292621vw;
+  }
+}
+
+/* Общие стили */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  color: #333333;
+}
+
+.container {
+  max-width: 122.5rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Стили для main */
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 3rem 0;
+}
+@media only screen and (max-width: 580px) {
+  .main {
+    padding: 3rem 2rem;
+  }
+}
+
+/* Стили для select */
+.select {
+  position: relative;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  max-width: 39.2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.select.select--open .select__trigger {
+  border-color: #999999;
+}
+.select.select--open .select__trigger::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.select.select--open .select__options {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+.select__field {
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  background-color: white;
+}
+.select__label {
+  font-size: 1.6rem;
+  color: #333333;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.select__trigger {
+  display: block;
+  width: 100%;
+  background-color: white;
+  font-size: 1.6rem;
+  color: #333;
+  padding: 1.6rem 3rem 1.6rem 1.6rem;
+  border: 0.1rem solid #EBEBEB;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+.select__trigger--placeholder {
+  color: #999999;
+}
+.select__trigger::before {
+  content: "";
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1002_108)'%3E%3Cpath d='M6.175 7.15833L10 10.975L13.825 7.15833L15 8.33333L10 13.3333L5 8.33333L6.175 7.15833Z' fill='%23999999'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1002_108'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  right: 1.6rem;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+.select__options {
+  position: absolute;
+  width: 100%;
+  max-height: 21.5rem;
+  overflow-y: auto;
+  background-color: white;
+  border: 0.1rem solid #EBEBEB;
+  border-radius: 0.4rem;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+.select__option {
+  margin: 0.5rem 0;
+  padding: 1rem 1.6rem;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  gap: 0.8rem;
+}
+.select__option .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.select__option:hover {
+  background-color: #EBEBEB;
+}
+
+.select__option:hover,
+.select__option--selected {
+  background-color: #f0f0f0;
+}
+
+.select--open .select__options {
+  display: block;
+}
+
+.content {
+  margin-top: 5rem;
+  max-width: 70.5rem;
+}
+.content__title {
+  font-weight: 600;
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+}
+.content__text {
+  line-height: 2.4rem;
+}
+.content__text:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
