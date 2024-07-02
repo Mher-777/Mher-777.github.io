@@ -122,9 +122,17 @@ body {
         border-radius: .5rem;
         cursor: pointer;
         transition: all linear .2s;
-    
+        display: flex;
+        align-items: center;
+        gap: .8rem;
         &--placeholder {
             color: #999999;
+        }
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            flex-shrink: 0;
         }
 
         &::before {

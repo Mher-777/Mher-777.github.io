@@ -24,10 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
             option.addEventListener('click', () => {
                 const selectedValue = option.getAttribute('data-value');
                 const selectedText = option.textContent;
-
                 options.querySelector('.select__option--selected').classList.remove('select__option--selected');
                 option.classList.add('select__option--selected');
-                trigger.textContent = selectedText;
+                trigger.innerHTML = option.innerHTML;
                 select.classList.remove('select--open');
 
                 if (select.classList.contains('select--dropdown1')) {
@@ -44,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         selects.forEach(select => {
             if (!select.contains(e.target)) {
                 select.classList.remove('select--open');
-                const options = select.querySelector('.select__options');
             }
         });
     });

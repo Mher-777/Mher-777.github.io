@@ -124,9 +124,22 @@ body {
   cursor: pointer;
   -webkit-transition: all linear 0.2s;
   transition: all linear 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
 }
 .select__trigger--placeholder {
   color: #999999;
+}
+.select__trigger .icon {
+  width: 2rem;
+  height: 2rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .select__trigger::before {
   content: "";
