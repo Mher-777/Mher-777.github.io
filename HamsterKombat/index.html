@@ -1,0 +1,531 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamster Kombat - The Ultimate Hamster Battle</title>
+    <meta name="description" content="Join the ultimate hamster battle in Hamster Kombat! Train, fight, and conquer as you take your hamster to the top. Fun, action-packed, and full of surprises.">
+    <meta name="keywords" content="Hamster Kombat, hamster game, animal fighting game, pet battle, online game, strategy, action, combat, multiplayer, fun game">
+    <meta name="author" content="Hamster Kombat Team">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner flex flex_vertical flex_justify">
+            <div class="logo header__logo">
+                <a href="./index.html" class="logo__link">
+                    <img src="./images/logo.svg" alt="Hamster Kombat logo" class="logo__image">
+                </a>
+            </div>
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#instruction" class="menu__link js-link">What is it</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#rules" class="menu__link js-link">How to play</a>
+                    </li>
+
+                    <li class="menu__item menu__item_accent">
+                        <a href="#banner" class="menu__link js-link">How to withdraw money</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#reviews" class="menu__link js-link">Gamer’s reviews</a>
+                    </li>
+
+                    <li class="menu__item mobile-show">
+                        <a href="./contacts.html" class="menu__link">Contacts</a>
+                    </li>
+
+                    <li class="menu__item menu__item_copyright mobile-show">
+                        ©2024 Hamster Kombat Helper. All rights reserved.
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#replaceUrl" class="header__btn btn">Play in Telegram</a>
+
+            <button type="button" aria-label="open close menu" class="hamburger header__hamburger">
+               <svg class="icon icon_open" viewBox="0 0 40 40">
+                    <use xlink:href="./images/sprite.svg#menuOpen"></use>
+                </svg>
+
+                <svg class="icon icon_close" viewBox="0 0 40 40">
+                    <use xlink:href="./images/sprite.svg#menuClose"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner flex">
+                <div class="intro__cell intro__cell_left">
+                    <div class="intro__content">
+                        <h1 class="title intro__title">Become the champion
+                            of Hamster Kombat!</h1>
+                        <p class="intro__text">Dive into the thrilling world of Hamster Kombat, the revolutionary game of 2024.
+                            Collect coins, upgrade your hamsters, and turn your victories into real money!</p>
+
+                        <a href="#replaceUrl" class="intro__btn btn">Play in Telegram</a>
+                        <a href="#instruction" class="intro__btn btn btn_white js-link">Learn more</a>
+                    </div>
+                    <div class="intro__quote quote">
+                        <p class="quote__text">“Soon, Hamster’s team will mint its token on TON, introducing
+                            the benefits of blockchain to hundreds of millions of people.
+                            A new era is arriving, and we are witnessing its arrival in real time!”</p>
+                        <div class="quote__author">
+                            <div class="quote__pic">
+                                <picture><source type="image/webp" srcset="./images/user-1.webp"><img src="./images/user-1.png" alt="Pavel Durov" class="object-fit"></picture>
+                            </div>
+                            <div class="quote__cell">
+                                <strong class="quote__name">Pavel Durov</strong>
+                                <span class="quote__job">CEO and Founder of Telegram</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="intro__cell intro__cell_right">
+                    <div class="intro__image">
+                        <picture><source type="image/webp" srcset="./images/intro_image.webp"><img src="./images/intro_image.png" alt="Hamster Kombat"></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="instruction" id="instruction">
+        <div class="container">
+            <div class="instruction__inner">
+                <div class="instruction__top section-top">
+                    <div class="tag section-top__tag">
+                        <svg class="icon" viewBox="0 0 16 16">
+                            <use xlink:href="./images/sprite.svg#info"></use>
+                        </svg>
+                        <span class="tag__text">What is it?</span>
+                    </div>
+                    <h2 class="section-top__title title">From Clicks to Cash: <br>
+                        The Hamster Kombat Phenomenon</h2>
+                    <p class="section-top__text">Hamster Kombat is not just a game, it's a revolution. <br>
+                        Click, collect, and conquer in a world where fun meets financial freedom.</p>
+                </div>
+                <div class="instruction__items flex">
+                    <div class="instruction__item">
+                        <h3 class="instruction__subtitle">Gameplay</h3>
+                        <p class="instruction__text">Tap on the coin with the hamster CEO to earn rewards and grow your virtual company. Strategize your taps to maximize earnings and unlock new upgrades.</p>
+                        <div class="instruction__image">
+                            <picture><source type="image/webp" srcset="./images/instruction-1.webp"><img src="./images/instruction-1.jpg" alt="Gameplay" class="object-fit"></picture>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h3 class="instruction__subtitle">Rewards</h3>
+                        <p class="instruction__text">Earn cryptocurrency by tapping and managing your hamster CEO,
+                            turning your in-game efforts into real-world financial gains.
+                            Redeem your rewards for valuable upgrades and bonuses.</p>
+                        <div class="instruction__image">
+                            <picture><source type="image/webp" srcset="./images/instruction-2.webp"><img src="./images/instruction-2.jpg" alt="Rewards" class="object-fit"></picture>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h3 class="instruction__subtitle">Evolution</h3>
+                        <p class="instruction__text">Experience continuous updates and new features,
+                            ensuring a dynamic and ever-evolving gameplay experience.
+                            Stay ahead with the latest enhancements and strategies.</p>
+                        <div class="instruction__image">
+                            <picture><source type="image/webp" srcset="./images/instruction-3.webp"><img src="./images/instruction-3.jpg" alt="Evolution" class="object-fit"></picture>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h3 class="instruction__subtitle">Community</h3>
+                        <p class="instruction__text">Join a thriving community of players, exchange tips, and climb
+                            the ranks of successful hamster CEOs. Participate in events
+                            and competitions to showcase your skills.</p>
+                        <div class="instruction__image">
+                            <picture><source type="image/webp" srcset="./images/instruction-4.webp"><img src="./images/instruction-4.jpg" alt="Community" class="object-fit"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="rules" id="rules">
+        <div class="container">
+            <div class="rules__inner">
+                <div class="rules__top section-top">
+                    <div class="tag section-top__tag">
+                        <svg class="icon" viewBox="0 0 17 16">
+                            <use xlink:href="./images/sprite.svg#play"></use>
+                        </svg>
+                        <span class="tag__text">How to play?</span>
+                    </div>
+                    <h2 class="section-top__title title">Grow Your Empire, <br>
+                        One Tap at a Time</h2>
+                    <p class="section-top__text">Kick off your Hamster Kombat journey by tapping the coin. Simple actions lead to big rewards — watch your empire grow with every tap!</p>
+                </div>
+                <div class="rules__wrapper flex flex_justify">
+                    <div class="rules__items">
+                        <div class="rules__item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <use xlink:href="./images/sprite.svg#user"></use>
+                            </svg>
+                            <h3 class="rules__title">Registration &amp; Login</h3>
+                            <p class="rules__desc">Open Telegram and find the Hamster Kombat bot.
+                                Start the bot and create an account by following the instructions.</p>
+                        </div>
+
+                        <div class="rules__item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <use xlink:href="./images/sprite.svg#play"></use>
+                            </svg>
+                            <h3 class="rules__title">Starting the Game</h3>
+                            <p class="rules__desc">On the bot screen, you'll see your hamster CEO and a coin,
+                                start tapping on the coin to earn in-game coins.</p>
+                        </div>
+
+                        <div class="rules__item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <use xlink:href="./images/sprite.svg#plus"></use>
+                            </svg>
+                            <h3 class="rules__title">Earning Coins</h3>
+                            <p class="rules__desc">Each tap gives you coins, use the earned coins
+                                to buy upgrades and bonuses.</p>
+                        </div>
+
+                        <div class="rules__item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <use xlink:href="./images/sprite.svg#star"></use>
+                            </svg>
+                            <h3 class="rules__title">Upgrades &amp; Bonuses</h3>
+                            <p class="rules__desc">Go to the upgrades section in the bot, purchase and upgrade
+                                your hamster CEO's skills to increase your earnings</p>
+                        </div>
+
+                        <div class="rules__item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <use xlink:href="./images/sprite.svg#users"></use>
+                            </svg>
+                            <h3 class="rules__title">Social Interactions</h3>
+                            <p class="rules__desc">Join the player community on Telegram, exchange tips and strategies,
+                                participate in competitions and events to get more coins.</p>
+                        </div>
+                    </div>
+                    <div class="rules__image">
+                        <picture><source type="image/webp" srcset="./images/rules-image.webp"><img src="./images/rules-image.png" alt=""></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner" id="banner">
+        <div class="banner__bg absolute">
+            <picture><source type="image/webp" srcset="./images/banner.webp"><img src="./images/banner.jpg" alt="" class="object-fit"></picture>
+        </div>
+        <div class="container">
+            <div class="banner__inner">
+                <div class="tag tag_gray banner__tag">
+                    <svg class="icon" viewBox="0 0 16 16">
+                        <use xlink:href="./images/sprite.svg#coinsHand"></use>
+                    </svg>
+                    <span class="tag__text">How to withdraw money?</span>
+                </div>
+
+                <h2 class="title title_large banner__title">From Game to Crypto: <br>
+                    The Next Step</h2>
+                <h3 class="banner__subtitle">Anticipate the exciting launch where your in-game earnings <br>
+                    can be traded as cryptocurrency, get prepared for the next big step!</h3>
+
+                <ul class="banner__items flex">
+                    <li class="banner__item">
+                        <svg class="banner__icon" viewBox="0 0 16 16">
+                            <use xlink:href="./images/sprite.svg#dollar"></use>
+                        </svg>
+                        <p class="banner__text">Get Ready for the Market! <br>
+                            Hamster Kombat coins will soon be convertible
+                            to cryptocurrency on major exchanges.
+                            Watch your earnings grow as you trade
+                            your game coins.</p>
+                    </li>
+
+                    <li class="banner__item">
+                        <svg class="banner__icon" viewBox="0 0 16 16">
+                            <use xlink:href="./images/sprite.svg#thumbsUp"></use>
+                        </svg>
+                        <p class="banner__text">Similar Success Stories. Like Notcoin,
+                            which successfully launched on the exchange, Hamster Kombat aims to provide players
+                            with real financial opportunities.
+                            Stay tuned for exciting updates!</p>
+                    </li>
+
+                    <li class="banner__item">
+                        <svg class="banner__icon" viewBox="0 0 16 16">
+                            <use xlink:href="./images/sprite.svg#trendingUp"></use>
+                        </svg>
+                        <p class="banner__text">Your Earnings, Amplified. <br>
+                            Prepare to take your game rewards to the next level by converting them into valuable crypto assets. The future of in-game earnings
+                            is almost here!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="reviews__inner">
+                <div class="reviews__top section-top">
+                    <div class="tag section-top__tag">
+                        <svg class="icon" viewBox="0 0 16 16">
+                            <use xlink:href="./images/sprite.svg#message"></use>
+                        </svg>
+                        <span class="tag__text">Gamer’s reviews</span>
+                    </div>
+                    <h2 class="section-top__title title">Players Speak Out: <br>
+                        Real Experiences</h2>
+                    <p class="section-top__text">Hear from our community of gamers about their journey with Hamster Kombat.
+                        <br>
+                        Authentic reviews from players just like you!</p>
+                </div>
+                <div class="reviews__row">
+                    <div class="reviews__item review-item">
+                        <p class="review-item__text">"I started playing Hamster Kombat last week and I'm hooked! My hamster CEO is getting stronger every day. Can't wait for the crypto conversion feature!"</p>
+                        <div class="review-item__bottom flex flex_justify">
+                            <div class="review-item__author">
+                                <div class="review-item__pic">
+                                    <picture><source type="image/webp" srcset="./images/user-9.webp"><img src="./images/user-9.png" alt="Aarav" class="object-fit"></picture>
+                                </div>
+                                <div class="review-item__cell">
+                                    <strong class="review-item__name">Aarav</strong>
+                                    <span class="review-item__tg">@hamsterking01</span>
+                                </div>
+                            </div>
+
+                            <div class="review-item__info">
+                                <span class="review-item__number">9M</span>
+                                <span class="review-item__status">Epic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item review-item">
+                        <p class="review-item__text">"This game is so much fun! The design is adorable, and I love tapping to earn coins. Logging in daily to see my progress grow!"</p>
+                        <div class="review-item__bottom flex flex_justify">
+                            <div class="review-item__author">
+                                <div class="review-item__pic">
+                                    <picture><source type="image/webp" srcset="./images/user-10.webp"><img src="./images/user-10.png" alt="Priya" class="object-fit"></picture>
+                                </div>
+                                <div class="review-item__cell">
+                                    <strong class="review-item__name">Priya</strong>
+                                    <span class="review-item__tg">@TechSavvy01</span>
+                                </div>
+                            </div>
+
+                            <div class="review-item__info">
+                                <span class="review-item__number">52.5M</span>
+                                <span class="review-item__status">Master</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item review-item">
+                        <p class="review-item__text">"As a newbie, I found Hamster Kombat really easy to understand. My hamster CEO is already upgraded, and I’m excited for the future crypto trading."</p>
+                        <div class="review-item__bottom flex flex_justify">
+                            <div class="review-item__author">
+                                <div class="review-item__pic">
+                                    <picture><source type="image/webp" srcset="./images/user-2.webp"><img src="./images/user-2.png" alt="Rajesh" class="object-fit"></picture>
+                                </div>
+                                <div class="review-item__cell">
+                                    <strong class="review-item__name">Rajesh</strong>
+                                    <span class="review-item__tg">@MoonlightGamer</span>
+                                </div>
+                            </div>
+
+                            <div class="review-item__info">
+                                <span class="review-item__number">3.5M</span>
+                                <span class="review-item__status">Epic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item review-item">
+                        <p class="review-item__text">"I've been playing Hamster Kombat every day for the past month. The community is great, and my hamster CEO is now a powerhouse! Eagerly awaiting the money withdrawal update."</p>
+                        <div class="review-item__bottom flex flex_justify">
+                            <div class="review-item__author">
+                                <div class="review-item__pic">
+                                    <picture><source type="image/webp" srcset="./images/user-3.webp"><img src="./images/user-3.png" alt="Sanjay" class="object-fit"></picture>
+                                </div>
+                                <div class="review-item__cell">
+                                    <strong class="review-item__name">Sanjay</strong>
+                                    <span class="review-item__tg">@mehtasanj1998</span>
+                                </div>
+                            </div>
+
+                            <div class="review-item__info">
+                                <span class="review-item__number">42M</span>
+                                <span class="review-item__status">Legendary</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item review-item">
+                        <p class="review-item__text">"Hamster Kombat is my new favorite game! I enjoy the daily rewards and seeing my hamster CEO get stronger. The graphics are so cute!"</p>
+                        <div class="review-item__bottom flex flex_justify">
+                            <div class="review-item__author">
+                                <div class="review-item__pic">
+                                    <picture><source type="image/webp" srcset="./images/user-4.webp"><img src="./images/user-4.png" alt="Anjali" class="object-fit"></picture>
+                                </div>
+                                <div class="review-item__cell">
+                                    <strong class="review-item__name">Anjali</strong>
+                                    <span class="review-item__tg">@anjalinairongame</span>
+                                </div>
+                            </div>
+
+                            <div class="review-item__info">
+                                <span class="review-item__number">84.1M</span>
+                                <span class="review-item__status">Master</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item review-item">
+                        <p class="review-item__text">"I'm a seasoned player, and Hamster Kombat keeps me engaged with its updates. Looking forward to converting my earnings into crypto soon. Highly recommend it!"</p>
+                        <div class="review-item__bottom flex flex_justify">
+                            <div class="review-item__author">
+                                <div class="review-item__pic">
+                                    <picture><source type="image/webp" srcset="./images/user-5.webp"><img src="./images/user-5.png" alt="Vishal" class="object-fit"></picture>
+                                </div>
+                                <div class="review-item__cell">
+                                    <strong class="review-item__name">Vishal</strong>
+                                    <span class="review-item__tg">@vishnugenius</span>
+                                </div>
+                            </div>
+
+                            <div class="review-item__info">
+                                <span class="review-item__number">11M</span>
+                                <span class="review-item__status">Legendary</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item review-item">
+                        <p class="review-item__text">"I've been playing since launch, and it's been a blast! The design is top-notch, and my hamster CEO is the strongest among my friends. Eagerly waiting for the crypto conversion feature."</p>
+                        <div class="review-item__bottom flex flex_justify">
+                            <div class="review-item__author">
+                                <div class="review-item__pic">
+                                    <picture><source type="image/webp" srcset="./images/user-6.webp"><img src="./images/user-6.png" alt="Deepika" class="object-fit"></picture>
+                                </div>
+                                <div class="review-item__cell">
+                                    <strong class="review-item__name">Deepika</strong>
+                                    <span class="review-item__tg">@dee_dreamer</span>
+                                </div>
+                            </div>
+
+                            <div class="review-item__info">
+                                <span class="review-item__number">193.4M</span>
+                                <span class="review-item__status">Grandmaster</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item review-item">
+                        <p class="review-item__text">"Hamster Kombat is a great way to unwind and earn at the same time. My CEO hamster looks so cool with all the upgrades. I’m excited about the future exchange option!"</p>
+                        <div class="review-item__bottom flex flex_justify">
+                            <div class="review-item__author">
+                                <div class="review-item__pic">
+                                    <picture><source type="image/webp" srcset="./images/user-7.webp"><img src="./images/user-7.png" alt="Anjali" class="object-fit"></picture>
+                                </div>
+                                <div class="review-item__cell">
+                                    <strong class="review-item__name">Sarvar</strong>
+                                    <span class="review-item__tg">@gupta_game_master</span>
+                                </div>
+                            </div>
+
+                            <div class="review-item__info">
+                                <span class="review-item__number">1.2B</span>
+                                <span class="review-item__status">Lord</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item review-item">
+                        <p class="review-item__text">"This game is incredibly addictive! I tap every day to earn coins and upgrade my hamster CEO. Can’t wait for the feature to cash out real money."</p>
+                        <div class="review-item__bottom flex flex_justify">
+                            <div class="review-item__author">
+                                <div class="review-item__pic">
+                                    <picture><source type="image/webp" srcset="./images/user-8.webp"><img src="./images/user-8.png" alt="Nisha" class="object-fit"></picture>
+                                </div>
+                                <div class="review-item__cell">
+                                    <strong class="review-item__name">Nisha</strong>
+                                    <span class="review-item__tg">@nishrocks</span>
+                                </div>
+                            </div>
+
+                            <div class="review-item__info">
+                                <span class="review-item__number">1.2M</span>
+                                <span class="review-item__status">Diamond</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__content">
+                        <h3 class="title card__title">Join the Hamster <br>
+                            Revolution Today!</h3>
+                        <p class="card__text">Tap into the excitement and start earning with Hamster Kombat. <br>
+                            Click below to play in Telegram and watch your virtual empire grow!</p>
+
+                        <a href="#replaceUrl" class="card__btn btn">Play in Telegram</a>
+                    </div>
+                    
+                    <div class="card__image">
+                        <picture><source type="image/webp" srcset="./images/card_image.webp"><img src="./images/card_image.png" alt="Join the Hamster Revolution Today!"></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__top flex flex_vertical flex_justify">
+            <div class="logo footer__logo">
+                <a href="./index.html" class="logo__link">
+                    <img src="./images/logo.svg" alt="Hamster Kombat logo" class="logo__image">
+                </a>
+            </div>
+
+            <nav class="footer__menu">
+                <ul class="footer__list flex">
+                    <li class="footer__item">
+                        <a href="./contacts.html" class="footer__link">Contacts</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a href="./terms.html" class="footer__link">Terms of Service</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a href="./privacy.html" class="footer__link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__bottom flex flex_vertical flex_justify">
+            <div class="footer__copyright">
+                © <script>
+                document.write(/\d{4}/.exec(Date())[0])
+            </script>, Hamster Kombat Helper. All rights reserved.
+            </div>
+
+            <div class="footer__text">Any information on this site does not constitute financial advice. 18+</div>
+        </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+
+</body></html>
