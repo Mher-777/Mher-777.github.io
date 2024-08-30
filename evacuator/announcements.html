@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Создание объявления</title>
+    <link rel="stylesheet" href="./app/css/app.css?v=1725041656469">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body id="body">
+    <header class="header">
+        <div class="header__inner flex flex_justify flex_vertical">
+            <div class="logo header__logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__image" src="./app/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item is-active"><a class="menu__link" href="#">о&nbsp;проекте</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="js-btn btn header__btn" href="./announcements.html">
+                <div class="btn__back js-circles"></div><span class="btn__text">Добавить объявление</span>
+            </a>
+            <button class="hamburger header__hamburger" type="button" aria-label="open close menu">
+                <svg class="icon icon-menuOpen" viewBox="0 0 50 50">
+                    <use xlink:href="/app/icons/sprite.svg#menuOpen"></use>
+                </svg>
+                <svg class="icon icon-menuClose" viewBox="0 0 50 50">
+                    <use xlink:href="/app/icons/sprite.svg#menuClose"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="header__banner">
+            <div class="header__bg absolute">
+                <picture>
+                    <source type="image/webp" srcset="app/img/header_bg.webp">
+                        <img src="app/img/header_bg.jpg" class="object-fit" alt="Здесь может быть ваш эвакуатор" />
+                </picture>
+            </div>
+            <h2 class="header__title">Создание объявления</h2>
+        </div>
+    </header>
+    <section class="announcements">
+        <div class="container">
+            <div class="announcements__info">
+                <div class="announcements__icon">
+                    <img src="./app/img/money.svg" alt="money">
+                </div>
+                <div class="announcements__desc">Заполните все поля формы на&nbsp;размещение своего объявления на&nbsp;сайте.
+                    <br>Размещение объявления платное. Стоимость за&nbsp;одно объявление составляет <strong>990 руб.</strong>
+                    Объявление будет опубликовано на&nbsp;сайте после оплаты и проверки модератором.</div>
+            </div>
+            <form class="announcements__form" action="">
+                <div class="select announcements__field">
+                    <div class="select__label p">Выберете город</div>
+                    <div class="select__parent">
+                        <select class="select__hidden js-select">
+                            <option class="select__option" val="0">Москва</option>
+                            <option class="select__option" val="1">Киров</option>
+                            <option class="select__option" val="2">Самара</option>
+                            <option class="select__option" val="3">Саратов</option>
+                            <option class="select__option" val="4">Армения</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input announcements__field">
+                    <div class="input__label p">Ваше имя</div>
+                    <div class="input__parent">
+                        <input class="input__field" name="name" placeholder="" type="text" required="required" />
+                    </div>
+                </div>
+                <div class="input announcements__field">
+                    <div class="input__label p">Номер мобильного телефона</div>
+                    <div class="input__parent">
+                        <input class="input__field" name="phone" placeholder="+7 (999) 999 99 99" type="text" required="required" />
+                    </div>
+                </div>
+                <div class="input announcements__field">
+                    <div class="input__label p">Номер городского телефона</div>
+                    <div class="input__parent">
+                        <input class="input__field" name="phone" placeholder="+7 (999) 999 99 99" type="text" required="required" />
+                    </div>
+                </div>
+                <div class="input announcements__field">
+                    <div class="input__label p">Ваш email</div>
+                    <div class="input__parent">
+                        <input class="input__field" name="email" placeholder="example@gmail.com" type="text" required="required" />
+                    </div>
+                </div>
+                <div class="input announcements__field">
+                    <div class="input__label p">Адрес стоянки эвакуатора</div>
+                    <div class="input__parent">
+                        <input class="input__field" name="address" placeholder="" type="text" required="required" />
+                    </div>
+                </div>
+                <legend class="announcements__title">ИНФОРМАЦИЯ</legend>
+                <div class="input announcements__field">
+                    <div class="input__label p">Заголовок объявления</div>
+                    <div class="input__parent">
+                        <input class="input__field" name="ad_title" placeholder="Не более 50 символов" type="text" required="required" />
+                    </div>
+                </div>
+                <div class="textarea announcements__field">
+                    <div class="textarea__label p">Описание объявления</div>
+                    <div class="textarea__parent">
+                        <textarea class="textarea__field" name="ad_desc" placeholder="Не более 50 символов"></textarea>
+                    </div>
+                </div>
+                <legend class="announcements__title">ЦЕНЫ</legend>
+                <div class="announcements__row">
+                    <div class="input announcements__field">
+                        <div class="input__label p">Легковые автомобили</div>
+                        <div class="input__parent" data-text="рублей">
+                            <input class="input__field" name="passenger_cars" placeholder="" type="text" required="required" />
+                        </div>
+                    </div>
+                    <label class="checkbox announcements__checkbox">
+                        <input class="checkbox__input" data-rule-required="data-rule-required" value="Услугу не оказываю" name="passenger_cars_check" type="checkbox" /><span class="checkbox__text"><span class="checkbox__arrow"><svg class="icon icon-checked" viewBox="0 0 16 11"><use xlink:href="/app/icons/sprite.svg#checked"></use></svg></span>Услугу не оказываю</span>
+                    </label>
+                </div>
+                <div class="announcements__row">
+                    <div class="input announcements__field">
+                        <div class="input__label p">Мототехника</div>
+                        <div class="input__parent" data-text="рублей">
+                            <input class="input__field" name="motor_vehicles" placeholder="" type="text" required="required" />
+                        </div>
+                    </div>
+                    <label class="checkbox announcements__checkbox">
+                        <input class="checkbox__input" data-rule-required="data-rule-required" value="Услугу не оказываю" name="motor_vehicles_check" type="checkbox" /><span class="checkbox__text"><span class="checkbox__arrow"><svg class="icon icon-checked" viewBox="0 0 16 11"><use xlink:href="/app/icons/sprite.svg#checked"></use></svg></span>Услугу не оказываю</span>
+                    </label>
+                </div>
+                <div class="announcements__row">
+                    <div class="input announcements__field">
+                        <div class="input__label p">Внедорожник</div>
+                        <div class="input__parent" data-text="рублей">
+                            <input class="input__field" name="SUV" placeholder="" type="text" required="required" />
+                        </div>
+                    </div>
+                    <label class="checkbox announcements__checkbox">
+                        <input class="checkbox__input" data-rule-required="data-rule-required" value="Услугу не оказываю" name="SUV_check" type="checkbox" /><span class="checkbox__text"><span class="checkbox__arrow"><svg class="icon icon-checked" viewBox="0 0 16 11"><use xlink:href="/app/icons/sprite.svg#checked"></use></svg></span>Услугу не оказываю</span>
+                    </label>
+                </div>
+                <div class="announcements__row">
+                    <div class="input announcements__field">
+                        <div class="input__label p">Микроавтобус</div>
+                        <div class="input__parent" data-text="рублей">
+                            <input class="input__field" name="minibus" placeholder="" type="text" required="required" />
+                        </div>
+                    </div>
+                    <label class="checkbox announcements__checkbox">
+                        <input class="checkbox__input" data-rule-required="data-rule-required" value="Услугу не оказываю" name="minibus_check" type="checkbox" /><span class="checkbox__text"><span class="checkbox__arrow"><svg class="icon icon-checked" viewBox="0 0 16 11"><use xlink:href="/app/icons/sprite.svg#checked"></use></svg></span>Услугу не оказываю</span>
+                    </label>
+                </div>
+                <div class="announcements__row">
+                    <div class="input announcements__field">
+                        <div class="input__label p">Загородный тариф</div>
+                        <div class="input__parent" data-text="рублей">
+                            <input class="input__field" name="country_tariff" placeholder="" type="text" required="required" />
+                        </div>
+                    </div>
+                    <label class="checkbox announcements__checkbox">
+                        <input class="checkbox__input" data-rule-required="data-rule-required" value="Услугу не оказываю" name="country_tariff_check" type="checkbox" /><span class="checkbox__text"><span class="checkbox__arrow"><svg class="icon icon-checked" viewBox="0 0 16 11"><use xlink:href="/app/icons/sprite.svg#checked"></use></svg></span>Услугу не оказываю</span>
+                    </label>
+                </div>
+                <legend class="announcements__title">ФОТО</legend>
+                <div class="announcements__cell">
+                    <div class="file-upload"><span class="file-upload__text">Прикрепите фотографию к&nbsp;объявлению</span>
+                        <label class="file-upload__label">
+                            <input class="file-upload__input file" type="file"><span class="file-upload__btn">Загрузить</span>
+                        </label>
+                    </div>
+                    <label class="checkbox announcements__checkbox">
+                        <input class="checkbox__input" data-rule-required="data-rule-required" value="Я соглашаюсь с&nbsp;правилами использования сервиса, а&nbsp;также с&nbsp;передачей и обработкой моих данных в&nbsp;evarus.ru. Я подтверждаю своё совершеннолетие и ответственность за&nbsp;размещение."
+                        name="agreement" type="checkbox" /><span class="checkbox__text"><span class="checkbox__arrow"><svg class="icon icon-checked" viewBox="0 0 16 11"><use xlink:href="/app/icons/sprite.svg#checked"></use></svg></span>Я соглашаюсь с&nbsp;правилами использования сервиса,
+                        а&nbsp;также с&nbsp;передачей и обработкой моих данных в&nbsp;evarus.ru. Я подтверждаю своё совершеннолетие и ответственность за&nbsp;размещение.</span>
+                    </label>
+                    <button class="js-btn btn announcements__btn" type="submit">
+                        <div class="btn__back js-circles"></div><span class="btn__text">Продолжить</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="logo footer__logo">
+                    <a class="logo__link" href="#">
+                        <img class="logo__image" src="./app/img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="#">Вызвать эвакуатор</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Добавить эвакуатор на&nbsp;сайт</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Помощь</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Правила оплаты</a>
+                        </li>
+                        <li class="footer__item"><a class="footer__link" href="#">Защита персональных данных</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <a class="js-link down-up" href="#body"></a>
+    <script src="./app/js/app.js?v=1725041656475"></script>
+</body>
+
+</html>
